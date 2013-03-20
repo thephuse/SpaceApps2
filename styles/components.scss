@@ -1,0 +1,291 @@
+/*-- @component HEADER -- */
+
+.page-header {
+  @extend .cf; 
+  padding: 110px;
+  position: relative;
+  h1 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -102px;
+  }
+}
+
+.page-nav {
+  ul {
+    overflow: hidden;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 900;
+  }
+  .pull-l li {
+    padding-right: 70px;
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+  .pull-r li {
+    padding-left: 70px;
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+}
+
+/* -- @component SECTIONS -- */
+
+#liftoff, #challenges {
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+#liftoff, #challenges, #schedule {
+  -webkit-translate: translateZ(0);
+}
+
+#liftoff {
+  background-image: url("../images/clouds.jpg");
+}
+
+#challenges {
+  background-image: url("../images/city.jpg");
+}
+
+#schedule {
+  background-image: url("../images/rocket.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+
+/* -- @component EVENT INFO -- */
+
+.event-info {
+  padding-top: 35px;
+}
+
+.event-detail {
+  display: inline-block;
+  @extend %well;
+  margin: 0 10px;
+  
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 18px;
+  &.date {
+    background-image: url("../images/calendar.png");
+  }
+  &.location {
+    background-image: url("../images/location.png");
+  }
+}
+
+/* @component REGISTER */
+
+.register {
+  text-align: center;
+  margin-top: -40px;
+}
+
+/* -- @component CHALLENGES -- */
+
+.challenges {
+  @extend .cf;
+  margin: 70px 0 0 0;
+}
+
+.challenge {
+  @extend %well;
+  text-align: left;
+  background-image: url("../images/star.png");
+  background-position: 15px;
+}
+
+/* -- @component SCHEDULE -- */
+
+.schedule {
+  margin-top: 60px;
+  h3 {
+    text-align: left;
+  }
+}
+
+.schedule-table {
+  width: 100%;
+  text-align: left;
+  th {
+    width: 30%;
+    color: rgba(255,255,255, 0.5);
+    font-weight: 300;
+  }
+  td {
+    padding-bottom: 20px;
+  }
+}
+
+/* -- @component FAQS -- */
+
+.faqs {
+  list-style: none;
+  margin-bottom: 45px;
+  li {
+    margin-bottom: 15px;
+  }
+  .faq-q {
+    display: block;
+    padding-bottom: 15px;
+    padding-right: 15px;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    &:after {
+      width: 0; 
+      height: 0; 
+      border-style: solid; 
+      border-width: 10px 10px 0 10px;
+      border-color: #3b3b3b transparent transparent transparent;
+      content: " ";
+      position: absolute;
+      right: 0; 
+      top: 10px;
+    }
+  }
+  .faq-a {
+    display: none;
+    margin-top: 15px;
+    color: #b6b6b6;
+  }
+}
+
+/* -- @component TWEET -- */
+
+.conversation {
+  @extend .cf;
+  margin-bottom: 50px;
+  h4 {
+    margin-bottom: 25px;
+    font-weight: 300;
+  }
+  .time {
+    margin-top: 10px;
+    color: #aaa;
+  }
+}
+
+/* -- @component FOTTER -- */
+
+.page-footer {
+  padding: 30px;
+  font-size: 16px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.footer-nav {
+  li {
+    display: inline-block;
+    padding-right: 45px;
+  } 
+}
+
+/* -- @component CALLOUT -- */
+
+.callout {
+  width: 52.727272727%;
+  margin: 0 auto 70px auto;
+  border: 4px solid #f57665;
+  border-radius: 10px;
+  padding: 40px;
+  overflow: hidden;
+  header {
+    text-align: left;
+    .number {
+      display: block;
+      float: left;
+      font-size: 80px;
+      font-family: "steelfishregular", sans-serif;
+      margin-right: 20px;
+    }
+    .day {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 40px;
+      margin-top: 10px;
+    }
+  }
+}
+
+/* -- @component ORGANIZER -- */
+
+.organizer {
+  text-align: left;
+  margin-bottom: 80px;
+  img {
+    display: block;
+  }
+  header {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255,255,255, 0.25);
+  }
+  h3 {
+    font-size: 40px;
+    margin-bottom: 15px;
+    padding-bottom: 0;
+    border-bottom: 0;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 1.3;
+  }
+  p {
+    margin-bottom: 15px;
+  }
+  .btn-small {
+    background: #b83b2a;
+    padding: 11px 50px;
+    margin-top: 10px;
+    &:hover {
+      background: darken(#b83b2a, 10%);
+    }
+  }
+  &.pull-l {
+    clear: both;
+  }
+  .grid-11 a {
+    text-decoration: underline;
+  }
+  .more {
+    display: none;
+    padding-top: 15px;
+  }
+}
+
+/* -- @component SPONSORS -- */
+
+.sponsor {
+  display: block;
+  background: #000;
+  position: relative;
+  span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #4e4e4e;
+    color: #fff;
+    padding: 5px;
+    a {
+      color: #fff;
+    }
+  }
+}

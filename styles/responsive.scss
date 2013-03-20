@@ -1,0 +1,58 @@
+@media screen and (max-width: 1140px) {
+  #liftoff {
+    padding-bottom: 70px;
+  }
+  .callout {
+    width: 70%;
+  }
+  .page-header {
+    padding: 15px;
+    h1 {
+      margin-top: -50px;
+    }
+  }
+  body > section {
+    padding: 50px 0;
+  }
+  h2 {
+    margin-bottom: 40px;
+  }
+  .grid-8:first-child {
+    margin-bottom: 50px;
+  }
+  .page-nav li {
+    display: block;
+  }
+  .page-nav .pull-r li {
+    text-align: right;
+  }
+  .container {
+    width: 90%;
+    & > [class^="grid"], .schedule .grid-6, .organizer {
+      width: 100%!important;
+      margin-left: 0!important;
+    }
+  }
+  .schedule .grid-6 {
+    margin-bottom: 20px;
+  }
+  .footer-nav li {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .event-detail, .btn-small {
+    margin-bottom: 20px;
+  }
+  .organizer .btn-small {
+    padding: 11px 30px;
+  }
+  .callout {
+    width: 100%;
+  }
+  .challenge {
+    width: 100%;
+    margin-left: 0;
+  }
+}
