@@ -371,6 +371,11 @@ li.grid-wide-half:nth-of-type(odd) {
   background-repeat: no-repeat;
   background-position: center top; }
 
+#about {
+  background-image: url("../images/rom.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom; }
+
 /* -- @component EVENT INFO -- */
 .event-info {
   padding-top: 35px; }
