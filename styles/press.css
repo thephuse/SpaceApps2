@@ -62,7 +62,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #cccccc;
   margin: 1em 0;
   padding: 0; }
 
@@ -114,7 +114,7 @@ p {
   margin-bottom: 20px; }
 
 .btn, .btn-cta, .btn-facebook, .btn-twitter, .btn-download {
-  background: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 12px 30px;
   color: #fff;
   font-size: 18px;
@@ -125,7 +125,7 @@ p {
   -webkit-box-sizing: border-box;
   -webkit-transition: background-color 0.3s linear; }
   .btn:hover, .btn-cta:hover, .btn-facebook:hover, .btn-twitter:hover, .btn-download:hover {
-    background: rgba(241, 88, 61, 0.7);
+    background-color: rgba(241, 88, 61, 0.7);
     -webkit-transition: background-color 0.3s linear; }
   @media screen and (max-width: 840px) {
     .btn, .btn-cta, .btn-facebook, .btn-twitter, .btn-download {
@@ -143,14 +143,14 @@ p {
   font-size: 14px; }
 
 .btn-twitter {
-  background: #009ec9; }
+  background-color: #009ec9; }
   .btn-twitter:hover {
-    background: rgba(0, 158, 201, 0.7); }
+    background-color: rgba(0, 158, 201, 0.7); }
 
 .btn-facebook {
-  background: #375895; }
+  background-color: #375895; }
   .btn-facebook:hover {
-    background: rgba(55, 88, 149, 0.7); }
+    background-color: rgba(55, 88, 149, 0.7); }
 
 .btn-download {
   background-color: #3d994b;
@@ -162,7 +162,7 @@ p {
   background-position: 96% center;
   padding-right: 50px; }
   .btn-download:hover {
-    background: rgba(61, 153, 75, 0.7); }
+    background-color: rgba(61, 153, 75, 0.7); }
 
 .cta {
   margin-top: 40px;
@@ -400,7 +400,7 @@ input[type="email"] {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  border: 2px solid #888;
+  border: 2px solid #888888;
   border-radius: 50px;
   width: 52px;
   height: 52px;

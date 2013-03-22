@@ -58,7 +58,7 @@
   background-image: url("../images/city.jpg");
 }
 
-#schedule {
+#schedule, #press {
   background-image: url("../images/rocket.png");
   background-repeat: no-repeat;
   background-position: center top;
@@ -99,7 +99,7 @@
 
 .challenges {
   @extend .cf;
-  margin: 70px 0 0 0;
+  margin: 70px 0;
 }
 
 .challenge {
@@ -179,6 +179,7 @@
   }
 }
 
+
 /* -- @component FOTTER -- */
 
 .page-footer {
@@ -221,6 +222,10 @@
       font-size: 40px;
       margin-top: 10px;
     }
+  }
+  &.press {
+    width: 77.1722%;
+    padding-bottom: 0;
   }
 }
 
@@ -287,5 +292,63 @@
     a {
       color: #fff;
     }
+  }
+}
+
+/* -- @component PRESS -- */
+
+.press .btn-small {
+  width:90%;
+}
+
+.press {
+  text-align: left;
+  article {
+    margin-bottom: 40px;
+    a {
+      font-family: "brandon-grotesque", sans-serif;
+      display: block;
+      font-size: 18px;
+      text-transform: uppercase;
+      position: relative;
+      &:after {
+        position: absolute;
+        width: 24px;
+        height: 27px;
+        right: 0;
+        top: 0;
+        background-image: url(../images/arrow-right.png);
+        background-repeat: no-repeat;
+        background-position: top left;
+        content: " " ;
+      }
+      &:hover:after {
+        background-position: bottom left;
+      }
+    }
+    footer {
+      font-family: "proxima-nova";
+      font-size: 18px;
+      text-transform: none;
+      margin-top: 10px;
+      span {
+        color: rgba(255,255,255,0.6);
+      }
+    }
+  }
+  blockquote {
+    
+    
+    &:before {
+      position: absolute;
+      left: -20px;
+      content: "\201C";
+      top: -10px;
+      color: #fff; 
+      width: 20px; 
+      height: 20px;
+      font-size: 36px;
+    }
+    
   }
 }

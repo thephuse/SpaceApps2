@@ -56,7 +56,7 @@ p {
 }
 
 .btn {
-  background: rgba(255,255,255,0.1);
+  background-color: rgba(255,255,255,0.1);
   padding: 12px 30px;
   color: #fff; 
   font-size: 18px;
@@ -67,7 +67,7 @@ p {
   -webkit-box-sizing: border-box;
   -webkit-transition: background-color 0.3s linear;
   &:hover {
-    background:rgba(241,88,61,0.7);
+    background-color:rgba(241,88,61,0.7);
     -webkit-transition: background-color 0.3s linear;
   }
   @media screen and (max-width: 840px) {
@@ -91,16 +91,16 @@ p {
 }
 
 .btn-twitter {
-  background: rgb(0,158,201);
+  background-color: rgb(0,158,201);
   &:hover {
-    background: rgba(0,158,201, 0.7);
+    background-color: rgba(0,158,201, 0.7);
   }
 }
 
 .btn-facebook {
-  background: rgb(55,88,149);
+  background-color: rgb(55,88,149);
   &:hover {
-    background: rgba(55,88,149, 0.7);
+    background-color: rgba(55,88,149, 0.7);
   }
 }
 
@@ -115,7 +115,7 @@ p {
   background-position: 96% center;
   padding-right: 50px;
   &:hover {
-    background: rgba(61,153,75, 0.7);
+    background-color: rgba(61,153,75, 0.7);
   }
 }
 
