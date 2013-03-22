@@ -42,6 +42,14 @@
 }
 
 @media screen and (max-width: 768px) {
+  [class^="grid"] {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+  .sponsor span {
+    font-style: 12px;
+  }
   .event-detail, .btn-small {
     margin-bottom: 20px;
   }
@@ -51,13 +59,20 @@
   .callout {
     width: 100%;
   }
+  .callout header .number {
+    float: none;
+  }
   .challenge {
     width: 100%;
     margin-left: 0;
   }
+  .page-nav ul {
+    width: 50%;
+  }
   .page-header h1 {
     width: 150px;
     margin-top: -20px;
+    margin-left: -75px;
     img {
       max-width: 100%;
     }
