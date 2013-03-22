@@ -42,9 +42,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    width: 95%;
-  }
+
   [class^="grid"] {
     width: 100%;
     float: none;
@@ -71,14 +69,17 @@
   }
   .page-nav ul {
     width: 50%;
+    a {
+      font-size: 14px;
+    }
   }
   .page-header {
-    padding: 0 7px;
+    padding: 7px 0;
   }
   .page-header h1 {
-    width: 150px;
+    width: 120px;
     margin-top: -20px;
-    margin-left: -75px;
+    margin-left: -60px;
     img {
       max-width: 100%;
     }
