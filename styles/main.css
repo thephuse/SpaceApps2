@@ -567,6 +567,9 @@ li.grid-wide-half:nth-of-type(odd) {
   .footer-nav li {
     display: block; } }
 @media screen and (max-width: 768px) {
+  .container {
+    width: 98%; }
+
   [class^="grid"] {
     width: 100%;
     float: none;
