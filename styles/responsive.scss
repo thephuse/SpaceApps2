@@ -43,7 +43,7 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    width: 98%;
+    width: 95%;
   }
   [class^="grid"] {
     width: 100%;
@@ -71,6 +71,9 @@
   }
   .page-nav ul {
     width: 50%;
+  }
+  .page-header {
+    padding: 0 7px;
   }
   .page-header h1 {
     width: 150px;
