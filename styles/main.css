@@ -330,11 +330,22 @@ li.grid-wide-half:nth-of-type(odd) {
 /*-- @component HEADER -- */
 .page-header {
   position: relative;
-  background: black url("../images/header.gif") no-repeat top center; }
+  background: black url("../images/header.png") repeat-y top center; }
   .page-header h1 {
     width: 23.636363636%;
     float: left;
     padding: 35px 0; }
+
+.mobile-logos {
+  display: none;
+  float: left;
+  padding-top: 10px;
+  width: 30%; }
+  .mobile-logos img {
+    max-width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    height: 36px; }
 
 .page-nav {
   float: left;
@@ -355,18 +366,18 @@ li.grid-wide-half:nth-of-type(odd) {
   display: none;
   color: #000;
   background: #fff;
-  padding: 8px 15px 8px 50px;
+  padding: 10px 15px 10px 50px;
   position: relative;
   clear: both; }
   .menu-toggle:before {
     content: "";
     position: absolute;
-    top: 30%;
+    top: 11px;
     left: 15px;
     width: 16px;
     height: 2px;
     border-top: 8px double #000;
-    border-bottom: 4px solid #000;
+    border-bottom: 3px solid #000;
     color: #000; }
   .menu-toggle:hover {
     background-color: #fff; }
@@ -656,29 +667,33 @@ li.grid-wide-half:nth-of-type(odd) {
     .page-nav ul {
       text-align: center; }
     .page-nav li {
-      width: 40%; } }
+      width: 40%; }
+
+  .btn-primary, .challenges_page_list .challenges-links li a {
+    padding: 15px 60px; } }
 @media screen and (max-width: 768px) {
-  .menu-toggle {
+  h2 {
+    font-size: 50px; }
+
+  .menu-toggle, .mobile-logos {
     display: block; }
 
   .page-header {
-    padding-bottom: 20px; }
+    padding-bottom: 10px; }
 
   .page-header h1, .nasa-partner {
-    width: 50%;
-    padding: 20px 0; }
-    .page-header h1 img, .nasa-partner img {
-      max-width: 100%; }
-
-  .nasa-partner {
-    float: right; }
+    display: none; }
 
   .page-nav {
-    width: 100%;
-    float: none; }
+    width: 70%;
+    padding-top: 10px; }
     .page-nav ul {
       display: none;
-      padding-top: 20px; }
+      padding-left: 50px;
+      padding-top: 10px; }
+    .page-nav li {
+      display: block;
+      text-align: left; }
 
   [class^="grid"] {
     width: 100%;

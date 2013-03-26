@@ -26,6 +26,7 @@ function responsiveNav() {
   $(".menu-toggle").click(function(e){
     e.preventDefault();
     $(".page-nav ul").toggle();
+    $(this).toggleClass("open");
   });
 }
 

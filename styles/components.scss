@@ -3,11 +3,24 @@
 .page-header {
   @extend .cf; 
   position: relative;
-  background:#000 url("../images/header.gif") no-repeat top center;
+  background:#000 url("../images/header.png") repeat-y top center;
   h1 {
     width: 23.636363636%;
     float: left;
     padding: 35px 0;
+  }
+}
+
+.mobile-logos {
+  display: none;
+  float: left;
+  padding-top: 10px;   
+  width: 30%;
+  img {
+    max-width: 40%;
+    display: inline-block;
+    vertical-align: top;
+    height: 36px;
   }
 }
 
@@ -35,23 +48,24 @@
   @extend .btn;
   color: #000;
   background: #fff;
-  padding: 8px 15px 8px 50px;
+  padding: 10px 15px 10px 50px;
   position: relative;
   clear: both;
   &:before {
     content: "";
     position: absolute;
-    top: 30%;
+    top: 11px;
     left:15px;
     width:16px;
     height:2px;
     border-top: 8px double #000;
-    border-bottom: 4px solid #000;
+    border-bottom: 3px solid #000;
     color: #000;
   }
   &:hover {
     background-color: #fff;
   }
+
 }
 
 .nasa-partner {
