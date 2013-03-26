@@ -247,6 +247,8 @@ li.grid-wide-half:nth-of-type(odd) {
 
 .white a, .white h2 {
   color: #f24831; }
+.white .btn-primary, .white .challenges_page_list .challenges-links li a, .challenges_page_list .challenges-links li .white a {
+  color: #fff; }
 
 .grey {
   background: #222222;
