@@ -2,40 +2,73 @@
 
 .page-header {
   @extend .cf; 
-  padding: 110px;
   position: relative;
+  background:#000 url("../images/header.gif") no-repeat top center;
   h1 {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    margin-left: -102px;
+    width: 23.636363636%;
+    float: left;
+    padding: 35px 0;
   }
 }
 
 .page-nav {
-  ul {
-    overflow: hidden;
-  }
-  li {
-    display: inline-block;
-  }
+  float: left;
+  width: 52.727272728%;
+  padding-top: 40px;
   a {
     text-transform: uppercase;
     font-size: 16px;
     font-family: "brandon-grotesque", sans-serif;
     font-weight: 900;
   }
-  .pull-l li {
-    padding-right: 70px;
-    &:last-child {
-      padding-right: 0;
-    }
+  li {
+    display: inline-block;
+    width: 25.862068966%;
   }
-  .pull-r li {
-    padding-left: 70px;
-    &:first-child {
-      padding-left: 0;
-    }
+  ul {
+    display: block;
+  }
+}
+
+.menu-toggle {
+  display: none;
+  @extend .btn;
+  color: #000;
+  background: #fff;
+  padding: 8px 15px 8px 50px;
+  position: relative;
+  clear: both;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left:15px;
+    width:16px;
+    height:2px;
+    border-top: 8px double #000;
+    border-bottom: 4px solid #000;
+    color: #000;
+  }
+  &:hover {
+    background-color: #fff;
+  }
+}
+
+.nasa-partner {
+  float: right;
+  padding: 35px 0;
+  display: block;
+  width: 23.636363636%;
+  font-family: "brandon-grotesque", sans-serif;
+  color: $red;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px;
+  img {
+    display: block;
+    padding-top: 15px;
+    margin: 0 auto;
   }
 }
 

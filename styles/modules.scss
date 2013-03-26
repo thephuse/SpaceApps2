@@ -37,9 +37,12 @@
   background: #000;
   border-radius: 500px;
   display: inline-block;
-  color: #fff!important;
+  color: #fff;
   text-decoration: none;
   -webkit-transition: all .2s ease-in-out;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   &:hover {
     -webkit-transition: all .2s ease-in-out;
     background: #222;
@@ -69,6 +72,7 @@
 }
 
 .btn-red {
+  @extend .btn;
   background: $red;
   &:hover {
     background: darken($red, 5%);

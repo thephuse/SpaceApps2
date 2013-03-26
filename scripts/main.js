@@ -22,6 +22,13 @@ function scrollNav() {
   });
 }
 
+function responsiveNav() {
+  $(".menu-toggle").click(function(e){
+    e.preventDefault();
+    $(".page-nav ul").toggle();
+  });
+}
+
 function filter() {
   if ($("#challenges-filter").length) {
     $('#challenges-filter').affix({ offset: $('#challenges-filter').position() });
@@ -78,4 +85,5 @@ $(document).ready(function(){
   showMore();
   filter();
   scrollNav();
+  responsiveNav();
 });

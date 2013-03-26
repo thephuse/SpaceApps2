@@ -260,18 +260,21 @@ li.grid-wide-half:nth-of-type(odd) {
   .centered .about {
     margin-bottom: 70px; }
 
-.btn, .btn-primary, .challenges_page_list .challenges-links li a, .btn-small {
+.btn, .btn-primary, .challenges_page_list .challenges-links li a, .btn-small, .btn-red, .menu-toggle {
   font-family: "brandon-grotesque", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   background: #000;
   border-radius: 500px;
   display: inline-block;
-  color: #fff!important;
+  color: #fff;
   text-decoration: none;
-  -webkit-transition: all 0.2s ease-in-out; }
-  .btn:hover, .btn-primary:hover, .challenges_page_list .challenges-links li a:hover, .btn-small:hover {
-    -webkit-transition: all 0.2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box; }
+  .btn:hover, .btn-primary:hover, .challenges_page_list .challenges-links li a:hover, .btn-small:hover, .btn-red:hover, .menu-toggle:hover {
+    -webkit-transition: all .2s ease-in-out;
     background: #222; }
 
 .btn-primary, .challenges_page_list .challenges-links li a {
@@ -326,31 +329,63 @@ li.grid-wide-half:nth-of-type(odd) {
 
 /*-- @component HEADER -- */
 .page-header {
-  padding: 110px;
-  position: relative; }
+  position: relative;
+  background: black url("../images/header.gif") no-repeat top center; }
   .page-header h1 {
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    margin-left: -102px; }
+    width: 23.636363636%;
+    float: left;
+    padding: 35px 0; }
 
-.page-nav ul {
-  overflow: hidden; }
-.page-nav li {
-  display: inline-block; }
-.page-nav a {
-  text-transform: uppercase;
-  font-size: 16px;
+.page-nav {
+  float: left;
+  width: 52.727272728%;
+  padding-top: 40px; }
+  .page-nav a {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 900; }
+  .page-nav li {
+    display: inline-block;
+    width: 25.862068966%; }
+  .page-nav ul {
+    display: block; }
+
+.menu-toggle {
+  display: none;
+  color: #000;
+  background: #fff;
+  padding: 8px 15px 8px 50px;
+  position: relative;
+  clear: both; }
+  .menu-toggle:before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 15px;
+    width: 16px;
+    height: 2px;
+    border-top: 8px double #000;
+    border-bottom: 4px solid #000;
+    color: #000; }
+  .menu-toggle:hover {
+    background-color: #fff; }
+
+.nasa-partner {
+  float: right;
+  padding: 35px 0;
+  display: block;
+  width: 23.636363636%;
   font-family: "brandon-grotesque", sans-serif;
-  font-weight: 900; }
-.page-nav .pull-l li {
-  padding-right: 70px; }
-  .page-nav .pull-l li:last-child {
-    padding-right: 0; }
-.page-nav .pull-r li {
-  padding-left: 70px; }
-  .page-nav .pull-r li:first-child {
-    padding-left: 0; }
+  color: #f24831;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 14px; }
+  .nasa-partner img {
+    display: block;
+    padding-top: 15px;
+    margin: 0 auto; }
 
 /* -- @component SECTIONS -- */
 #liftoff, #challenges {
@@ -432,7 +467,7 @@ li.grid-wide-half:nth-of-type(odd) {
     display: block;
     padding-bottom: 15px;
     padding-right: 15px;
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #ddd;
     position: relative; }
     .faqs .faq-q:after {
       width: 0;
@@ -595,11 +630,6 @@ li.grid-wide-half:nth-of-type(odd) {
   .callout {
     width: 70%; }
 
-  .page-header {
-    padding: 15px; }
-    .page-header h1 {
-      margin-top: -50px; }
-
   body > section {
     padding: 50px 0; }
 
@@ -609,24 +639,47 @@ li.grid-wide-half:nth-of-type(odd) {
   .grid-8:first-child {
     margin-bottom: 50px; }
 
-  .page-nav li {
-    display: block; }
-
-  .page-nav .pull-r li {
-    text-align: right; }
-
   .container {
     width: 90%; }
     .container > [class^="grid"], .container .schedule .grid-6, .container .organizer {
-      width: 100%!important;
-      margin-left: 0!important; }
+      width: 100% !important;
+      margin-left: 0 !important; }
 
   .schedule .grid-6 {
     margin-bottom: 20px; }
 
   .footer-nav li {
-    display: block; } }
+    display: block; }
+
+  .page-nav {
+    padding-top: 20px; }
+    .page-nav ul {
+      text-align: center; }
+    .page-nav li {
+      width: 40%; } }
 @media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: block; }
+
+  .page-header {
+    padding-bottom: 20px; }
+
+  .page-header h1, .nasa-partner {
+    width: 50%;
+    padding: 20px 0; }
+    .page-header h1 img, .nasa-partner img {
+      max-width: 100%; }
+
+  .nasa-partner {
+    float: right; }
+
+  .page-nav {
+    width: 100%;
+    float: none; }
+    .page-nav ul {
+      display: none;
+      padding-top: 20px; }
+
   [class^="grid"] {
     width: 100%;
     float: none;
@@ -649,22 +702,7 @@ li.grid-wide-half:nth-of-type(odd) {
 
   .challenge {
     width: 100%;
-    margin-left: 0; }
-
-  .page-nav ul {
-    width: 50%; }
-    .page-nav ul a {
-      font-size: 14px; }
-
-  .page-header {
-    padding: 7px 0; }
-
-  .page-header h1 {
-    width: 120px;
-    margin-top: -20px;
-    margin-left: -60px; }
-    .page-header h1 img {
-      max-width: 100%; } }
+    margin-left: 0; } }
 #challenges-page {
   background-color: #fafafa; }
 

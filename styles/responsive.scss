@@ -5,12 +5,6 @@
   .callout {
     width: 70%;
   }
-  .page-header {
-    padding: 15px;
-    h1 {
-      margin-top: -50px;
-    }
-  }
   body > section {
     padding: 50px 0;
   }
@@ -19,12 +13,6 @@
   }
   .grid-8:first-child {
     margin-bottom: 50px;
-  }
-  .page-nav li {
-    display: block;
-  }
-  .page-nav .pull-r li {
-    text-align: right;
   }
   .container {
     width: 90%;
@@ -39,10 +27,42 @@
   .footer-nav li {
     display: block;
   }
+  .page-nav {
+    padding-top: 20px;
+    ul {
+      text-align: center;
+    }
+    li {
+      width: 40%;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {
-
+  .menu-toggle {
+    display: block;
+  }
+  .page-header {
+    padding-bottom: 20px;
+  }
+  .page-header h1, .nasa-partner {
+    width: 50%;
+    padding: 20px 0;
+    img {
+      max-width: 100%;
+    }
+  }
+  .nasa-partner {
+    float: right;
+  }
+  .page-nav {
+    width: 100%;
+    float: none;
+    ul {
+      display: none;
+      padding-top: 20px;
+    }
+  }
   [class^="grid"] {
     width: 100%;
     float: none;
@@ -67,21 +87,5 @@
     width: 100%;
     margin-left: 0;
   }
-  .page-nav ul {
-    width: 50%;
-    a {
-      font-size: 14px;
-    }
-  }
-  .page-header {
-    padding: 7px 0;
-  }
-  .page-header h1 {
-    width: 120px;
-    margin-top: -20px;
-    margin-left: -60px;
-    img {
-      max-width: 100%;
-    }
-  }
+ 
 }
