@@ -5,12 +5,6 @@
   .callout {
     width: 70%;
   }
-  .page-header {
-    padding: 15px;
-    h1 {
-      margin-top: -50px;
-    }
-  }
   body > section {
     padding: 50px 0;
   }
@@ -19,12 +13,6 @@
   }
   .grid-8:first-child {
     margin-bottom: 50px;
-  }
-  .page-nav li {
-    display: block;
-  }
-  .page-nav .pull-r li {
-    text-align: right;
   }
   .container {
     width: 90%;
@@ -39,9 +27,56 @@
   .footer-nav li {
     display: block;
   }
+  .page-nav {
+    padding-top: 20px;
+    ul {
+      text-align: center;
+    }
+    li {
+      width: 40%;
+    }
+  }
+  .btn-primary {
+    padding: 15px 60px;
+  }
 }
 
 @media screen and (max-width: 768px) {
+  h2 {
+    font-size: 50px;
+  }
+
+  .menu-toggle, .mobile-logos {
+    display: block;
+  }
+  .page-header {
+    padding-bottom: 10px;
+  }
+  .page-header h1, .nasa-partner {
+    display: none;
+  }
+  .page-nav {
+    width: 70%; 
+    padding-top: 10px;
+    ul {
+      display: none;
+      padding-left: 50px;
+      padding-top: 10px;
+      
+    }
+    li {
+      display: block;
+      text-align: left;
+    }
+  }
+  [class^="grid"] {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
+  .sponsor span {
+    font-style: 12px;
+  }
   .event-detail, .btn-small {
     margin-bottom: 20px;
   }
@@ -51,8 +86,12 @@
   .callout {
     width: 100%;
   }
+  .callout header .number {
+    float: none;
+  }
   .challenge {
     width: 100%;
     margin-left: 0;
   }
+ 
 }
