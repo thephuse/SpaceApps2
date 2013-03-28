@@ -1,0 +1,23 @@
+{
+  "name": "spaceapps",
+  "version": "2.0.0",
+  "description": "Space App Challenge Toronto Website",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thephuse/SpaceApps2.git"
+  },
+  "author": "The Phuse",
+  "gitHead": "4f72f91ca4e6f0e779ab340961a9bddfef5e5a64",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-sass": "~0.3.0",
+    "grunt-contrib-watch": "~0.3.1",
+    "grunt-contrib-coffee": "~0.6.4",
+    "grunt-contrib-uglify": "~0.2.0",
+    "grunt-contrib-concat": "~0.1.3"
+  }
+}
