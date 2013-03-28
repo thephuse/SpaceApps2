@@ -1,4 +1,5 @@
 .DS_Store
+images/.DS_Store
 .sass-cache/
 styles/.sass-cache/
-node_modules/
+*.sassc
