@@ -120,3 +120,36 @@
     margin-bottom: 50px;
   }
 }
+
+
+/* -- @module CALLOUT -- */
+
+.callout {
+  width: 65.859%;
+  margin: 0 auto 70px auto;
+  border: 4px solid #f57665;
+  border-radius: 10px;
+  padding: 40px;
+  overflow: hidden;
+  header {
+    text-align: left;
+    .number {
+      display: block;
+      float: left;
+      font-size: 80px;
+      font-family: "steelfishregular", sans-serif;
+      margin-right: 20px;
+    }
+    .day {
+      font-size: 24px;
+    }
+    h3 {
+      font-size: 40px;
+      margin-top: 10px;
+    }
+  }
+  &.press {
+    width: 77.1722%;
+    padding-bottom: 0;
+  }
+}

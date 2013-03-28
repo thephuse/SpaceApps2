@@ -329,6 +329,31 @@ li.grid-wide-half:nth-of-type(odd) {
 .text p {
   margin-bottom: 50px; }
 
+/* -- @module CALLOUT -- */
+.callout {
+  width: 65.859%;
+  margin: 0 auto 70px auto;
+  border: 4px solid #f57665;
+  border-radius: 10px;
+  padding: 40px;
+  overflow: hidden; }
+  .callout header {
+    text-align: left; }
+    .callout header .number {
+      display: block;
+      float: left;
+      font-size: 80px;
+      font-family: "steelfishregular", sans-serif;
+      margin-right: 20px; }
+    .callout header .day {
+      font-size: 24px; }
+    .callout header h3 {
+      font-size: 40px;
+      margin-top: 10px; }
+  .callout.press {
+    width: 77.1722%;
+    padding-bottom: 0; }
+
 /*-- @component HEADER -- */
 .page-header {
   position: relative;
@@ -518,31 +543,6 @@ li.grid-wide-half:nth-of-type(odd) {
   display: inline-block;
   padding-right: 45px; }
 
-/* -- @component CALLOUT -- */
-.callout {
-  width: 65.859%;
-  margin: 0 auto 70px auto;
-  border: 4px solid #f57665;
-  border-radius: 10px;
-  padding: 40px;
-  overflow: hidden; }
-  .callout header {
-    text-align: left; }
-    .callout header .number {
-      display: block;
-      float: left;
-      font-size: 80px;
-      font-family: "steelfishregular", sans-serif;
-      margin-right: 20px; }
-    .callout header .day {
-      font-size: 24px; }
-    .callout header h3 {
-      font-size: 40px;
-      margin-top: 10px; }
-  .callout.press {
-    width: 77.1722%;
-    padding-bottom: 0; }
-
 /* -- @component ORGANIZER -- */
 .organizer {
   text-align: left;
@@ -598,7 +598,8 @@ li.grid-wide-half:nth-of-type(odd) {
   width: 90%; }
 
 .press {
-  text-align: left; }
+  text-align: left;
+  /* -- @component ARTICLE -- */ }
   .press article {
     margin-bottom: 40px; }
     .press article a {
