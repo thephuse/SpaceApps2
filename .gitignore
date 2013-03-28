@@ -3,3 +3,4 @@ images/.DS_Store
 .sass-cache/
 styles/.sass-cache/
 *.sassc
+node_modules
