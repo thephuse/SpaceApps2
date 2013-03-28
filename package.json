@@ -13,6 +13,7 @@
   "author": "The Phuse",
   "gitHead": "4f72f91ca4e6f0e779ab340961a9bddfef5e5a64",
   "devDependencies": {
+    "bower" : "~0.8",
     "grunt": "~0.4.1",
     "grunt-contrib-sass": "~0.3.0",
     "grunt-contrib-watch": "~0.3.1",
