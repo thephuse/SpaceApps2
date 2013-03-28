@@ -62,7 +62,7 @@ hr {
   display: block;
   height: 1px;
   border: 0;
-  border-top: 1px solid #cccccc;
+  border-top: 1px solid #ccc;
   margin: 1em 0;
   padding: 0; }
 
@@ -400,7 +400,7 @@ input[type="email"] {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
-  border: 2px solid #888888;
+  border: 2px solid #888;
   border-radius: 50px;
   width: 52px;
   height: 52px;
