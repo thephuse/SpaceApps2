@@ -50,4 +50,4 @@ Development without Grunt and Bower
 ------------------------------------
 Grunt is just a tool to ease development and save some http requests, but you can develop Space Apps without it. You can compile your `main.scss` into `main.css` however you like (ie with `sass --watch` or whatever). 
 
-The `main.js` file isn't compiled or uglified or anything so feel free to edit normally. If you need to add new dependencies, I recommend using the bower/grunt method, but you can also just add scripts to the `/vendor` directory and link to them from the html files like any project (just remember to include on all pages that require the plugin).
+The `main.js` file isn't compiled or uglified or anything so feel free to edit normally. If you need to add new dependencies, I recommend using the bower/grunt method, but you can also just add scripts to the `/vendor` directory and link to them from the html files like normal (just remember to include on all pages that require the plugin).
