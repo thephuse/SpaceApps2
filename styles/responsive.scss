@@ -45,7 +45,13 @@
   h2 {
     font-size: 50px;
   }
-
+  #sponsors-page {
+    [class*="grid"] {
+      width: 100%;
+      float: none;
+      margin-left: 0;
+    }
+  }
   .menu-toggle, .mobile-logos {
     display: block;
   }

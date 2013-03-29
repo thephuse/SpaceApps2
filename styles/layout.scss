@@ -12,6 +12,7 @@
 }
 
 .row {
+  clear: both;
   @extend .cf; 
 }
 
@@ -37,8 +38,21 @@ body > section {
   }
 }
 
+.grid-fourth {
+  width: 25%;
+  margin-left: 0;
+}
+
+.center-text {
+  text-align: center;
+}
+
 .grid-1 {
   width: 3.8384%;
+}
+
+.grid-3 {
+  width: 15.1516%;
 }
 
 .grid-4 {
@@ -62,6 +76,10 @@ body > section {
   &:nth-of-type(odd){
     margin-left: 0;
   }
+}
+
+.grid-10 {
+  width: 54.7478%;
 }
 
 .grid-11 {

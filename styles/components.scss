@@ -118,6 +118,16 @@
   background-position: center bottom;
 }
 
+#sponsors {
+  background-image: url("../images/rom_bg.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+
+#sponsors .row {
+  margin-top: 40px;
+}
+
 /* -- @component EVENT INFO -- */
 
 .event-info {
@@ -300,19 +310,28 @@
 
 .sponsor {
   display: block;
-  background: #000;
   position: relative;
   span {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #4e4e4e;
+    display: block;
+    text-align: center;
     color: #fff;
     padding: 5px;
+    font-size: 15px;
+    margin-bottom: 15px;
     a {
       color: #fff;
     }
   }
+}
+
+.white .sponsor {
+  span {
+    color: #000;
+  }
+}
+
+#sponsors-page .row .grid-6 {
+  text-align: center;
 }
 
 /* -- @component PRESS -- */
