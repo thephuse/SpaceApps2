@@ -358,6 +358,8 @@
     }
   }
   blockquote {
+    width: 90%;
+    line-height: 1.3;
     &:before {
       position: absolute;
       left: -20px;

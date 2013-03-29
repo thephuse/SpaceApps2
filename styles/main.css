@@ -628,15 +628,18 @@ li.grid-wide-half:nth-of-type(odd) {
       margin-top: 10px; }
       .press article footer span {
         color: rgba(255, 255, 255, 0.6); }
-  .press blockquote:before {
-    position: absolute;
-    left: -20px;
-    content: "\201C";
-    top: -10px;
-    color: #fff;
-    width: 20px;
-    height: 20px;
-    font-size: 36px; }
+  .press blockquote {
+    width: 90%;
+    line-height: 1.3; }
+    .press blockquote:before {
+      position: absolute;
+      left: -20px;
+      content: "\201C";
+      top: -10px;
+      color: #fff;
+      width: 20px;
+      height: 20px;
+      font-size: 36px; }
 
 @media screen and (max-width: 1140px) {
   #liftoff {
