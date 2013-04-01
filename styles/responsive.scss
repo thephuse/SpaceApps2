@@ -1,4 +1,9 @@
 @media screen and (max-width: 1140px) {
+  .organizer-img:hover:after {
+    height: 120px;
+    width: 160px;
+    padding-top: 40px;
+  }
   #liftoff {
     padding-bottom: 70px;
   }
@@ -17,9 +22,16 @@
   .container {
     width: 90%;
     & > [class^="grid"], .schedule .grid-6, .organizer {
-      width: 100%!important;
+      width: 100%;
       margin-left: 0!important;
     }
+    & > .grid-seventh {
+      width: 25%;
+    }
+  }
+  #sponsors .pull-l, #sponsors .pull-r {
+    float: none;
+    width: 100%;
   }
   .schedule .grid-6 {
     margin-bottom: 20px;
@@ -42,6 +54,40 @@
 }
 
 @media screen and (max-width: 768px) {
+  
+  #sponsors .grid-3, #organizers .grid-seventh .organizer-img {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .organizer-img {
+    display: inline-block;
+
+  }
+  .modal {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    left: 20px;
+    width: auto;
+    margin: 0;
+    aside {
+      background:#fff;
+      img {
+        max-width: 60px;
+        display: inline-block;
+      }
+      a {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 0;
+      }
+    }
+  }
+  .modal-main {
+    width: 100%;
+    float: none;
+    margin-left: 0;
+  }
   .challenges_page_list {
     width: 90%;
   }
@@ -102,5 +148,10 @@
     width: 100%;
     margin-left: 0;
   }
- 
+  .container {
+    & > .grid-seventh {
+      width: 100%;
+      float: none;
+    }
+  }
 }
