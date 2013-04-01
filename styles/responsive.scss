@@ -42,6 +42,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .challenges_page_list {
+    width: 90%;
+  }
   h2 {
     font-size: 50px;
   }
