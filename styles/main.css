@@ -348,6 +348,19 @@ li.grid-wide-half:nth-of-type(odd) {
   .btn-facebook:hover {
     background: #002a5e; }
 
+.inner-nav {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px !important; }
+  .inner-nav li {
+    display: inline-block;
+    padding-right: 20px; }
+  .inner-nav a {
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase; }
+
 .event-detail, .challenge {
   display: inline-block;
   border-radius: 10px;
@@ -365,29 +378,32 @@ li.grid-wide-half:nth-of-type(odd) {
   margin-bottom: 50px; }
 
 /* -- @module CALLOUT -- */
-.callout {
+.callout, .inner-nav {
   width: 65.859%;
   margin: 0 auto 70px auto;
   border: 4px solid #f57665;
   border-radius: 10px;
   padding: 40px;
   overflow: hidden; }
-  .callout header {
+  .callout header, .inner-nav header {
     text-align: left; }
-    .callout header .number {
+    .callout header .number, .inner-nav header .number {
       display: block;
       float: left;
       font-size: 80px;
       font-family: "steelfishregular", sans-serif;
       margin-right: 20px; }
-    .callout header .day {
+    .callout header .day, .inner-nav header .day {
       font-size: 24px; }
-    .callout header h3 {
+    .callout header h3, .inner-nav header h3 {
       font-size: 40px;
       margin-top: 10px; }
-  .callout.press {
+  .callout.press, .press.inner-nav {
     width: 77.1722%;
     padding-bottom: 0; }
+
+.grey .callout, .grey .inner-nav {
+  border-color: #777; }
 
 .subtitle {
   font-size: 15px;
@@ -493,7 +509,12 @@ li.grid-wide-half:nth-of-type(odd) {
 #liftoff {
   background-image: url("../images/clouds.jpg"); }
 
-#challenges {
+#youth {
+  background-image: url("../images/clouds.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat; }
+
+#challenges, #youth-schedule {
   background-image: url("../images/city.jpg");
   margin-top: -40px; }
 
@@ -778,7 +799,7 @@ li.grid-wide-half:nth-of-type(odd) {
   #liftoff {
     padding-bottom: 70px; }
 
-  .callout {
+  .callout, .inner-nav {
     width: 70%; }
 
   body > section {
@@ -857,10 +878,10 @@ li.grid-wide-half:nth-of-type(odd) {
   .organizer .btn-small, .organizer .challenges-links a, .challenges-links .organizer a {
     padding: 11px 30px; }
 
-  .callout {
+  .callout, .inner-nav {
     width: 100%; }
 
-  .callout header .number {
+  .callout header .number, .inner-nav header .number {
     float: none; }
 
   .challenge {

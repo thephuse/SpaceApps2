@@ -101,7 +101,13 @@
   background-image: url("../images/clouds.jpg");
 }
 
-#challenges {
+#youth {
+  background-image: url("../images/clouds.jpg");
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
+#challenges, #youth-schedule {
   background-image: url("../images/city.jpg");
   margin-top: -40px;
 }
