@@ -39,6 +39,12 @@ h3 {
   }
 }
 
+.text h3 {
+  font-size: 40px;
+  border-bottom: 0;
+  text-transform: none;
+}
+
 p, li {
   line-height: 1.7;
 }
