@@ -449,8 +449,8 @@ li.grid-wide-half:nth-of-type(odd) {
 
 .page-nav {
   float: left;
-  width: 52.727272728%;
-  padding-top: 40px; }
+  width: 57.727272728%;
+  padding-top: 25px; }
   .page-nav a {
     text-transform: uppercase;
     font-size: 16px;
@@ -458,7 +458,7 @@ li.grid-wide-half:nth-of-type(odd) {
     font-weight: 900; }
   .page-nav li {
     display: inline-block;
-    width: 25.862068966%; }
+    width: 30%; }
   .page-nav ul {
     display: block; }
 
@@ -486,7 +486,7 @@ li.grid-wide-half:nth-of-type(odd) {
   float: right;
   padding: 35px 0;
   display: block;
-  width: 23.636363636%;
+  width: 18.636363636%;
   font-family: "brandon-grotesque", sans-serif;
   color: #f24831;
   text-align: center;
