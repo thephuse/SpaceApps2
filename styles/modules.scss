@@ -169,6 +169,24 @@
     width: 77.1722%;
     padding-bottom: 0;
   }
+  ul {
+    list-style: none;
+    li {
+      margin-bottom: 20px;
+      ul {
+        margin-left: 2em;
+        padding-top: 20px;
+      }
+    }
+  }
+}
+
+.callout-wide {
+  @extend .callout;
+  width: 100%;
+  &.schedule {
+    margin-top: 0;
+  }
 }
 
 .grey .callout {

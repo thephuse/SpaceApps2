@@ -378,31 +378,43 @@ li.grid-wide-half:nth-of-type(odd) {
   margin-bottom: 50px; }
 
 /* -- @module CALLOUT -- */
-.callout, .inner-nav {
+.callout, .inner-nav, .callout-wide {
   width: 65.859%;
   margin: 0 auto 70px auto;
   border: 4px solid #f57665;
   border-radius: 10px;
   padding: 40px;
   overflow: hidden; }
-  .callout header, .inner-nav header {
+  .callout header, .inner-nav header, .callout-wide header {
     text-align: left; }
-    .callout header .number, .inner-nav header .number {
+    .callout header .number, .inner-nav header .number, .callout-wide header .number {
       display: block;
       float: left;
       font-size: 80px;
       font-family: "steelfishregular", sans-serif;
       margin-right: 20px; }
-    .callout header .day, .inner-nav header .day {
+    .callout header .day, .inner-nav header .day, .callout-wide header .day {
       font-size: 24px; }
-    .callout header h3, .inner-nav header h3 {
+    .callout header h3, .inner-nav header h3, .callout-wide header h3 {
       font-size: 40px;
       margin-top: 10px; }
-  .callout.press, .press.inner-nav {
+  .callout.press, .press.inner-nav, .press.callout-wide {
     width: 77.1722%;
     padding-bottom: 0; }
+  .callout ul, .inner-nav ul, .callout-wide ul {
+    list-style: none; }
+    .callout ul li, .inner-nav ul li, .callout-wide ul li {
+      margin-bottom: 20px; }
+      .callout ul li ul, .inner-nav ul li ul, .callout-wide ul li ul {
+        margin-left: 2em;
+        padding-top: 20px; }
 
-.grey .callout, .grey .inner-nav {
+.callout-wide {
+  width: 100%; }
+  .callout-wide.schedule {
+    margin-top: 0; }
+
+.grey .callout, .grey .inner-nav, .grey .callout-wide {
   border-color: #777; }
 
 .subtitle {
@@ -514,7 +526,10 @@ li.grid-wide-half:nth-of-type(odd) {
   background-position: bottom center;
   background-repeat: no-repeat; }
 
-#challenges, #youth-schedule {
+#youth-details {
+  background-repeat: no-repeat; }
+
+#challenges, #youth-details {
   background-image: url("../images/city.jpg");
   margin-top: -40px; }
 
@@ -799,7 +814,7 @@ li.grid-wide-half:nth-of-type(odd) {
   #liftoff {
     padding-bottom: 70px; }
 
-  .callout, .inner-nav {
+  .callout, .inner-nav, .callout-wide {
     width: 70%; }
 
   body > section {
@@ -878,10 +893,10 @@ li.grid-wide-half:nth-of-type(odd) {
   .organizer .btn-small, .organizer .challenges-links a, .challenges-links .organizer a {
     padding: 11px 30px; }
 
-  .callout, .inner-nav {
+  .callout, .inner-nav, .callout-wide {
     width: 100%; }
 
-  .callout header .number, .inner-nav header .number {
+  .callout header .number, .inner-nav header .number, .callout-wide header .number {
     float: none; }
 
   .challenge {
