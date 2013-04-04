@@ -133,8 +133,11 @@
 }
 
 .text {
-  p {
+  p, ul {
     margin-bottom: 50px;
+  }
+  ul {
+    list-style-position: inside;
   }
 }
 

@@ -380,8 +380,10 @@ li.grid-wide-half:nth-of-type(odd) {
   color: #aaaaaa;
   margin-bottom: 1em; }
 
-.text p {
+.text p, .text ul {
   margin-bottom: 50px; }
+.text ul {
+  list-style-position: inside; }
 
 /* -- @module CALLOUT -- */
 .callout, .inner-nav, .callout-wide {
