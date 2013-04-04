@@ -521,19 +521,11 @@ li.grid-wide-half:nth-of-type(odd) {
 #liftoff {
   background-image: url("../images/clouds.jpg"); }
 
-#youth {
-  background-image: url("../images/clouds.jpg");
-  background-position: bottom center;
-  background-repeat: no-repeat; }
-
-#youth-details {
-  background-repeat: no-repeat; }
-
-#challenges, #youth-details {
+#challenges {
   background-image: url("../images/city.jpg");
   margin-top: -40px; }
 
-#schedule, #press {
+#schedule, #press, #youth-schedule {
   background-image: url("../images/rocket.png");
   background-repeat: no-repeat;
   background-position: center top; }
@@ -590,12 +582,21 @@ li.grid-wide-half:nth-of-type(odd) {
 .schedule-table {
   width: 100%;
   text-align: left; }
+  .schedule-table th[scope="col"] {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding-bottom: 10px;
+    color: #fff;
+    margin-bottom: 10px; }
   .schedule-table th {
     width: 30%;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 300; }
   .schedule-table td {
-    padding-bottom: 20px; }
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+#youth-schedule .schedule-table {
+  margin-bottom: 30px; }
 
 /* -- @component FAQS -- */
 .faqs {
