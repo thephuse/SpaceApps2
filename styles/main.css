@@ -626,6 +626,8 @@ li.grid-wide-half:nth-of-type(odd) {
   margin-top: -40px; }
   .register .btn-primary, .register .challenges-links a, .challenges-links .register a {
     width: 49%; }
+    .register .btn-primary:last-child, .register .challenges-links a:last-child, .challenges-links .register a:last-child {
+      float: right; }
 
 /* -- @component CHALLENGES -- */
 .challenges {
