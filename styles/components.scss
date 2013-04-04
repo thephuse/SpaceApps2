@@ -26,8 +26,8 @@
 
 .page-nav {
   float: left;
-  width: 52.727272728%;
-  padding-top: 40px;
+  width: 57.727272728%;
+  padding-top: 25px;
   a {
     text-transform: uppercase;
     font-size: 16px;
@@ -36,7 +36,7 @@
   }
   li {
     display: inline-block;
-    width: 25.862068966%;
+    width: 30%;
   }
   ul {
     display: block;
@@ -72,7 +72,7 @@
   float: right;
   padding: 35px 0;
   display: block;
-  width: 23.636363636%;
+  width: 18.636363636%;
   font-family: "brandon-grotesque", sans-serif;
   color: $red;
   text-align: center;
@@ -101,12 +101,14 @@
   background-image: url("../images/clouds.jpg");
 }
 
+
+
 #challenges {
   background-image: url("../images/city.jpg");
   margin-top: -40px;
 }
 
-#schedule, #press {
+#schedule, #press, #youth-schedule {
   background-image: url("../images/rocket.png");
   background-repeat: no-repeat;
   background-position: center top;
@@ -150,11 +152,20 @@
   }
 }
 
+.white .event-info {
+  color: #fff;
+}
+
 /* @component REGISTER */
 
 .register {
   text-align: center;
   margin-top: -40px;
+  .btn-primary {
+    width: 49%;
+    &:last-child {
+    }
+  }
 }
 
 /* -- @component CHALLENGES -- */
@@ -183,14 +194,25 @@
 .schedule-table {
   width: 100%;
   text-align: left;
+  th[scope="col"] {
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    padding-bottom: 10px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
   th {
     width: 30%;
     color: rgba(255,255,255, 0.5);
     font-weight: 300;
   }
   td {
-    padding-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
+}
+
+#youth-schedule .schedule-table {
+  margin-bottom: 30px;
 }
 
 /* -- @component FAQS -- */

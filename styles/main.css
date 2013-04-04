@@ -142,6 +142,11 @@ h3 {
     vertical-align: middle;
     padding-left: 30px; }
 
+.text h3 {
+  font-size: 40px;
+  border-bottom: 0;
+  text-transform: none; }
+
 p, li {
   line-height: 1.7; }
 
@@ -256,6 +261,21 @@ li.grid-wide-half:nth-of-type(odd) {
   .img-grid-wide img:nth-child(6n+6) {
     margin-right: 0; }
 
+.flex-row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap; }
+  .flex-row .sponsor {
+    display: block;
+    text-align: center;
+    color: #777;
+    font-size: 14px;
+    -webkit-flex: 1 auto;
+    padding: 20px; }
+
 .black {
   background-color: #000;
   color: #fff; }
@@ -332,6 +352,19 @@ li.grid-wide-half:nth-of-type(odd) {
   .btn-facebook:hover {
     background: #002a5e; }
 
+.inner-nav {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 20px !important; }
+  .inner-nav li {
+    display: inline-block;
+    padding-right: 20px; }
+  .inner-nav a {
+    font-family: "brandon-grotesque", sans-serif;
+    font-weight: 900;
+    text-transform: uppercase; }
+
 .event-detail, .challenge {
   display: inline-block;
   border-radius: 10px;
@@ -349,29 +382,44 @@ li.grid-wide-half:nth-of-type(odd) {
   margin-bottom: 50px; }
 
 /* -- @module CALLOUT -- */
-.callout {
+.callout, .inner-nav, .callout-wide {
   width: 65.859%;
   margin: 0 auto 70px auto;
   border: 4px solid #f57665;
   border-radius: 10px;
   padding: 40px;
   overflow: hidden; }
-  .callout header {
+  .callout header, .inner-nav header, .callout-wide header {
     text-align: left; }
-    .callout header .number {
+    .callout header .number, .inner-nav header .number, .callout-wide header .number {
       display: block;
       float: left;
       font-size: 80px;
       font-family: "steelfishregular", sans-serif;
       margin-right: 20px; }
-    .callout header .day {
+    .callout header .day, .inner-nav header .day, .callout-wide header .day {
       font-size: 24px; }
-    .callout header h3 {
+    .callout header h3, .inner-nav header h3, .callout-wide header h3 {
       font-size: 40px;
       margin-top: 10px; }
-  .callout.press {
+  .callout.press, .press.inner-nav, .press.callout-wide {
     width: 77.1722%;
     padding-bottom: 0; }
+  .callout ul, .inner-nav ul, .callout-wide ul {
+    list-style: none; }
+    .callout ul li, .inner-nav ul li, .callout-wide ul li {
+      margin-bottom: 20px; }
+      .callout ul li ul, .inner-nav ul li ul, .callout-wide ul li ul {
+        margin-left: 2em;
+        padding-top: 20px; }
+
+.callout-wide {
+  width: 100%; }
+  .callout-wide.schedule {
+    margin-top: 0; }
+
+.grey .callout, .grey .inner-nav, .grey .callout-wide {
+  border-color: #777; }
 
 .subtitle {
   font-size: 15px;
@@ -471,8 +519,8 @@ li.grid-wide-half:nth-of-type(odd) {
 
 .page-nav {
   float: left;
-  width: 52.727272728%;
-  padding-top: 40px; }
+  width: 57.727272728%;
+  padding-top: 25px; }
   .page-nav a {
     text-transform: uppercase;
     font-size: 16px;
@@ -480,7 +528,7 @@ li.grid-wide-half:nth-of-type(odd) {
     font-weight: 900; }
   .page-nav li {
     display: inline-block;
-    width: 25.862068966%; }
+    width: 30%; }
   .page-nav ul {
     display: block; }
 
@@ -508,7 +556,7 @@ li.grid-wide-half:nth-of-type(odd) {
   float: right;
   padding: 35px 0;
   display: block;
-  width: 23.636363636%;
+  width: 18.636363636%;
   font-family: "brandon-grotesque", sans-serif;
   color: #f24831;
   text-align: center;
@@ -535,7 +583,7 @@ li.grid-wide-half:nth-of-type(odd) {
   background-image: url("../images/city.jpg");
   margin-top: -40px; }
 
-#schedule, #press {
+#schedule, #press, #youth-schedule {
   background-image: url("../images/rocket.png");
   background-repeat: no-repeat;
   background-position: center top; }
@@ -569,10 +617,15 @@ li.grid-wide-half:nth-of-type(odd) {
   .event-detail.location {
     background-image: url("../images/location.png"); }
 
+.white .event-info {
+  color: #fff; }
+
 /* @component REGISTER */
 .register {
   text-align: center;
   margin-top: -40px; }
+  .register .btn-primary, .register .challenges-links a, .challenges-links .register a {
+    width: 49%; }
 
 /* -- @component CHALLENGES -- */
 .challenges {
@@ -592,12 +645,21 @@ li.grid-wide-half:nth-of-type(odd) {
 .schedule-table {
   width: 100%;
   text-align: left; }
+  .schedule-table th[scope="col"] {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+    padding-bottom: 10px;
+    color: #fff;
+    margin-bottom: 10px; }
   .schedule-table th {
     width: 30%;
     color: rgba(255, 255, 255, 0.5);
     font-weight: 300; }
   .schedule-table td {
-    padding-bottom: 20px; }
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
+#youth-schedule .schedule-table {
+  margin-bottom: 30px; }
 
 /* -- @component FAQS -- */
 .faqs {
@@ -841,7 +903,7 @@ li.grid-wide-half:nth-of-type(odd) {
   #liftoff {
     padding-bottom: 70px; }
 
-  .callout {
+  .callout, .inner-nav, .callout-wide {
     width: 70%; }
 
   body > section {
@@ -879,7 +941,10 @@ li.grid-wide-half:nth-of-type(odd) {
       width: 40%; }
 
   .btn-primary, .challenges-links a {
-    padding: 15px 60px; } }
+    padding: 15px 60px; }
+
+  .register .btn-primary:first-child, .register .challenges-links a:first-child, .challenges-links .register a:first-child {
+    margin-bottom: 20px; } }
 @media screen and (max-width: 768px) {
   #sponsors .grid-3, #organizers .grid-seventh .organizer-img {
     text-align: center;
@@ -959,10 +1024,10 @@ li.grid-wide-half:nth-of-type(odd) {
   .organizer .btn-small, .organizer .challenges-links a, .challenges-links .organizer a {
     padding: 11px 30px; }
 
-  .callout {
+  .callout, .inner-nav, .callout-wide {
     width: 100%; }
 
-  .callout header .number {
+  .callout header .number, .inner-nav header .number, .callout-wide header .number {
     float: none; }
 
   .challenge {
