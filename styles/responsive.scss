@@ -39,6 +39,11 @@
   .btn-primary {
     padding: 15px 60px;
   }
+  .register {
+    .btn-primary:first-child {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 @media screen and (max-width: 768px) {

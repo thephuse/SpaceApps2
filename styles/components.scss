@@ -152,11 +152,21 @@
   }
 }
 
+.white .event-info {
+  color: #fff;
+}
+
 /* @component REGISTER */
 
 .register {
   text-align: center;
   margin-top: -40px;
+  .btn-primary {
+    width: 49%;
+    &:last-child {
+      float: right;
+    }
+  }
 }
 
 /* -- @component CHALLENGES -- */

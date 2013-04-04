@@ -559,10 +559,17 @@ li.grid-wide-half:nth-of-type(odd) {
   .event-detail.location {
     background-image: url("../images/location.png"); }
 
+.white .event-info {
+  color: #fff; }
+
 /* @component REGISTER */
 .register {
   text-align: center;
   margin-top: -40px; }
+  .register .btn-primary, .register .challenges-links a, .challenges-links .register a {
+    width: 49%; }
+    .register .btn-primary:last-child, .register .challenges-links a:last-child, .challenges-links .register a:last-child {
+      float: right; }
 
 /* -- @component CHALLENGES -- */
 .challenges {
@@ -847,7 +854,10 @@ li.grid-wide-half:nth-of-type(odd) {
       width: 40%; }
 
   .btn-primary, .challenges-links a {
-    padding: 15px 60px; } }
+    padding: 15px 60px; }
+
+  .register .btn-primary:first-child, .register .challenges-links a:first-child, .challenges-links .register a:first-child {
+    margin-bottom: 20px; } }
 @media screen and (max-width: 768px) {
   .challenges_page_list {
     width: 90%; }
