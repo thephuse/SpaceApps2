@@ -399,7 +399,7 @@ li.grid-wide-half:nth-of-type(odd) {
 .modal {
   color: #000;
   position: fixed;
-  top: 10%;
+  top: 5%;
   left: 50%;
   z-index: 1050;
   width: 620px;
@@ -889,12 +889,15 @@ li.grid-wide-half:nth-of-type(odd) {
     display: inline-block; }
 
   .modal {
+    background: #fff;
     position: fixed;
     top: 20px;
     right: 20px;
     left: 20px;
     width: auto;
-    margin: 0; }
+    margin: 0;
+    height: 400px;
+    overflow-y: scroll; }
     .modal aside {
       background: #fff; }
       .modal aside img {
@@ -908,6 +911,7 @@ li.grid-wide-half:nth-of-type(odd) {
   .modal-main {
     width: 100%;
     float: none;
+    background: #fff;
     margin-left: 0; }
 
   .challenges_page_list {

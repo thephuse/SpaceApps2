@@ -64,12 +64,15 @@
 
   }
   .modal {
+    background:#fff;
     position: fixed;
     top: 20px;
     right: 20px;
     left: 20px;
     width: auto;
     margin: 0;
+    height: 400px;
+    overflow-y: scroll;
     aside {
       background:#fff;
       img {
@@ -86,6 +89,7 @@
   .modal-main {
     width: 100%;
     float: none;
+    background:#fff;
     margin-left: 0;
   }
   .challenges_page_list {
