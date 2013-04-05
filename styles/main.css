@@ -385,6 +385,9 @@ li.grid-wide-half:nth-of-type(odd) {
 .text ul {
   list-style-position: inside; }
 
+#youth .text p, #youth .text ul {
+  margin-bottom: 30px; }
+
 /* -- @module CALLOUT -- */
 .callout, .inner-nav, .callout-wide {
   width: 65.859%;
@@ -587,7 +590,7 @@ li.grid-wide-half:nth-of-type(odd) {
   background-image: url("../images/city.jpg");
   margin-top: -40px; }
 
-#schedule, #press, #youth-schedule {
+#schedule, #press, #youth {
   background-image: url("../images/rocket.png");
   background-repeat: no-repeat;
   background-position: center top; }
