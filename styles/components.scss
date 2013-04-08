@@ -364,8 +364,8 @@
 
 .mentor-img {
   @extend .organizer-img;
+  text-align: center;
   &:hover:after {
-    width: 170px;
     height: 125px;
   }
 }

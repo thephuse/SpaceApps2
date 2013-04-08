@@ -780,9 +780,10 @@ li.grid-wide-half:nth-of-type(odd) {
   display: none; }
 
 /* -- @component MENTOR -- */
-.mentor-img:hover:after {
-  width: 170px;
-  height: 125px; }
+.mentor-img {
+  text-align: center; }
+  .mentor-img:hover:after {
+    height: 125px; }
 
 /* -- @component SPONSORS -- */
 .sponsor {
@@ -946,6 +947,9 @@ li.grid-wide-half:nth-of-type(odd) {
       margin-left: 0 !important; }
     .container > .grid-seventh, .container > .mentor {
       width: 25%; }
+
+  .mentor-img {
+    text-align: left; }
 
   #sponsors .pull-l, #sponsors .pull-r {
     float: none;
