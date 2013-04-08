@@ -73,8 +73,8 @@ function modals() {
     var modal = $(this).attr("href");
     var modalImg = $(this).find("img").attr("src");
     e.preventDefault();
-    overlay.show();
-    $(modal).show();
+    overlay.fadeIn();
+    $(modal).fadeIn();
     $(modal).find("aside img").attr("src", modalImg);
   });
   overlay.on("click", function(e){
