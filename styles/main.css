@@ -756,16 +756,20 @@ li.grid-wide-half:nth-of-type(odd) {
 .organizer-img, .mentor-img {
   position: relative;
   display: block; }
-  .organizer-img span, .mentor-img span {
-    display: block;
-    margin-top: 10px;
-    font-size: 14px; }
-  .organizer-img:hover:after, .mentor-img:hover:after {
+  .organizer-img:after, .mentor-img:after {
+    -webkit-transition: all 2s linear;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 93px;
+    content: ""; }
+  .organizer-img span, .mentor-img span {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px; }
+  .organizer-img:hover:after, .mentor-img:hover:after {
+    -webkit-transition: all 2s linear;
     content: "i";
     background: rgba(0, 0, 0, 0.7);
     color: #fff;
@@ -782,8 +786,6 @@ li.grid-wide-half:nth-of-type(odd) {
 /* -- @component MENTOR -- */
 .mentor-img {
   text-align: center; }
-  .mentor-img:hover:after {
-    height: 125px; }
 
 /* -- @component SPONSORS -- */
 .sponsor {
