@@ -4,6 +4,10 @@
     width: 160px;
     padding-top: 40px;
   }
+  .mentor-img:hover:after {
+    height: 135px;
+    width: 170px;
+  }
   #liftoff {
     padding-bottom: 70px;
   }
@@ -25,7 +29,7 @@
       width: 100%;
       margin-left: 0!important;
     }
-    & > .grid-seventh {
+    & > .grid-seventh, & > .mentor {
       width: 25%;
     }
   }
