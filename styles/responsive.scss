@@ -1,4 +1,18 @@
 @media screen and (max-width: 1140px) {
+  #challenges-filter {
+    padding: 10px 0 0 0;
+  }
+   #challenges-filter ul li.lead {
+    display: block;
+   }
+  #challenges-filter ul li:not(.lead) {
+    margin: 5px;
+    padding: 5px;
+    display: inline-block;
+  }
+  #organizers, #mentors {
+    display: none;
+  }
   .organizer-img:hover:after {
     height: 120px;
     width: 160px;
@@ -28,13 +42,14 @@
     & > [class^="grid"], .schedule .grid-6, .organizer {
       width: 100%;
       margin-left: 0!important;
+      text-align: center;
     }
     & > .grid-seventh, & > .mentor {
       width: 25%;
     }
   }
   .mentor-img {
-    text-align: left;
+    text-align: center;
   }
   #sponsors .pull-l, #sponsors .pull-r {
     float: none;
@@ -45,6 +60,12 @@
   }
   .footer-nav li {
     display: block;
+  }
+  .page-footer {
+    .pull-l, .pull-r {
+      float: none;
+      width: 100%;
+    }
   }
   .page-nav {
     padding-top: 20px;
@@ -169,5 +190,8 @@
       width: 100%;
       float: none;
     }
+  }
+  .page-footer {
+    
   }
 }

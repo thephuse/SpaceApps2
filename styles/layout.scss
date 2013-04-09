@@ -38,6 +38,10 @@ body > section {
   }
 }
 
+.grid-fifth {
+  width: 18.54544%;
+}
+
 .grid-fourth {
   width: 25%;
   margin-left: 0;
@@ -172,8 +176,6 @@ li.grid-wide-half {
     text-align: center;
     color: #777;
     font-size: 14px;
-    -webkit-flex: 1 auto;
-    flex: 1 auto;
     padding: 20px;
   }
 }
