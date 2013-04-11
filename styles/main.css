@@ -461,8 +461,8 @@ li.grid-wide-half:nth-of-type(odd) {
   top: 5%;
   left: 50%;
   z-index: 1050;
-  width: 720px;
-  margin-left: -360px;
+  width: 820px;
+  margin-left: -410px;
   background-color: #ffffff;
   outline: none;
   -webkit-box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
@@ -790,8 +790,14 @@ li.grid-wide-half:nth-of-type(odd) {
 /* -- @component MENTOR -- */
 .mentor-img {
   text-align: center; }
+  .mentor-img img {
+    text-align: center;
+    display: inline-block; }
   .mentor-img:after {
-    height: 85px; }
+    height: 135px;
+    width: 170px;
+    left: 50%;
+    margin-left: -85px; }
 
 /* -- @component SPONSORS -- */
 .sponsor {
