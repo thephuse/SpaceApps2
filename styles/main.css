@@ -929,6 +929,30 @@ li.grid-wide-half:nth-of-type(odd) {
   .challenges-links li {
     display: inline-block; }
 
+.challenges-mini {
+  list-style: none; }
+  .challenges-mini > li {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    font-size: 15px; }
+  .challenges-mini h4 {
+    font-size: 18px; }
+
+.challenges-tags-mini li, .challenges-links-mini li {
+  display: inline-block; }
+
+.challenges-links-mini a {
+  text-decoration: underline; }
+
+.challenges-tags-mini {
+  padding: 8px 0; }
+  .challenges-tags-mini li {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 0 4px; }
+    .challenges-tags-mini li:first-child {
+      display: none; }
+
 @media screen and (max-width: 1140px) {
   #challenges-filter {
     padding: 10px 0 0 0; }
