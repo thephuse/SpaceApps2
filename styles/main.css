@@ -1133,7 +1133,8 @@ li.grid-wide-half:nth-of-type(odd) {
     padding-top: 10px; }
     .page-nav ul {
       padding-left: 50px;
-      padding-top: 10px; }
+      padding-top: 10px;
+      display: none; }
     .page-nav li {
       display: block;
       text-align: left; }
