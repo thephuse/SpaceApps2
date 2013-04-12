@@ -147,11 +147,15 @@
   .page-header h1, .nasa-partner {
     display: none;
   }
+
+  .main-site-link {
+    float: right;
+    padding-top: 17px;
+  }
   .page-nav {
     width: 70%; 
     padding-top: 10px;
     ul {
-      display: none;
       padding-left: 50px;
       padding-top: 10px;
       

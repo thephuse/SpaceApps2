@@ -468,3 +468,46 @@
     
   }
 }
+
+#page-mini {
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.main-site-link {
+  padding-top: 60px;
+  display: block;
+}
+
+.mobile-nav {
+  list-style: none;
+  @extend .callout;
+  padding: 20px;
+  margin-bottom: 40px;
+  text-align: center;
+  li {
+    display: inline-block;
+    font-size: 16px;
+    padding: 0 15px;
+  }
+}
+
+.info-list {
+  list-style: none;
+  margin-bottom: 20px;
+  strong {
+    display: inline-block;
+    padding-right: 10px;
+  }
+}
+
+.schedule-table-mobile {
+  font-size: 15px;
+  width: 100%;
+  margin: 20px 0;
+  td, th {
+    padding: 5px;
+    border: 1px solid #999;
+  }
+}
