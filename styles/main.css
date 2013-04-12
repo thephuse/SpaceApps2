@@ -964,7 +964,7 @@ li.grid-wide-half:nth-of-type(odd) {
 .challenges-mini {
   list-style: none; }
   .challenges-mini > li {
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid #999;
     margin-bottom: 15px;
     padding-bottom: 15px;
     font-size: 15px; }
@@ -974,14 +974,22 @@ li.grid-wide-half:nth-of-type(odd) {
 .challenges-tags-mini li, .challenges-links-mini li {
   display: inline-block; }
 
-.challenges-links-mini a {
-  text-decoration: underline; }
+.challenges-links-mini {
+  margin-top: 8px; }
+  .challenges-links-mini a {
+    background: #f24831;
+    color: #fff;
+    padding: 3px 15px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 5px; }
 
 .challenges-tags-mini {
   padding: 8px 0; }
   .challenges-tags-mini li {
-    background: rgba(0, 0, 0, 0.2);
-    padding: 0 4px; }
+    background: rgba(0, 0, 0, 0.1);
+    padding: 0 4px;
+    border-radius: 5px; }
     .challenges-tags-mini li:first-child {
       display: none; }
 

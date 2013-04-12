@@ -84,7 +84,7 @@
 .challenges-mini {
   list-style: none;
   & > li {
-    border-bottom: 1px solid rgba(255,255,255,0.5);
+    border-bottom: 1px solid #999;
     margin-bottom: 15px;
     padding-bottom: 15px;
     font-size: 15px;
@@ -101,16 +101,23 @@
 }
 
 .challenges-links-mini {
+  margin-top: 8px;
   a {
-    text-decoration: underline;
+    background:$red;
+    color: #fff;
+    padding: 3px 15px;
+    display: inline-block;
+    margin-right: 5px;
+    border-radius: 5px;
   }
 }
 
 .challenges-tags-mini{
   padding: 8px 0;
   li {
-    background:rgba(0,0,0,0.2);
+    background:rgba(0,0,0,0.1);
     padding: 0 4px;
+    border-radius: 5px;
     &:first-child {
       display: none;
     }
