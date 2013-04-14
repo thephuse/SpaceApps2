@@ -875,12 +875,12 @@ li.grid-wide-half:nth-of-type(odd) {
 
 .mobile-nav {
   list-style: none;
-  padding: 20px;
+  padding: 10px;
   margin-bottom: 40px;
   text-align: center; }
   .mobile-nav li {
     display: inline-block;
-    font-size: 16px;
+    font-size: 14px;
     padding: 0 15px; }
 
 .info-list {
