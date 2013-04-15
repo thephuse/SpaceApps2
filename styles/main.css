@@ -797,11 +797,6 @@ li.grid-wide-half:nth-of-type(odd) {
   .mentor-img img {
     text-align: center;
     display: inline-block; }
-  .mentor-img:after {
-    height: 135px;
-    width: 170px;
-    left: 50%;
-    margin-left: -85px; }
 
 /* -- @component SPONSORS -- */
 .sponsor {
