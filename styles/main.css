@@ -349,7 +349,8 @@ li.grid-wide-half:nth-of-type(odd) {
     background: #f03319; }
 
 .btn-twitter, .btn-facebook {
-  padding: 11px 20px; }
+  padding: 11px 20px;
+  color: white !important; }
 
 .btn-twitter {
   background: #006bc0; }
@@ -869,8 +870,10 @@ li.grid-wide-half:nth-of-type(odd) {
       height: 20px;
       font-size: 36px; }
 
-#page-mini h2 {
-  margin-bottom: 20px; }
+#page-mini {
+  padding: 20px; }
+  #page-mini h2 {
+    margin-bottom: 20px; }
 
 .main-site-link {
   padding-top: 60px;
@@ -879,7 +882,7 @@ li.grid-wide-half:nth-of-type(odd) {
 .mobile-nav {
   list-style: none;
   padding: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center; }
   .mobile-nav li {
     display: inline-block;

@@ -470,6 +470,7 @@
 }
 
 #page-mini {
+  padding: 20px;
   h2 {
     margin-bottom: 20px;
   }
@@ -484,7 +485,7 @@
   list-style: none;
   @extend .callout;
   padding: 10px;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   text-align: center;
   li {
     display: inline-block;
