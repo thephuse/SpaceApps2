@@ -815,6 +815,8 @@ li.grid-wide-half:nth-of-type(odd) {
 .white .sponsor span {
   color: #000; }
 
+#sponsors-page .row + .row {
+  margin-top: 20px; }
 #sponsors-page .row .grid-6 {
   text-align: center; }
 

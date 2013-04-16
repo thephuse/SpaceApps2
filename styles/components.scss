@@ -401,8 +401,13 @@
   }
 }
 
-#sponsors-page .row .grid-6 {
-  text-align: center;
+#sponsors-page{
+  .row + .row {
+    margin-top: 20px;
+  }
+  .row .grid-6 {
+    text-align: center;
+  }
 }
 
 /* -- @component PRESS -- */
