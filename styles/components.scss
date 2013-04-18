@@ -83,6 +83,7 @@
   p {
     vertical-align: top;
     &:first-child {
+      padding-bottom: 5px;
       img {
         margin-top: -10px;
       }
@@ -141,6 +142,11 @@
     font-size: 22px;
     margin-bottom: 10px;
   }
+}
+
+#judges .row {
+  width: 60%;
+  margin: 0 auto;
 }
 
 /* -- @component EVENT INFO -- */
@@ -377,19 +383,25 @@
 }
 
 
-/* -- @component MENTOR -- */
-.mentor {
+/* -- @component MENTOR /JUDGE -- */
+.mentor, .judge {
   @extend .organizer;
 }
 
-.mentor-img {
+.mentor-img, .judge-img {
   @extend .organizer-img;
   text-align: center;
   img {
     text-align: center;
     display: inline-block;
   }
+}
 
+.judge-img {
+  width: 170px;
+  &:hover:after {
+    height: 135px;
+  }
 }
 
 /* -- @component SPONSORS -- */

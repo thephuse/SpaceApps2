@@ -475,7 +475,7 @@ li.grid-wide-half:nth-of-type(odd) {
   background-clip: padding-box;
   overflow: hidden;
   text-align: left;
-  min-height: 300px; }
+  min-height: 350px; }
   .modal a {
     color: #000; }
   .modal .btn-small, .modal .challenges-links a, .challenges-links .modal a {
@@ -582,8 +582,10 @@ li.grid-wide-half:nth-of-type(odd) {
   vertical-align: top; }
   .partners p {
     vertical-align: top; }
-    .partners p:first-child img {
-      margin-top: -10px; }
+    .partners p:first-child {
+      padding-bottom: 5px; }
+      .partners p:first-child img {
+        margin-top: -10px; }
   .partners img {
     display: inline-block;
     padding-left: 10px; }
@@ -624,6 +626,10 @@ li.grid-wide-half:nth-of-type(odd) {
 #youth-challenges h4 {
   font-size: 22px;
   margin-bottom: 10px; }
+
+#judges .row {
+  width: 60%;
+  margin: 0 auto; }
 
 /* -- @component EVENT INFO -- */
 .event-info {
@@ -736,43 +742,43 @@ li.grid-wide-half:nth-of-type(odd) {
   padding-right: 45px; }
 
 /* -- @component ORGANIZER -- */
-.organizer, .mentor {
+.organizer, .mentor, .judge {
   margin-bottom: 20px; }
-  .organizer img, .mentor img {
+  .organizer img, .mentor img, .judge img {
     display: block; }
-  .organizer header, .mentor header {
+  .organizer header, .mentor header, .judge header {
     text-transform: uppercase;
     margin-bottom: 15px;
     padding-bottom: 15px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.25); }
-  .organizer h3, .mentor h3 {
+  .organizer h3, .mentor h3, .judge h3 {
     font-size: 40px;
     margin-bottom: 15px;
     padding-bottom: 0;
     border-bottom: 0; }
-  .organizer h4, .mentor h4 {
+  .organizer h4, .mentor h4, .judge h4 {
     font-size: 16px;
     line-height: 1.3; }
-  .organizer p, .mentor p {
+  .organizer p, .mentor p, .judge p {
     margin-bottom: 15px; }
-  .organizer .btn-small, .mentor .btn-small, .organizer .challenges-links a, .challenges-links .organizer a, .mentor .challenges-links a, .challenges-links .mentor a {
+  .organizer .btn-small, .mentor .btn-small, .judge .btn-small, .organizer .challenges-links a, .challenges-links .organizer a, .mentor .challenges-links a, .challenges-links .mentor a, .judge .challenges-links a, .challenges-links .judge a {
     background: #a3a3a3;
     padding: 11px 50px;
     margin-top: 10px; }
-    .organizer .btn-small:hover, .mentor .btn-small:hover, .organizer .challenges-links a:hover, .challenges-links .organizer a:hover, .mentor .challenges-links a:hover, .challenges-links .mentor a:hover {
+    .organizer .btn-small:hover, .mentor .btn-small:hover, .judge .btn-small:hover, .organizer .challenges-links a:hover, .challenges-links .organizer a:hover, .mentor .challenges-links a:hover, .challenges-links .mentor a:hover, .judge .challenges-links a:hover, .challenges-links .judge a:hover {
       background: #8a8a8a; }
-  .organizer.pull-l, .pull-l.mentor {
+  .organizer.pull-l, .pull-l.mentor, .pull-l.judge {
     clear: both; }
-  .organizer .grid-11 a, .mentor .grid-11 a {
+  .organizer .grid-11 a, .mentor .grid-11 a, .judge .grid-11 a {
     text-decoration: underline; }
-  .organizer .more, .mentor .more {
+  .organizer .more, .mentor .more, .judge .more {
     display: none;
     padding-top: 15px; }
 
-.organizer-img, .mentor-img {
+.organizer-img, .mentor-img, .judge-img {
   position: relative;
   display: block; }
-  .organizer-img:after, .mentor-img:after {
+  .organizer-img:after, .mentor-img:after, .judge-img:after {
     -webkit-transition: all 2s linear;
     position: absolute;
     top: 0;
@@ -780,11 +786,11 @@ li.grid-wide-half:nth-of-type(odd) {
     width: 100%;
     height: 103px;
     content: ""; }
-  .organizer-img span, .mentor-img span {
+  .organizer-img span, .mentor-img span, .judge-img span {
     display: block;
     margin-top: 10px;
     font-size: 14px; }
-  .organizer-img:hover:after, .mentor-img:hover:after {
+  .organizer-img:hover:after, .mentor-img:hover:after, .judge-img:hover:after {
     -webkit-transition: all 2s linear;
     content: "i";
     background: rgba(0, 0, 0, 0.7);
@@ -799,12 +805,17 @@ li.grid-wide-half:nth-of-type(odd) {
 .modal {
   display: none; }
 
-/* -- @component MENTOR -- */
-.mentor-img {
+/* -- @component MENTOR /JUDGE -- */
+.mentor-img, .judge-img {
   text-align: center; }
-  .mentor-img img {
+  .mentor-img img, .judge-img img {
     text-align: center;
     display: inline-block; }
+
+.judge-img {
+  width: 170px; }
+  .judge-img:hover:after {
+    height: 135px; }
 
 /* -- @component SPONSORS -- */
 .sponsor {
@@ -1016,10 +1027,10 @@ li.grid-wide-half:nth-of-type(odd) {
     padding: 5px;
     display: inline-block; }
 
-  #organizers, #mentors {
+  #organizers, #mentors, #judges {
     display: none; }
 
-  .organizer-img:hover:after, .mentor-img:hover:after {
+  .organizer-img:hover:after, .mentor-img:hover:after, .judge-img:hover:after {
     height: 120px;
     width: 160px;
     padding-top: 40px; }
@@ -1045,7 +1056,7 @@ li.grid-wide-half:nth-of-type(odd) {
 
   .container {
     width: 90%; }
-    .container > [class^="grid"], .container .schedule .grid-6, .container .organizer, .container .mentor {
+    .container > [class^="grid"], .container .schedule .grid-6, .container .organizer, .container .mentor, .container .judge {
       width: 100%;
       margin-left: 0 !important;
       text-align: center; }
@@ -1085,11 +1096,11 @@ li.grid-wide-half:nth-of-type(odd) {
   .partners p:first-child img {
     margin-top: 0; } }
 @media screen and (max-width: 768px) {
-  #sponsors .grid-3, #organizers .grid-seventh .organizer-img, #organizers .grid-seventh .mentor-img {
+  #sponsors .grid-3, #organizers .grid-seventh .organizer-img, #organizers .grid-seventh .mentor-img, #organizers .grid-seventh .judge-img {
     text-align: center;
     margin-bottom: 20px; }
 
-  .organizer-img, .mentor-img {
+  .organizer-img, .mentor-img, .judge-img {
     display: inline-block; }
 
   .modal {
@@ -1164,7 +1175,7 @@ li.grid-wide-half:nth-of-type(odd) {
   .event-detail, .btn-small, .challenges-links a {
     margin-bottom: 20px; }
 
-  .organizer .btn-small, .mentor .btn-small, .organizer .challenges-links a, .challenges-links .organizer a, .mentor .challenges-links a, .challenges-links .mentor a {
+  .organizer .btn-small, .mentor .btn-small, .judge .btn-small, .organizer .challenges-links a, .challenges-links .organizer a, .mentor .challenges-links a, .challenges-links .mentor a, .judge .challenges-links a, .challenges-links .judge a {
     padding: 11px 30px; }
 
   .callout, .inner-nav, .callout-wide, .mobile-nav {
