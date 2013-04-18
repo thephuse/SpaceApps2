@@ -621,6 +621,10 @@ li.grid-wide-half:nth-of-type(odd) {
 #sponsors .row {
   margin-top: 40px; }
 
+#youth-challenges h4 {
+  font-size: 22px;
+  margin-bottom: 10px; }
+
 /* -- @component EVENT INFO -- */
 .event-info {
   padding-top: 35px; }
