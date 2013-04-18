@@ -84,6 +84,9 @@
       margin-bottom: 20px;
     }
   }
+  .partners p:first-child img{
+    margin-top: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -144,7 +147,7 @@
   .page-header {
     padding-bottom: 10px;
   }
-  .page-header h1, .nasa-partner {
+  .page-header h1, .partners {
     display: none;
   }
 

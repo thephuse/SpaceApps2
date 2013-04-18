@@ -535,7 +535,7 @@ li.grid-wide-half:nth-of-type(odd) {
 
 .page-nav {
   float: left;
-  width: 57.727272728%;
+  width: 55.727272728%;
   padding-top: 25px; }
   .page-nav a {
     text-transform: uppercase;
@@ -568,21 +568,25 @@ li.grid-wide-half:nth-of-type(odd) {
   .menu-toggle:hover {
     background-color: #fff; }
 
-.nasa-partner {
+.partners {
   float: right;
   padding: 35px 0;
   display: block;
-  width: 18.636363636%;
+  width: 20.636363636%;
   font-family: "brandon-grotesque", sans-serif;
-  color: #f24831;
+  color: #aaaaaa;
   text-align: center;
   text-transform: uppercase;
   font-weight: normal;
-  font-size: 14px; }
-  .nasa-partner img {
-    display: block;
-    padding-top: 15px;
-    margin: 0 auto; }
+  font-size: 14px;
+  vertical-align: top; }
+  .partners p {
+    vertical-align: top; }
+    .partners p:first-child img {
+      margin-top: -10px; }
+  .partners img {
+    display: inline-block;
+    padding-left: 10px; }
 
 /* -- @component SECTIONS -- */
 #liftoff, #challenges {
@@ -1072,7 +1076,10 @@ li.grid-wide-half:nth-of-type(odd) {
     padding: 15px 60px; }
 
   .register .btn-primary:first-child, .register .challenges-links a:first-child, .challenges-links .register a:first-child {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .partners p:first-child img {
+    margin-top: 0; } }
 @media screen and (max-width: 768px) {
   #sponsors .grid-3, #organizers .grid-seventh .organizer-img, #organizers .grid-seventh .mentor-img {
     text-align: center;
@@ -1124,7 +1131,7 @@ li.grid-wide-half:nth-of-type(odd) {
   .page-header {
     padding-bottom: 10px; }
 
-  .page-header h1, .nasa-partner {
+  .page-header h1, .partners {
     display: none; }
 
   .main-site-link {
