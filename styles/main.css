@@ -921,8 +921,7 @@ li.grid-wide-half:nth-of-type(odd) {
     border: 1px solid #999; }
 
 #live {
-  border-bottom: 15px solid #fff;
-  padding: 60px auto; }
+  padding: 60px 0; }
 
 #live object + a {
   width: 100% !important;
