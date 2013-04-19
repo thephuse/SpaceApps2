@@ -922,11 +922,12 @@ li.grid-wide-half:nth-of-type(odd) {
 
 #live {
   padding: 60px 0; }
-
-#live object + a {
-  width: 100% !important;
-  padding-top: 20px !important;
-  font-size: 18px !important; }
+  #live object {
+    max-width: 100%; }
+    #live object + a {
+      width: 100% !important;
+      padding-top: 20px !important;
+      font-size: 18px !important; }
 
 #challenges-filter {
   background: #000;

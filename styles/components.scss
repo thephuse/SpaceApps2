@@ -542,10 +542,12 @@
 
 #live {
   padding: 60px 0;
-}
-
-#live object + a {
-  width: 100%!important;
-  padding-top: 20px!important;
-  font-size: 18px!important;
+  object {
+    max-width: 100%;
+    & + a {
+      width: 100%!important;
+      padding-top: 20px!important;
+      font-size: 18px!important;
+    }
+  }
 }
