@@ -115,7 +115,7 @@
   margin-top: -40px;
 }
 
-#schedule, #press, #youth {
+#schedule, #press, #youth, #live {
   background-image: url("../images/rocket.png");
   background-repeat: no-repeat;
   background-position: center top;
@@ -538,4 +538,15 @@
     padding: 5px;
     border: 1px solid #999;
   }
+}
+
+#live {
+  border-top: 5px solid $red;
+  padding: 60px auto;
+}
+
+#live object + a {
+  width: 100%!important;
+  padding-top: 20px!important;
+  font-size: 18px!important;
 }

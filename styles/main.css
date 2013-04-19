@@ -605,7 +605,7 @@ li.grid-wide-half:nth-of-type(odd) {
   background-image: url("../images/city.jpg");
   margin-top: -40px; }
 
-#schedule, #press, #youth {
+#schedule, #press, #youth, #live {
   background-image: url("../images/rocket.png");
   background-repeat: no-repeat;
   background-position: center top; }
@@ -919,6 +919,15 @@ li.grid-wide-half:nth-of-type(odd) {
   .schedule-table-mobile td, .schedule-table-mobile th {
     padding: 5px;
     border: 1px solid #999; }
+
+#live {
+  border-top: 5px solid #f24831;
+  padding: 60px auto; }
+
+#live object + a {
+  width: 100% !important;
+  padding-top: 20px !important;
+  font-size: 18px !important; }
 
 #challenges-filter {
   background: #000;
