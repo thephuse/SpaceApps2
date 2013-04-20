@@ -922,6 +922,10 @@ li.grid-wide-half:nth-of-type(odd) {
 
 #live {
   padding: 60px 0; }
+  #live h2 {
+    margin-bottom: 20px; }
+  #live h4 {
+    font-size: 22px; }
   #live object {
     max-width: 100%; }
     #live object + a {

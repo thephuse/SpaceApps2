@@ -542,6 +542,12 @@
 
 #live {
   padding: 60px 0;
+  h2 {
+    margin-bottom: 20px;
+  }
+  h4 {
+    font-size: 22px;
+  }
   object {
     max-width: 100%;
     & + a {
