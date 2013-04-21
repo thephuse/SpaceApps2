@@ -593,7 +593,7 @@ li.grid-wide-half:nth-of-type(odd) {
 /* -- @component SECTIONS -- */
 #liftoff, #challenges {
   background-repeat: no-repeat;
-  background-position: top center; }
+  background-position: bottom center; }
 
 #liftoff, #challenges, #schedule {
   -webkit-translate: translateZ(0); }
@@ -670,6 +670,14 @@ li.grid-wide-half:nth-of-type(odd) {
   text-align: left;
   background-image: url("../images/star.png");
   background-position: 15px; }
+  .challenge.challenge-winner {
+    background-image: none;
+    padding-left: 30px; }
+    .challenge.challenge-winner span {
+      font-size: 14px;
+      color: #999;
+      display: inline-block;
+      padding-right: 10px; }
 
 /* -- @component SCHEDULE -- */
 .schedule {
@@ -935,6 +943,55 @@ li.grid-wide-half:nth-of-type(odd) {
       width: 100% !important;
       padding-top: 20px !important;
       font-size: 18px !important; }
+
+#mc_embed_signup {
+  width: 50%;
+  margin: 0 auto; }
+  #mc_embed_signup form {
+    position: relative; }
+  #mc_embed_signup input[type="email"] {
+    font-size: inherit;
+    font-family: inherit;
+    background: #000000;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border: 4px solid #3b3b3b;
+    border-radius: 50px;
+    padding: 10px 30px 11px 30px;
+    color: #ccc;
+    -webkit-transition: background-color 0.1s linear; }
+    #mc_embed_signup input[type="email"]:focus {
+      outline: none;
+      background-color: #222;
+      -webkit-transition: background-color 0.1s linear; }
+  #mc_embed_signup .circle, #mc_embed_signup input[type="submit"] {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #888;
+    border-radius: 50px;
+    width: 52px;
+    height: 52px;
+    cursor: pointer;
+    -webkit-transition: background-color 0.2s linear; }
+    #mc_embed_signup .circle:hover, #mc_embed_signup input[type="submit"]:hover {
+      border-color: #fff;
+      -webkit-transition: background-color 0.2s linear; }
+  #mc_embed_signup input[type="submit"] {
+    background-color: #f24831;
+    background-image: url("../images/check.png");
+    border-color: #f79b8b;
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    right: 6px;
+    top: 7px; }
+    #mc_embed_signup input[type="submit"]:hover {
+      background-color: #f24831; }
 
 #challenges-filter {
   background: #000;
