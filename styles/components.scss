@@ -155,6 +155,10 @@
   padding-top: 35px;
 }
 
+.winner {
+  padding-left: 30px;
+}
+
 .event-detail {
   display: inline-block;
   @extend %well;
@@ -169,6 +173,7 @@
   &.location {
     background-image: url("../images/location.png");
   }
+
 }
 
 .white .event-info {

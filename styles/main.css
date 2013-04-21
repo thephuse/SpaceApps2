@@ -635,6 +635,9 @@ li.grid-wide-half:nth-of-type(odd) {
 .event-info {
   padding-top: 35px; }
 
+.winner {
+  padding-left: 30px; }
+
 .event-detail {
   display: inline-block;
   margin: 0 10px;
