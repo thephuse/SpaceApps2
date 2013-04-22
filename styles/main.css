@@ -447,7 +447,7 @@ li.grid-wide-half:nth-of-type(odd) {
   margin-top: 30px;
   margin-bottom: 39px; }
   .subtitle span {
-    background: #fff;
+    background: #f24831;
     display: inline-block;
     padding: 0 15px; }
   .subtitle:after {
@@ -455,7 +455,7 @@ li.grid-wide-half:nth-of-type(odd) {
     width: 100%;
     height: 1px;
     display: block;
-    border-bottom: 1px solid #222;
+    border-bottom: 1px solid #fff;
     content: " "; }
 
 /*-- @module MODALS --*/
@@ -633,7 +633,9 @@ li.grid-wide-half:nth-of-type(odd) {
 
 /* -- @component EVENT INFO -- */
 .event-info {
-  padding-top: 35px; }
+  padding-bottom: 50px; }
+  .event-info a {
+    text-decoration: none; }
 
 .winner {
   padding-left: 30px; }

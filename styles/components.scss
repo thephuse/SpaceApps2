@@ -152,7 +152,10 @@
 /* -- @component EVENT INFO -- */
 
 .event-info {
-  padding-top: 35px;
+  padding-bottom: 50px;
+  a {
+    text-decoration: none;
+  }
 }
 
 .winner {
