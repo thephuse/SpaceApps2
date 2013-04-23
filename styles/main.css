@@ -447,7 +447,7 @@ li.grid-wide-half:nth-of-type(odd) {
   margin-top: 30px;
   margin-bottom: 39px; }
   .subtitle span {
-    background: #f24831;
+    background: #fff;
     display: inline-block;
     padding: 0 15px; }
   .subtitle:after {
@@ -455,7 +455,7 @@ li.grid-wide-half:nth-of-type(odd) {
     width: 100%;
     height: 1px;
     display: block;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #222;
     content: " "; }
 
 /*-- @module MODALS --*/
