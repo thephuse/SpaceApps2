@@ -113,6 +113,12 @@
 #challenges {
   background-image: url("../images/city.jpg");
   margin-top: -40px;
+  hr {
+    margin: 50px;
+  }
+  .row {
+    margin-bottom: 40px;
+  }
 }
 
 #schedule, #press, #youth, #live {
@@ -159,13 +165,24 @@
 }
 
 .winner {
-  padding-left: 30px;
+  background:#000;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: left;
+
+  h3 {
+    font-size: 18px;
+    font-family: "brandon-grotesque", sans-serif;
+    span {
+      color: #999;
+      padding-right: 8px;
+    }
+  }
 }
 
 .event-detail {
-  display: inline-block;
+  
   @extend %well;
-  margin: 0 10px;
   font-family: "brandon-grotesque", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
