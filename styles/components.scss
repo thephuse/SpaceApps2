@@ -155,6 +155,15 @@
   margin: 0 auto;
 }
 
+#vote {
+  h4 {
+    margin-bottom: 20px;
+  }
+  p {
+    margin-top: 20px;
+  }
+}
+
 /* -- @component EVENT INFO -- */
 
 .event-info {
@@ -650,4 +659,12 @@
     }
   }
 
+}
+
+
+.mention {
+  color: $red!important;
+  display: block;
+  text-transform: uppercase;
+  padding-top: 15px;
 }

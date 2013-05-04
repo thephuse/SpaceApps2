@@ -101,6 +101,25 @@
   }
 }
 
+.btn-vote {
+  @extend .btn;
+  background: #5DA423;
+  color: #fff!important;
+  @extend .btn-small;
+  padding: 5px 30px;
+  &:hover {
+    background:darken(#5DA423, 5%);
+  }
+}
+
+.btn-project {
+  @extend .btn-vote;
+  background:#333;
+  &:hover {
+    background:#111;
+  }
+}
+
 .inner-nav {
   list-style: none;
   text-align: center;
