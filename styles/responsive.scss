@@ -90,7 +90,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  
+
   #sponsors .grid-3, #organizers .grid-seventh .organizer-img {
     text-align: center;
     margin-bottom: 20px;
@@ -156,7 +156,7 @@
     padding-top: 17px;
   }
   .page-nav {
-    width: 70%; 
+    width: 70%;
     padding-top: 10px;
     ul {
       padding-left: 50px;
@@ -198,7 +198,7 @@
       float: none;
     }
   }
-  .page-footer {
-    
+  #liftoff .btn-primary:first-child {
+    margin-bottom: 30px;
   }
 }
