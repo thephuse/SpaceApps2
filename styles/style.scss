@@ -1,0 +1,380 @@
+
+/* @group CSS Reset
+----------------------------------------------- */
+
+abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{line-height:1}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}nav ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:0 0}ins{background-color:#ff9;color:#000;text-decoration:none}mark{background-color:#ff9;color:#000;font-style:italic;font-weight:700}del{text-decoration:line-through}abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}table{border-collapse:collapse;border-spacing:0}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}input,select{vertical-align:middle}
+
+/* @group Mixins
+----------------------------------------------- */
+
+@mixin gradient-v($start, $end) {
+  background-image: -moz-linear-gradient(top, $start 0%, $end 100%);
+  background-image: -webkit-linear-gradient(top, $start 0%, $end 100%);
+  background-image: -o-linear-gradient(top, $start 0%, $end 100%);
+  background-image: -ms-linear-gradient(top, $start 0%, $end 100%);
+  background-image: linear-gradient(to bottom, $start 0%, $end 100%);
+}
+@mixin gradient-v-stop($start, $end, $stop, $stopdistance: 50%) {
+  background-image: -moz-linear-gradient(top, $start 0%, $stop $stopdistance, $end 100%);
+  background-image: -webkit-linear-gradient(top, $start 0%, $stop $stopdistance, $end 100%);
+  background-image: -o-linear-gradient(top, $start 0%, $stop $stopdistance, $end 100%);
+  background-image: -ms-linear-gradient(top, $start 0%, $stop $stopdistance, $end 100%);
+  background-image: linear-gradient(to bottom, $start 0%, $stop $stopdistance, $end 100%);
+}
+
+@mixin transition($transition...) {  
+  -webkit-transition: $transition;
+  -moz-transition: $transition;
+  -ms-transition: $transition;
+  -o-transition: $transition;
+  transition: $transition;
+}
+
+@mixin at2x($image_name, $w: auto, $h: auto, $extention: '.png') {
+  background-image: url($image_name + $extention);
+  $x2img : $image_name + '@2x' + $extention;
+
+  @media all and (-webkit-min-device-pixel-ratio : 1.5) {
+    background-image: url($x2img);
+    background-size: $w $h;
+  }  
+}
+
+%box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+%clear {
+  &:before,
+  &:after {
+    content:"";
+    display:table;
+  }
+  &:after {
+    clear:both;
+  }
+}
+
+
+/* @group Variables
+----------------------------------------------- */
+
+/*  Layout  */
+$contentwidth: 980px;
+$contentpadding: 20px;
+
+/*  Theme Colours  */
+$darkblue: #1d2228;
+$bluegrey: #7c868d;
+$red: #f25337;
+$lightbluegrey: #707b83;
+$grey: #ccc;
+
+/*  Typography  */
+$textcolor: $lightbluegrey;
+$headingcolor: $red;
+$linkcolor: $red;
+$linkhover: lighten($linkcolor, 20);
+
+$fancyFont: 'brandon-grotesque', sans-serif;
+$mainFont: 'Quattrocento Sans', sans-serif;
+
+
+/* @group Global
+----------------------------------------------- */
+
+body {
+  margin: 0;
+  background: $darkblue;
+}
+
+/* @group Typography
+----------------------------------------------- */
+body {
+  color: $textcolor;
+  font-family: $mainFont;
+  font-size: 16px;
+}
+a {
+  color: $linkcolor;
+  text-decoration: none;
+  @include transition(color 0.1s);
+  &:hover {
+    color: $linkhover;
+    text-decoration: none;
+  }
+  img {
+    border: none;
+  }
+}
+
+h1, h2, h3, h4 {
+  margin: 1em 0;
+  font-weight: bold;
+  font-family: $fancyFont;
+}
+h1 {
+  font-size: 2.5em;
+  font-weight: normal;
+  line-height: 1.3em;
+}
+h2 {
+  color: $headingcolor;
+  font-size: 1.9em;
+  margin: 0 0 0.4em;
+}
+h3 {
+}
+h4 {
+}
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+p {
+  margin: 0.5em 0;
+  line-height: 1.8;
+}
+textarea, input, button, .btn, select {
+  color: $textcolor;
+  font-family: $mainFont;
+  font-size: inherit;
+  outline: none;
+}
+
+/* @group Layout
+----------------------------------------------- */
+
+.page-header .container, .page-footer .container, .main .container {
+  width: 90%;
+  padding: 0 $contentpadding;
+  max-width: $contentwidth;
+  margin: 0 auto;
+  position: relative;
+  @extend %box-sizing;
+  @extend %clear;
+}
+
+.grid {
+  display: block;
+  float: left;
+  width: 100%;
+  min-height: 30px;
+  @extend %box-sizing;
+  margin-bottom: 1em;
+}
+
+.grid-narrow {
+  width: 30%;
+}
+.grid-wide {
+  width: 70%;
+}
+.grid-half {
+  width: 48%;
+  @extend %box-sizing;
+  display: inline-block;
+  vertical-align: top;
+  &:nth-of-type(2n - 1) {
+    margin-right: 4%;
+    clear: left;
+  }
+}
+.grid-third {
+  width: 33.33%;
+  @extend %box-sizing;
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* @group Forms
+----------------------------------------------- */
+
+input.email {
+  padding: 15px 20px;
+  border-radius: 50px;
+  border: 1px solid #000;
+  box-shadow: 0 1px 1px 0 rgba(#fff, 0.24), inset 0 2px 0 0 rgba(#000, 0.27);
+  width: 40%;
+}
+.button {
+  padding: 12px 16px;;
+  border-radius: 50px;
+  border: 1px solid #9f4545;
+  box-shadow: 0 2px 2px 0 rgba(#000, 0.39), inset 0 1px 0 0 rgba(#fff, 0.41);
+  @include gradient-v(#ff6f55, #dc4328);
+  color: #fff;
+  text-shadow: 0 0 4px rgba(#000, 0.25);
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: bold;
+  cursor: pointer;
+  @include transition(box-shadow 0.2s);
+  &:hover {
+    @include gradient-v(lighten(#ff6f55, 3), lighten(#dc4328, 3));
+  }
+  &:active {
+    @include gradient-v(#EC6048, #dc4328);
+    box-shadow: inset 0 2px 2px 0 rgba(#000, 0.19);
+  }
+}
+#mc-embedded-subscribe-form {
+  text-align: center;
+}
+#mc-embedded-subscribe {
+  margin-left: -107px;
+}
+#mce-EMAIL {
+  padding-right: 115px;
+}
+
+
+/* @group Components
+----------------------------------------------- */
+
+/*-- @component HEADER -- */
+
+.page-header {
+  padding: 50px 0 0;
+  .logo {
+    float: left;
+  }
+  .social-icons {
+    margin-top: 22px;
+  }
+}
+.page-nav {
+  ul {
+    float: left;
+    margin: 25px 0 0 50px;
+  }
+  li {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.9em;
+  }
+  a {
+    padding: 25px;
+    color: #7d8188;
+    font-weight: bold;
+    @include transition(color 0.2s);
+    &.active, &:hover {
+      color: #fff;
+    }
+    &.dropdown.active {
+      color: $red;
+    }
+  }
+}
+
+.menu-toggle {
+  display: none;
+}
+
+/*-- @component FOOTER -- */
+
+.page-footer {
+  padding: 30px 0 60px;
+  .social-icons {
+    line-height: 40px;
+  }
+}
+
+.attributions {
+  float: left;
+  font-size: 0.9em;
+  a {
+    color: $grey;
+    vertical-align: top;
+    line-height: 40px;
+    margin-right: 15px;
+    &:hover {
+      color: #fff;
+    }
+  }
+  img {
+    margin-left: 5px;
+  }
+}
+
+/*-- @component SECTION -- */
+
+section {
+  padding: 40px 0;
+}
+
+.white-section {
+  background: #fff;
+}
+
+.transparent-section {
+  color: #fff;
+  p {
+    color: $grey;
+  }
+  a {
+    color: $bluegrey;
+  }
+  .cta {
+    margin: 1em 0 0.5em;
+    text-align: center;
+    color: #fff;
+    font-size: 2em;
+    font-weight: bold;
+    font-family: $fancyFont;
+  }
+}
+.extra-links p {
+  text-align: center;
+  color: #fff;
+}
+
+.graphic-row {
+  @extend %clear;
+  margin: 30px 0;
+
+  .description {
+    margin: 0 180px;
+  }
+  p {
+    font-size: 1.1em;
+  }
+
+  &.reg {
+    img { float: left; }
+    .description { margin-right: 0; }
+  }
+  &.alt {
+    img { float: right; }
+    .description { margin-left: 0; }
+  }
+}
+
+/* -- @component SOCIAL ICONS -- */
+.social-icons {
+  float: right;
+  a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left: 15px;
+    @include transition(background-position 0.4s);
+    &:hover {
+      background-position: 0 -20px;
+    }
+  }
+  .email {
+    background: url(../images/social-email.png);
+  }
+  .twitter {
+    background: url(../images/social-twitter.png);
+  }
+  .facebook {
+    background: url(../images/social-facebook.png);
+  }
+  .googleplus {
+    background: url(../images/social-googleplus.png);
+  }
+}
