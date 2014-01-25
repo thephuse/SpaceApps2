@@ -16,7 +16,7 @@
 <body>
 
   <!-- @component HEADER -->
-  <header class="page-header black">
+  <header class="page-header">
     <div class="container">
       <a href="/" class="logo"><img alt="Toronto Space Apps Challenge" src="./images/logo.png"></a>
       <nav class="page-nav">
@@ -39,14 +39,23 @@
 
   
   <!-- @compontent SECTION-->
-  <section class="main transparent-section">
+  <section class="main transparent-section" id="hero">
     <div class="container">
-      <h1><strong>Space Apps Toronto 2014</strong><br/>
+      <h1 class="main-headline"><strong>Space Apps Toronto 2014</strong><br/>
       is preparing for launch</h1>
-      <div class="counter">
-        <!-- ?? -->
+      <!-- @compontent COUNTER -->
+      <div class="counter-wrapper">
+        <div class="counter">
+          <div class="number">
+          0000000000000000
+          </div>
+          <div class="units">
+          MB
+          </div>
+        </div>
+        <div class="legend">Data Collected by Nasa since you loaded this page</div>
       </div>
-      <p>Every second, NASA gathers close to 1 GB of data about our universe. Let's put that data to good use. The NASA International Space Apps Challenge is a global hackathon aimed at making that data fascinating, relevant and empowering. On April 11-13th, 150 developers, makers, engineers and entrepreneurs will attack 25 NASA designed challenges, coming up with solutions silly to serious, fantastical to feasible. Build a team, pick a challenge, and leverage your access to a unique mentors roster featuring past and present astronauts, aerospace engineers, and designers.</p>
+      <p class="cf">Every second, NASA gathers close to 1 GB of data about our universe. Let's put that data to good use. The NASA International Space Apps Challenge is a global hackathon aimed at making that data fascinating, relevant and empowering. On April 11-13th, 150 developers, makers, engineers and entrepreneurs will attack 25 NASA designed challenges, coming up with solutions silly to serious, fantastical to feasible. Build a team, pick a challenge, and leverage your access to a unique mentors roster featuring past and present astronauts, aerospace engineers, and designers.</p>
       <p class="cta">Be the first to know when registration opens</p>
       <!-- Begin MailChimp Signup Form -->
       <div id="mc_embed_signup">
@@ -119,9 +128,9 @@
 
 
   <!-- @component FOOTER -->
-  <footer class="page-footer">
+  <footer class="page-footer transparent-section">
     <div class="container">
-      <div class="separator"></div>
+      <div class="separator"><span class="leaf"></span></div>
       <div class="attributions">
         <a href="http://nasa.gov">In partnership with <img src="./images/nasa.png" alt="NASA"></a>
         <a href="http://thephuse.com">Designed by <img src="./images/thephuse.png" alt="The Phuse"></a>
@@ -148,5 +157,7 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>-->
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+  <script src="./scripts/site.js"></script>
 </body>
 </html>

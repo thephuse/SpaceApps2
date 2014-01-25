@@ -47,6 +47,7 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
 }
 
 %clear {
+  clear: both;
   &:before,
   &:after {
     content:"";
@@ -57,16 +58,21 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
   }
 }
 
+.cf {
+  @extend %clear;
+}
+
 
 /* @group Variables
 ----------------------------------------------- */
 
 /*  Layout  */
-$contentwidth: 980px;
+$contentwidth: 1000px;
 $contentpadding: 20px;
 
 /*  Theme Colours  */
 $darkblue: #1d2228;
+$textblue: #272c33;
 $bluegrey: #7c868d;
 $red: #f25337;
 $lightbluegrey: #707b83;
@@ -80,6 +86,7 @@ $linkhover: lighten($linkcolor, 20);
 
 $fancyFont: 'brandon-grotesque', sans-serif;
 $mainFont: 'Quattrocento Sans', sans-serif;
+$narrowFont: 'pt-sans-narrow', sans-serif;
 
 
 /* @group Global
@@ -87,7 +94,9 @@ $mainFont: 'Quattrocento Sans', sans-serif;
 
 body {
   margin: 0;
-  background: $darkblue;
+  background: $darkblue url(../images/background.jpg) no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 /* @group Typography
@@ -111,7 +120,7 @@ a {
 }
 
 h1, h2, h3, h4 {
-  margin: 1em 0;
+  margin: 0 0 1em 0;
   font-weight: bold;
   font-family: $fancyFont;
 }
@@ -231,13 +240,29 @@ input.email {
 }
 
 
+/* @group Hero Backdrop
+----------------------------------------------- */
+
+#hero {
+  .container {
+    position: relative;
+  }
+}
+
+.space-junk {
+  position: fixed;
+  z-index: -2;
+}
+
+
+
 /* @group Components
 ----------------------------------------------- */
 
 /*-- @component HEADER -- */
 
 .page-header {
-  padding: 50px 0 0;
+  padding: 50px 0 20px;
   .logo {
     float: left;
   }
@@ -276,7 +301,7 @@ input.email {
 /*-- @component FOOTER -- */
 
 .page-footer {
-  padding: 30px 0 60px;
+  padding: 0 0 60px;
   .social-icons {
     line-height: 40px;
   }
@@ -286,16 +311,43 @@ input.email {
   float: left;
   font-size: 0.9em;
   a {
-    color: $grey;
     vertical-align: top;
     line-height: 40px;
     margin-right: 15px;
-    &:hover {
-      color: #fff;
-    }
+  }
+  a:hover img {
+    opacity: 1;
   }
   img {
     margin-left: 5px;
+    opacity: 0.4;
+    @include transition(opacity 0.2s);
+  }
+}
+
+.separator {
+  text-align: center;
+  margin-bottom: 30px;
+  .leaf {
+    display: inline-block;
+    background: url(../images/leaf-small-dark.png) no-repeat center;
+    height: 30px;
+    width: 30px;
+
+    &:before, &:after {
+      background: rgba(#4e4f52, 0.2);
+      display: block;
+      height: 1px;
+      content: " ";
+      width: 48%;
+      position: absolute;
+      left: 0;
+      top: 12px;
+    }
+    &:after {
+       right: 0;  
+       left: auto; 
+    }
   }
 }
 
@@ -316,6 +368,10 @@ section {
   }
   a {
     color: $bluegrey;
+    @include transition(color 0.2s);
+    &:hover {
+      color: #fff;
+    }
   }
   .cta {
     margin: 1em 0 0.5em;
@@ -326,10 +382,14 @@ section {
     font-family: $fancyFont;
   }
 }
-.extra-links p {
-  text-align: center;
-  color: #fff;
+
+/*-- @component Homepage Hero -- */
+
+.main-headline {
+  float: left;
 }
+
+/*-- @component Homepage Graphics -- */
 
 .graphic-row {
   @extend %clear;
@@ -349,6 +409,17 @@ section {
   &.alt {
     img { float: right; }
     .description { margin-left: 0; }
+  }
+}
+
+
+/*-- Last Section -- */
+
+.extra-links {
+  padding-bottom: 15px;
+  p {
+    text-align: center;
+    color: #fff;
   }
 }
 
@@ -376,5 +447,44 @@ section {
   }
   .googleplus {
     background: url(../images/social-googleplus.png);
+  }
+}
+
+
+/* -- @component COUNTER -- */
+.counter-wrapper {
+  float: right;
+  background: rgba(#fff, 0.05);
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 15px 15px 13px;
+  text-align: center;
+  .legend {
+    font-size: 0.8em;
+  }
+}
+.counter {
+  background: rgba(#fff, 0.07);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 13px;
+  color: $textblue;
+  .number {
+    float: left;
+    line-height: 65px;
+    font-family: $narrowFont;
+    font-size: 2.3em;
+    width: 325px;
+    strong {
+      color: #fff;
+    }
+  }
+  .units {
+    float: right;
+    line-height: 65px;
+    border-left: 3px solid $textblue;
+    width: 60px;
+    font-size: 1.3em;
   }
 }
