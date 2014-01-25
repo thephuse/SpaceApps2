@@ -99,6 +99,10 @@ body {
   background-attachment: fixed;
 }
 
+.center {
+  text-align: center;
+}
+
 /* @group Typography
 ----------------------------------------------- */
 body {
@@ -363,6 +367,9 @@ section {
 
 .transparent-section {
   color: #fff;
+  h2 {
+    color: #fff;
+  }
   p {
     color: $grey;
   }
@@ -372,6 +379,9 @@ section {
     &:hover {
       color: #fff;
     }
+  }
+  a.button {
+    color: #fff;
   }
   .cta {
     margin: 1em 0 0.5em;
@@ -417,8 +427,7 @@ section {
 
 .extra-links {
   padding-bottom: 15px;
-  p {
-    text-align: center;
+  .grid p {
     color: #fff;
   }
 }

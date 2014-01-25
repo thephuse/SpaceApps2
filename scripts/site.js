@@ -41,9 +41,9 @@ $(function () {
 
     // In the time it took you to read this sentence, NASA gathered approximately 1.73 gigabytes of data from our nearly 100 currently active missions! 
     // - See more at: http://open.nasa.gov/blog/2012/10/04/what-is-nasa-doing-with-big-data-today/#sthash.LtjIKsZ3.dpuf
-    // Assume that time to read sentence = 4 seconds => 1.73/4 GB of data per second => 43.25 MB / 100 ms
+    // Assume that time to read sentence = 4 seconds => 1.73/4 GB of data per second => 432500 KB / 100 ms
     var $number = $('.counter .number'),
-      newnumber = parseInt(parseInt($number.text()) + 43.25),
+      newnumber = parseInt(parseInt($number.text()) + 432500),
       nzeros = 16 - newnumber.toString().length,
       zeros = '';
     for (var i = 0; i < nzeros; i++)

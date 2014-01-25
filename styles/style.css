@@ -93,6 +93,9 @@ body {
   background-size: cover;
   background-attachment: fixed; }
 
+.center {
+  text-align: center; }
+
 /* @group Typography
 ----------------------------------------------- */
 body {
@@ -328,6 +331,8 @@ section {
 
 .transparent-section {
   color: #fff; }
+  .transparent-section h2 {
+    color: #fff; }
   .transparent-section p {
     color: #cccccc; }
   .transparent-section a {
@@ -339,6 +344,8 @@ section {
     transition: color 0.2s; }
     .transparent-section a:hover {
       color: #fff; }
+  .transparent-section a.button {
+    color: #fff; }
   .transparent-section .cta {
     margin: 1em 0 0.5em;
     text-align: center;
@@ -370,8 +377,7 @@ section {
 /*-- Last Section -- */
 .extra-links {
   padding-bottom: 15px; }
-  .extra-links p {
-    text-align: center;
+  .extra-links .grid p {
     color: #fff; }
 
 /* -- @component SOCIAL ICONS -- */
