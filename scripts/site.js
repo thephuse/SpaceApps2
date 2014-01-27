@@ -6,17 +6,17 @@ $(function () {
   var $hero = $('#hero .container');
 
   $hero
-    .prepend($('<img/>').addClass('space-junk').addClass('shuttle').attr('src', '../images/background-shuttle.png').css({ top: '23%', left: '5%' }))
-    .prepend($('<img/>').addClass('space-junk').addClass('planet').attr('src', '../images/background-planet.png').css({ top: '60%', left: '90%' }))
-    .prepend($('<img/>').addClass('space-junk').addClass('satellite').attr('src', '../images/background-satellite.png').css({ top: '53%', left: '4%' }))
-    .prepend($('<img/>').addClass('space-junk').addClass('sputnik').attr('src', '../images/background-sputnik.png').css({ top: '23%', left: '89%' }));
+    .prepend($('<img/>').addClass('space-junk').addClass('shuttle').attr('src', 'images/background-shuttle.png').css({ top: '23%', left: '5%' }))
+    .prepend($('<img/>').addClass('space-junk').addClass('planet').attr('src', 'images/background-planet.png').css({ top: '60%', left: '90%' }))
+    .prepend($('<img/>').addClass('space-junk').addClass('satellite').attr('src', 'images/background-satellite.png').css({ top: '53%', left: '4%' }))
+    .prepend($('<img/>').addClass('space-junk').addClass('sputnik').attr('src', 'images/background-sputnik.png').css({ top: '23%', left: '89%' }));
 
   for (var i = 0; i < 10; i++)
   {
     $hero
-      .prepend($('<img/>').addClass('space-junk').addClass('star').attr('src', '../images/background-star.png')
+      .prepend($('<img/>').addClass('space-junk').addClass('star').attr('src', 'images/background-star.png')
         .css({ top: getRandomInt(1, 100) + '%', left: getRandomInt(1, 100) + '%', opacity: 0.3, width: getRandomInt(20, 122) }))
-      .prepend($('<img/>').addClass('space-junk').addClass('distant-planet').attr('src', '../images/background-circle.png')
+      .prepend($('<img/>').addClass('space-junk').addClass('distant-planet').attr('src', 'images/background-circle.png')
         .css({ top: getRandomInt(1, 100) + '%', left: getRandomInt(1, 100) + '%', width: getRandomInt(5, 36) }));
   }
 

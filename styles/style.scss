@@ -124,31 +124,32 @@ a {
 }
 
 h1, h2, h3, h4 {
-  margin: 0 0 1em 0;
   font-weight: bold;
   font-family: $fancyFont;
 }
 h1 {
   font-size: 2.5em;
-  font-weight: normal;
   line-height: 1.3em;
+  margin: 0;
 }
 h2 {
   color: $headingcolor;
   font-size: 1.9em;
-  margin: 0 0 0.4em;
-}
-h3 {
-}
-h4 {
+  margin: 0.5em 0 1em;
 }
 ul, li {
   margin: 0;
   padding: 0;
 }
 p {
-  margin: 0.5em 0;
+  margin: 0.5em 0 1.5em;
   line-height: 1.8;
+  font-size: 1.05em;
+}
+p.full {
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 textarea, input, button, .btn, select {
   color: $textcolor;
@@ -184,6 +185,7 @@ textarea, input, button, .btn, select {
 }
 .grid-wide {
   width: 70%;
+  padding-right: 75px;
 }
 .grid-half {
   width: 48%;
@@ -213,15 +215,15 @@ input.email {
   width: 40%;
 }
 .button {
-  padding: 12px 16px;;
+  padding: 12px 16px 11px;
   border-radius: 50px;
   border: 1px solid #9f4545;
-  box-shadow: 0 2px 2px 0 rgba(#000, 0.39), inset 0 1px 0 0 rgba(#fff, 0.41);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.39), inset 0 1px 0 0 rgba(255, 255, 255, 0.41), 0 0 0 2px rgba(#000, 0.2);
   @include gradient-v(#ff6f55, #dc4328);
   color: #fff;
-  text-shadow: 0 0 4px rgba(#000, 0.25);
+  text-shadow: 0 1px 1px rgba(#000, 0.3);
   text-transform: uppercase;
-  font-size: 0.8em;
+  font-size: 14px;
   font-weight: bold;
   cursor: pointer;
   @include transition(box-shadow 0.2s);
@@ -238,6 +240,8 @@ input.email {
 }
 #mc-embedded-subscribe {
   margin-left: -107px;
+  box-shadow: 0 2px 2px 0 rgba(#000, 0.39), inset 0 1px 0 0 rgba(#fff, 0.41);
+  font-size: 13px;
 }
 #mce-EMAIL {
   padding-right: 115px;
@@ -373,6 +377,10 @@ section {
   p {
     color: $grey;
   }
+  .subtitle {
+    color: #fff;
+    font-size: 1.1em;
+  }
   a {
     color: $bluegrey;
     @include transition(color 0.2s);
@@ -393,13 +401,15 @@ section {
   }
 }
 
-/*-- @component Homepage Hero -- */
+/*-- Homepage Hero -- */
 
 .main-headline {
   float: left;
+  font-weight: normal;
+  margin-bottom: 1.3em;
 }
 
-/*-- @component Homepage Graphics -- */
+/*-- Homepage Graphics -- */
 
 .graphic-row {
   @extend %clear;
@@ -411,6 +421,9 @@ section {
   p {
     font-size: 1.1em;
   }
+  h2 {
+    margin: 0 0 0.4em;
+  }
 
   &.reg {
     img { float: left; }
@@ -419,6 +432,16 @@ section {
   &.alt {
     img { float: right; }
     .description { margin-left: 0; }
+  }
+}
+
+
+/*-- Sponsors Hero -- */
+
+.buttons {
+  margin: 3em 0 2em;
+  .button {
+    margin: 0 5px;
   }
 }
 
@@ -495,5 +518,67 @@ section {
     border-left: 3px solid $textblue;
     width: 60px;
     font-size: 1.3em;
+  }
+}
+
+/* -- @component TESTIMONIAL -- */
+.testimonial {
+  margin-top: 2.5em;
+}
+.photo {
+  float: left;
+  margin-top: 10px;
+  & + cite {
+    margin-left: 100px;
+  }
+}
+.quote {
+  line-height: 1.8em;
+  font-style: italic;
+  color: $lightbluegrey;
+  margin-bottom: 30px;
+}
+.transparent-section .quote {
+  color: #fff;
+}
+cite {
+  display: block;
+  font-family: $fancyFont;
+  font-size: 0.8em;
+  line-height: 1.6;
+  text-transform: uppercase;
+  font-style: normal;
+  color: #b2b7bb;
+}
+.transparent-section cite {
+  color: $bluegrey;
+}
+
+
+/* -- @component STATS -- */
+.stats {
+  li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    color: #626f78;
+    line-height: 1.2em;
+    font-weight: bold;
+    font-size: 0.9em;
+    width: 230px;
+    text-align: left;
+    font-family: $fancyFont;
+    margin-bottom: 20px;
+  }
+  .stat {
+    margin-left: 90px;
+    padding-top: 15px;
+  }
+  .icon {
+    float: left;
+    padding: 15px;
+    border: 2px solid $red;
+    border-radius: 200px;
+    margin-right: 10px;
   }
 }
