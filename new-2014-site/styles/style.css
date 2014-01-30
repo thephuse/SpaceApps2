@@ -67,7 +67,7 @@ input, select {
 
 /* @group Mixins
 ----------------------------------------------- */
-.page-header .container, .page-footer .container, .main .container, .grid, .grid-half, .grid-third {
+.page-header .container, .page-footer .container, .main .container, .grid, .grid-half, .grid-third, .dropdown.active ul a {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -263,27 +263,65 @@ input.email {
 
 .page-nav ul {
   float: left;
-  margin: 25px 0 0 50px; }
+  margin: 0 0 0 50px; }
 .page-nav li {
   display: inline-block;
   text-transform: uppercase;
   font-size: 0.9em; }
-.page-nav a {
-  padding: 25px;
+.page-nav a, .page-nav span {
+  display: block;
+  margin: 5px;
+  padding: 20px;
   color: #7d8188;
   font-weight: bold;
+  cursor: pointer;
   -webkit-transition: color 0.2s;
   -moz-transition: color 0.2s;
   -ms-transition: color 0.2s;
   -o-transition: color 0.2s;
   transition: color 0.2s; }
-  .page-nav a.active, .page-nav a:hover {
+  .page-nav a.active, .page-nav span.active {
     color: #fff; }
-  .page-nav a.dropdown.active {
+  .page-nav a:hover, .page-nav span:hover {
     color: #f25337; }
-
-.menu-toggle {
+  .page-nav a.dropdown.active, .page-nav span.dropdown.active {
+    color: #f25337; }
+.page-nav .menu-toggle {
   display: none; }
+
+.dropdown ul {
+  display: none; }
+
+.dropdown.active {
+  position: relative;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 5px 5px 0 0; }
+  .dropdown.active > span {
+    color: #f25337; }
+  .dropdown.active ul {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 64px 0 0;
+    width: 100%; }
+    .dropdown.active ul li {
+      display: block; }
+      .dropdown.active ul li:last-of-type a {
+        border-radius: 0 0 5px 5px;
+        border-top: 1px solid rgba(255, 255, 255, 0.05); }
+    .dropdown.active ul a {
+      padding: 20px;
+      color: #fff;
+      margin: 0;
+      background: rgba(21, 24, 26, 0.98); }
+      .dropdown.active ul a:hover {
+        background: #000; }
+  .dropdown.active .sub {
+    padding-top: 5px;
+    text-transform: initial;
+    color: #7c868d; }
 
 /*-- @component FOOTER -- */
 .page-footer {

@@ -2,6 +2,20 @@ function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
+function moveElement(el, vert, horz) {
+  if (parseInt(el.css('top')) > -1 * el.height() && 
+      parseInt(el.css('top')) < $(window).height() + el.height() &&
+      parseInt(el.css('left')) > -1 * el.width() && 
+      parseInt(el.css('left')) < $(window).width() + el.width())
+  {
+    el.css({
+      top: parseInt(el.css('top')) + vert,
+      left: parseInt(el.css('left')) + horz
+    });
+  }
+}
+
+
 $(function () {
   var $hero = $('#hero .container');
 
@@ -21,23 +35,13 @@ $(function () {
   }
 
 
-  function moveElement(el, vert, horz) {
-    if (parseInt(el.css('top')) > -1 * el.height() && 
-        parseInt(el.css('top')) < $(window).height() + el.height() &&
-        parseInt(el.css('left')) > -1 * el.width() && 
-        parseInt(el.css('left')) < $(window).width() + el.width())
-    {
-      el.css({
-        top: parseInt(el.css('top')) + vert,
-        left: parseInt(el.css('left')) + horz
-      });
-    }
-  }
-
+  $('.dropdown').click(function() {
+    $(this).toggleClass('active');
+  });
 
   var intervalcounter = 0;
   window.setInterval(function () {
-    /* Increment "DATA COLLECTED BY NASA SINCE YOU LOADED THIS PAGE" */
+    /* Increment "DATA COLLECTED BY NASA SINCE YOU LOADED THIS PAGE" counter */
 
     // In the time it took you to read this sentence, NASA gathered approximately 1.73 gigabytes of data from our nearly 100 currently active missions! 
     // - See more at: http://open.nasa.gov/blog/2012/10/04/what-is-nasa-doing-with-big-data-today/#sthash.LtjIKsZ3.dpuf
