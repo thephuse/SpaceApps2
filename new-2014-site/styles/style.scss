@@ -632,3 +632,94 @@ cite {
     margin-right: 10px;
   }
 }
+
+
+/*-- @component TIMELINE -- */
+
+.timeline {
+  @extend %clear;
+  list-style: none;
+  float: left;
+  position: relative;
+  width: 100%;
+  margin-top: 30px;
+
+  &:after {
+    content: "";
+    display: block;
+    background: #525960;
+    width: 3px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: 0 auto ;
+    z-index: -2;
+  }
+
+  li {
+    @extend %clear;
+    @extend %box-sizing;
+    width: 50%;
+    font-size: 1.1em;
+    line-height: 1.5;
+    position: relative;
+    $circlesize: 36px;
+    margin-bottom: 20px;
+    text-align: left;
+
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      z-index: 10;
+      background: #1f262e;
+      width: $circlesize;
+      height: $circlesize;
+      margin: 0 auto 15px;
+      border-radius: (2 * $circlesize);
+      border: 3px solid #525960;
+      @extend %box-sizing;
+    }
+
+    &:nth-of-type(2n) {
+      float: right;
+      padding-left: 50px;
+      &:before {
+        left: - $circlesize/2;
+      }
+    }
+    &:nth-of-type(2n - 1) {
+      float: left;
+      padding-right: 40px;
+      &:before {
+        right: - $circlesize/2;
+      }
+    }
+  }
+  a {
+    display: block;
+    margin-top: 15px;
+    color: #2f91dc;
+    font-weight: bold;
+    font-family: $fancyFont;
+    text-transform: uppercase;
+    font-size: 15px;
+    opacity: 0.85;
+    @include transition(opacity 0.2s);
+    &:hover {
+      color: #2f91dc;
+      opacity: 1;
+    }
+  }
+}
+.icon-arrow-right {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(../images/icon-arrow-right.png);
+  vertical-align: bottom;
+  margin-left: 7px;
+}
