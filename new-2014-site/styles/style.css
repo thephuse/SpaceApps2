@@ -623,3 +623,37 @@ cite {
   background: url(../images/icon-arrow-right.png);
   vertical-align: bottom;
   margin-left: 7px; }
+
+/*-- @component SPONSORSHIP-LEVELS -- */
+.sponsorship-levels {
+  text-align: center; }
+  .sponsorship-levels thead th {
+    border: 2px solid #ebeced;
+    border-bottom: none;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 1.6em;
+    padding-bottom: 15px;
+    width: 20%; }
+  .sponsorship-levels thead .launch {
+    box-shadow: inset 0 0 0 4px #fff, inset 0 20px 0 0 #cacfd2;
+    color: #bbbebf;
+    border-radius: 10px 0 0 0; }
+  .sponsorship-levels thead .youth {
+    box-shadow: inset 0 0 0 4px #fff, inset 0 20px 0 0 #f5755f;
+    color: #f25337; }
+  .sponsorship-levels thead .orbit {
+    box-shadow: inset 0 0 0 4px #fff, inset 0 20px 0 0 #59a6e2;
+    color: #59a6e2; }
+  .sponsorship-levels thead .lead {
+    box-shadow: inset 0 0 0 4px #fff, inset 0 20px 0 0 #fdd281;
+    color: #fdd281; }
+  .sponsorship-levels thead img {
+    display: block;
+    margin: -34px auto 10px; }
+  .sponsorship-levels thead tbody th {
+    border: 1px solid #ebeced;
+    font-weight: normal; }
+  .sponsorship-levels td {
+    min-height: 120px;
+    min-width: 120px;
+    vertical-align: middle; }
