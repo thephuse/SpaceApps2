@@ -64,7 +64,7 @@ $(function () {
       moveElement($('.shuttle'), -1, -1);
     }
 
-    if (intervalcounter % 5 == 0)
+    if (intervalcounter % 3 == 0)
     {
       /* Fade stars in and out */
       var $stars = $('.star');
@@ -72,8 +72,8 @@ $(function () {
       {
         var $star = $stars.eq(i),
           opacity = $star.css('opacity'),
-          change = (opacity < 0 ? 0.1 : (opacity > 1 ? 0.9 : 1 + getRandomInt(-2, 2)/10));
-        $star.animate({opacity: change}, 390);
+          change = (opacity < 0 ? 0.1 : (opacity > 1 ? 0.9 : 1 + getRandomInt(-3, 3)/10));
+        $star.animate({opacity: change}, 190);
       }
     }
     intervalcounter++;
