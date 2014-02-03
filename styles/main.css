@@ -528,6 +528,34 @@ li.grid-wide-half:nth-of-type(odd) {
   z-index: 1040;
   background-color: rgba(0, 0, 0, 0.6); }
 
+/*-- @component NOTIFICATION -- */
+.body-with-notification {
+  padding-top: 55px; }
+
+.notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 20;
+  background: #fff;
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  box-shadow: 0 5px 0 0px rgba(0, 0, 0, 0.09); }
+  .notification .button {
+    background: #f24831;
+    text-decoration: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-left: 8px;
+    font-weight: bold;
+    white-space: nowrap; }
+    .notification .button:hover {
+      background: #eb290f; }
+    .notification .button:active {
+      background: #d8260e; }
+
 /*-- @component HEADER -- */
 .page-header {
   position: relative;
@@ -1128,6 +1156,15 @@ li.grid-wide-half:nth-of-type(odd) {
       display: none; }
 
 @media screen and (max-width: 1140px) {
+  .body-with-notification {
+    padding-top: 42px; }
+
+  .notification {
+    font-size: 13px;
+    padding: 10px; }
+    .notification .button {
+      padding: 5px 9px; }
+
   #challenges-filter {
     padding: 10px 0 0 0; }
 
@@ -1208,6 +1245,9 @@ li.grid-wide-half:nth-of-type(odd) {
   .partners p:first-child img {
     margin-top: 0; } }
 @media screen and (max-width: 768px) {
+  .notification span {
+    display: none; }
+
   #sponsors .grid-3, #organizers .grid-seventh .organizer-img, #organizers .grid-seventh .mentor-img, #organizers .grid-seventh .judge-img {
     text-align: center;
     margin-bottom: 20px; }

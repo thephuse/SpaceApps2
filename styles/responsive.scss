@@ -1,4 +1,16 @@
 @media screen and (max-width: 1140px) {
+
+  .body-with-notification {
+    padding-top: 42px;
+  }
+  .notification {
+    font-size: 13px;
+    padding: 10px;
+    .button {
+      padding: 5px 9px;
+    }
+  }
+
   #challenges-filter {
     padding: 10px 0 0 0;
   }
@@ -90,6 +102,10 @@
 }
 
 @media screen and (max-width: 768px) {
+
+  .notification span {
+    display: none;
+  }
 
   #sponsors .grid-3, #organizers .grid-seventh .organizer-img {
     text-align: center;
