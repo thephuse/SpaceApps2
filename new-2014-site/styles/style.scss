@@ -208,7 +208,8 @@ input.email {
   border-radius: 50px;
   border: 1px solid #000;
   box-shadow: 0 1px 1px 0 rgba(#fff, 0.24), inset 0 2px 0 0 rgba(#000, 0.27);
-  width: 40%;
+  width: 400px;
+  @extend %box-sizing;
 }
 .button {
   padding: 12px 20px 11px;
@@ -233,6 +234,7 @@ input.email {
 }
 #mc-embedded-subscribe-form {
   text-align: center;
+  white-space: nowrap;
 }
 #mc-embedded-subscribe {
   margin-left: -115px;
@@ -274,6 +276,31 @@ input.email {
     margin-top: 22px;
   }
 }
+
+.menu-toggle {
+  display: none;
+  margin: 50px -20px 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 10px 15px 10px 50px;
+  position: relative;
+  clear: both;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 11px;
+    left:15px;
+    width:16px;
+    height:2px;
+    border-top: 8px double #fff;
+    border-bottom: 3px solid #fff;
+    color: #fff;
+  }
+  &:hover {
+    background: rgba(255, 255, 255, 0.15);
+  }
+}
+
 .page-nav {
   ul {
     float: left;
@@ -538,6 +565,9 @@ section {
     &:hover {
       background-position: 0 -20px;
     }
+    &:first-of-type {
+      margin-left: 0;
+    }
   }
   .email {
     background: url(../images/social-email.png);
@@ -594,13 +624,16 @@ section {
 
 /* -- @component TESTIMONIAL -- */
 .testimonial {
-  margin-top: 2.5em;
+  padding-top: 2.5em;
 }
 .photo {
   float: left;
   margin-top: 10px;
   & + cite {
-    margin-left: 100px;
+    height: 100px;
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 15px;
   }
 }
 .quote {
@@ -657,6 +690,7 @@ cite {
 
 /*-- @component TIMELINE -- */
 
+$circlesize: 36px;
 .timeline {
   @extend %clear;
   list-style: none;
@@ -687,7 +721,6 @@ cite {
     font-size: 1.1em;
     line-height: 1.5;
     position: relative;
-    $circlesize: 36px;
     margin-bottom: 20px;
     text-align: left;
 
@@ -848,5 +881,247 @@ cite {
     margin: 10px 0 0;
     font-size: 0.85em;
     line-height: 1.6;
+  }
+}
+
+
+
+
+/* @group Responsive
+----------------------------------------------- */
+
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 2em;
+    margin-top: 20px;
+  }
+  .sponsorship-heading .right {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .page-nav {
+    ul {
+      margin: 0 0 0 28px;
+    }
+    li {
+      vertical-align: middle;
+    }
+    a {
+      padding: 16px 10px;
+      max-width: 90px;
+      text-align: center;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .main-headline {
+    float: none;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .counter-wrapper {
+    float: none;
+    margin: 0 auto;
+    width: 390px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  .grid-wide, .grid-narrow, .grid-third {
+    width: 100%;
+  }
+  .grid-wide {
+    padding-right: 0;
+  }
+  .white-section .grid-narrow {
+    border-top: 1px solid #eee;
+  }
+  .transparent-section .grid-narrow {
+    border-top: 1px solid rgba(#fff, 0.1);
+  }
+  .attributions {
+    float: none;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer .social-icons {
+    float: none;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 15px;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .page-nav {
+    width: 100%;
+    margin: 0 -20px;
+    ul {
+      display: none;
+      width: 100%;
+      margin-left: 25px;
+    }
+    li {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+    a {
+      padding: 10px 20px;
+      max-width: 100%;
+      background: rgba(255, 255, 255, 0.07);
+      &:hover {
+        background: rgba(255, 255, 255, 0.1);
+      }
+    }
+  }
+  .sponsorship-heading, .sponsorship-levels {
+    display: none;
+  }
+  .white-section {
+    .cta {
+      margin-top: 20px;
+      .button {
+        margin: 20px auto 0;
+        display: block;
+        text-align: center;
+        width: 100px;
+      }
+    }
+  }
+  .extra-links .grid p {
+    margin: 0;
+  }
+
+}
+
+@media screen and (max-width: 550px) {
+  .page-header .container, .page-footer .container, .main .container {
+    width: 100%;
+  }
+  input.email {
+    width: 99%;
+  }
+  .transparent-section .cta {
+    line-height: 1.2;
+    font-size: 1.7em;
+  }
+  .counter-wrapper {
+    padding: 10px 10px 9px;
+    width: 336px;
+  }
+  .counter .number {
+    font-size: 32px;
+    width: 273px;
+  }
+  .counter-wrapper .legend {
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 480px) {
+
+  h1 {
+    font-size: 1.5em;
+  }
+  h2 {
+    text-align: center;
+    font-size: 1.5em;
+  }
+  .page-header {
+    padding: 20px 0 20px;
+  }
+  section {
+    padding: 20px 0;
+  }
+  .logo img {
+    width: 85px;
+  }
+  .page-header .social-icons {
+    margin-top: 10px;
+  }
+  .counter-wrapper {
+    width: 100%;
+    padding: 15px 19px;
+    margin: 0 -19px;
+    border-radius: 0;
+    margin-bottom: 20px;
+  }
+  .counter-wrapper .legend {
+    font-size: 10px;
+  }
+  .counter {
+    margin: 0 -7px 13px;
+  }
+  .counter .number {
+    font-size: 28px;
+    width: 225px;
+    line-height: 50px;
+  }
+  .counter .units {
+    width: 36px;
+    padding-top: 2px;
+    line-height: 48px;
+    border-color: #313841;
+  }
+  #mc-embedded-subscribe {
+    margin-left: -79px;
+    padding: 12px 7px 11px;
+    font-size: 11px;
+  }
+  #mce-EMAIL {
+    padding: 15px 76px 15px 12px;
+    font-size: 0.8em;
+  }
+
+  .graphic-row {
+   margin: 0;
+  }
+  .graphic-row p {
+    font-size: 1em;
+  }
+  .graphic-row.reg img, .graphic-row.alt img {
+    float: none;
+    margin: 0 auto 10px;
+    display: block;
+  }
+  .graphic-row .description {
+    margin: 0;
+  }
+  .attributions a {
+    display: block;
+    margin: 0;
+  }
+
+  .timeline {
+    &:after {
+      margin-left: 30px;
+    }
+    li {
+      width: 92%;
+      margin-left: 31px;
+      &:nth-of-type(2n) {
+        float: none;
+      }
+      &:nth-of-type(2n - 1) {
+        float: none;
+        padding-left: 50px;
+        padding-right: 0px;
+        &:before {
+          left: - $circlesize/2;
+          right: auto;
+        }
+      }
+    }
+  }
+  .timeline-button {
+    float: left;
   }
 }

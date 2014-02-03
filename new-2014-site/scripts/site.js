@@ -1,3 +1,11 @@
+function responsiveNav() {
+  $(".menu-toggle").click(function(e){
+    e.preventDefault();
+    $(".page-nav ul").toggle();
+    $(this).toggleClass("open");
+  });
+}
+
 function getRandomInt(min, max) {
   return Math.floor(Math.random() * (max - min + 1) + min);
 }
@@ -17,6 +25,8 @@ function moveElement(el, vert, horz) {
 
 
 $(function () {
+  responsiveNav();
+
   var $hero = $('#hero .container');
 
   $hero
@@ -40,6 +50,7 @@ $(function () {
   });
 
   var intervalcounter = 0;
+  
   window.setInterval(function () {
     /* Increment "DATA COLLECTED BY NASA SINCE YOU LOADED THIS PAGE" counter */
 
