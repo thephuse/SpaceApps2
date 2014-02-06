@@ -237,6 +237,7 @@ input.email {
   padding-right: 115px; }
 
 .thank-you {
+  display: none;
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
   padding: 15px 0;

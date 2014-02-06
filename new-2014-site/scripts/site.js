@@ -27,6 +27,12 @@ function moveElement(el, vert, horz) {
 $(function () {
   responsiveNav();
 
+  if(document.URL.match(/\?(.*)/)[1] == 'thank-you')
+  {
+    $('.thank-you').show();
+    $('#mc_embed_signup').hide();
+  }
+
   var $hero = $('#hero .container');
 
   $hero
