@@ -240,7 +240,7 @@ input.email {
   display: none;
   text-align: center;
   background: rgba(255, 255, 255, 0.05);
-  padding: 15px 0;
+  padding: 15px 5px;
   border-radius: 10px; }
   .thank-you h2 {
     font-weight: normal;
