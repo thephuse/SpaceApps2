@@ -245,6 +245,21 @@ input.email {
   padding-right: 115px;
 }
 
+.thank-you {
+  text-align: center;
+  background: rgba(#fff, 0.05);
+  padding: 15px 0;
+  border-radius: 10px;
+  h2 {
+    font-weight: normal;
+    margin: 0;
+    color: $grey;
+  }
+  p {
+    margin: 7px 0 0;
+  }
+}
+
 
 /* @group Hero Backdrop
 ----------------------------------------------- */

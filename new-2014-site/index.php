@@ -60,12 +60,21 @@
       <p class="cf">Every second, NASA gathers close to 1 GB of data about our universe. Let's put that data to good use. The NASA International Space Apps Challenge is a global hackathon aimed at making that data fascinating, relevant and empowering. On April 11-13th, 150 developers, makers, engineers and entrepreneurs will attack 25 NASA designed challenges, coming up with solutions silly to serious, fantastical to feasible. Build a team, pick a challenge, and leverage your access to a extraordinary mentors roster featuring past and present astronauts, aerospace engineers, and designers.</p>
       <p class="cta">Be the first to know when registration opens</p>
       <!-- Begin MailChimp Signup Form -->
+      <?php if (isset($_GET['thank-you'])): ?>
+      <div class="thank-you">
+        <h2>Thank you for signing up!</h2>
+        <p>A confirmation email has been sent to your account.</p>
+      </div>
+      <?php else: ?>
       <div id="mc_embed_signup">
-        <form action="http://thephuse.us1.list-manage.com/subscribe/post?u=f3c964da333bc05836b767d3a&amp;id=7bc2d0396e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <input type="email" value="" name="EMAIL" placeholder="Type your email address here" class="required email" id="mce-EMAIL">
+      <form action="http://spaceappstoronto.us1.list-manage1.com/subscribe/post" class="validate" id="mc-embedded-subscribe-form" method="POST">
+          <input type="hidden" name="u" value="f3c964da333bc05836b767d3a">
+          <input type="hidden" name="id" value="7bc2d0396e">
+          <input type="email" value="" name="MERGE0" placeholder="Type your email address here" class="required email" id="mce-EMAIL">
           <input type="submit" value="Notify Me" name="subscribe" id="mc-embedded-subscribe" class="button">
         </form>
       </div>
+      <?php endif; ?>
       <!--End mc_embed_signup-->
     </div>
   </section>
