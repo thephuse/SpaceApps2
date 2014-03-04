@@ -534,6 +534,10 @@ section {
 .graphic-row {
   @extend %clear;
   margin: 30px 0;
+  &.youth {
+    margin: 0 auto;
+    max-width: 800px;
+  }
 
   .description {
     margin: 0 180px;

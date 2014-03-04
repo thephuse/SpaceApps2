@@ -465,6 +465,9 @@ section {
 /*-- Homepage Graphics -- */
 .graphic-row {
   margin: 30px 0; }
+  .graphic-row.youth {
+    margin: 0 auto;
+    max-width: 800px; }
   .graphic-row .description {
     margin: 0 180px; }
   .graphic-row p {
