@@ -702,17 +702,17 @@ cite {
       border-radius: 0 8px 0 0;
       border-width: 2px 2px 0 2px; }
   .sponsorship-levels thead .launch {
-    box-shadow: inset 0 0 0 4px #fff, inset 0 20px 0 0 #cacfd2;
-    color: #bbbebf; }
-  .sponsorship-levels thead .youth {
-    box-shadow: inset 0 0 0 4px #fff, inset 0 20px 0 0 #f5755f;
-    color: #f25337; }
+    box-shadow: inset 0 0 0 4px #fff, inset 0 20px 0 0 #fdd281;
+    color: #fdd281; }
   .sponsorship-levels thead .orbit {
     box-shadow: inset 0 0 0 4px #fff, inset 0 20px 0 0 #59a6e2;
     color: #59a6e2; }
+  .sponsorship-levels thead .discovery {
+    box-shadow: inset 0 0 0 4px #fff, inset 0 20px 0 0 #cacfd2;
+    color: #bbbebf; }
   .sponsorship-levels thead .lead {
-    box-shadow: inset 0 0 0 4px #fff, inset 0 20px 0 0 #fdd281;
-    color: #fdd281; }
+    box-shadow: inset 0 0 0 4px #fff, inset 0 20px 0 0 #f5755f;
+    color: #f25337; }
   .sponsorship-levels thead img {
     display: block;
     margin: -34px auto 10px; }
