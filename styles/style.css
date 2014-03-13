@@ -462,6 +462,9 @@ section {
   font-weight: normal;
   margin-bottom: 1.3em; }
 
+.button-cta .button {
+  margin: 0 10px; }
+
 /*-- Homepage Graphics -- */
 .graphic-row {
   margin: 30px 0; }
