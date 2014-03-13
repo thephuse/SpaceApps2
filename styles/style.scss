@@ -22,7 +22,7 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
   background-image: linear-gradient(to bottom, $start 0%, $stop $stopdistance, $end 100%);
 }
 
-@mixin transition($transition...) {  
+@mixin transition($transition...) {
   -webkit-transition: $transition;
   -moz-transition: $transition;
   -ms-transition: $transition;
@@ -37,7 +37,7 @@ abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,d
   @media all and (-webkit-min-device-pixel-ratio : 1.5) {
     background-image: url($x2img);
     background-size: $w $h;
-  }  
+  }
 }
 
 %box-sizing {
@@ -345,7 +345,7 @@ input.email {
       color: $red;
     }
   }
-  
+
   .menu-toggle {
     display: none;
   }
@@ -442,8 +442,8 @@ input.email {
       top: 12px;
     }
     &:after {
-       right: 0;  
-       left: auto; 
+       right: 0;
+       left: auto;
     }
   }
 }
@@ -527,6 +527,11 @@ section {
   float: left;
   font-weight: normal;
   margin-bottom: 1.3em;
+}
+.button-cta {
+  .button {
+    margin: 0 10px;
+  }
 }
 
 /*-- Homepage Graphics -- */
