@@ -166,6 +166,9 @@ textarea, input, button, .btn, select {
   @extend %box-sizing;
   @extend %clear;
 }
+.wufoo.container {
+  max-width: 800px;
+}
 
 .grid {
   display: block;
