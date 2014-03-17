@@ -153,6 +153,9 @@ textarea, input, button, .btn, select {
   margin: 0 auto;
   position: relative; }
 
+.wufoo.container {
+  max-width: 800px; }
+
 .grid {
   display: block;
   float: left;
