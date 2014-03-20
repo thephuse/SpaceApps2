@@ -1000,7 +1000,7 @@ cite {
       float: none;
       margin: 0 auto; }
 
-  .grid-wide, .grid-narrow, .grid-third, .grid-half {
+  .grid-wide, .grid-narrow, .grid-third, .grid-half, .grid-fourth {
     width: 100%; }
 
   .grid-wide {
