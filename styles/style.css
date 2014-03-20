@@ -1150,6 +1150,10 @@ cite {
     display: block;
     margin: 0; }
 
+  .button-cta .button {
+    font-size: 15px;
+    padding: 11px 20px; }
+
   .timeline:after {
     margin-left: 30px; }
   .timeline li {
