@@ -1399,6 +1399,9 @@ $schedulecirclesize: 21px;
     font-size: 15px;
     padding: 11px 20px;
   }
+  .event-details .detail:last-child {
+    border-left: none;
+  }
   .timeline {
     &:after {
       margin-left: 30px;
