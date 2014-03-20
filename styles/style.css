@@ -1057,7 +1057,10 @@ cite {
       width: 100px; }
 
   .extra-links .grid p {
-    margin: 0; } }
+    margin: 0; }
+
+  .half-container.event, .half-container.venue {
+    margin-bottom: -20px; } }
 @media screen and (max-width: 550px) {
   .page-header .container, .page-footer .container, .main .container {
     width: 100%; }
