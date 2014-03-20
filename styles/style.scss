@@ -1227,6 +1227,7 @@ $schedulecirclesize: 21px;
     .content {
       float: none;
       margin: 0 auto;
+      box-sizing: border-box;
     }
   }
   .grid-wide, .grid-narrow, .grid-third, .grid-half, .grid-fourth {

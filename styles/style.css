@@ -998,7 +998,8 @@ cite {
     width: 100%; }
     .main .half-container .content {
       float: none;
-      margin: 0 auto; }
+      margin: 0 auto;
+      box-sizing: border-box; }
 
   .grid-wide, .grid-narrow, .grid-third, .grid-half, .grid-fourth {
     width: 100%; }
