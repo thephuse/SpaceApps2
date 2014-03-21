@@ -461,6 +461,15 @@ section {
     color: #fff;
     font-size: 1.1em; }
   .transparent-section a {
+    color: #7c868d;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s; }
+    .transparent-section a:hover {
+      color: #fff; }
+  .transparent-section a.link {
     color: #fff;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
     text-decoration: none;
@@ -469,7 +478,7 @@ section {
     -ms-transition: border-color 0.2s;
     -o-transition: border-color 0.2s;
     transition: border-color 0.2s; }
-    .transparent-section a:hover {
+    .transparent-section a.link:hover {
       border-bottom: 1px solid #fff; }
   .transparent-section a.button {
     color: #fff; }
@@ -501,7 +510,7 @@ section {
     text-decoration: none; }
   .button-cta .sub-text .icon {
     vertical-align: text-top;
-    margin-left: 6px; }
+    padding-left: 6px; }
 
 /*-- Homepage Graphics -- */
 .graphic-row {
