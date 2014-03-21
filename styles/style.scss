@@ -532,6 +532,14 @@ section {
     font-size: 1.1em;
   }
   a {
+    color: $bluegrey;
+    @include transition(color 0.2s);
+    &:hover {
+      color: #fff;
+    }
+
+  }
+  a.link {
     color: #fff;
     border-bottom: 1px solid rgba(#fff, 0);
     text-decoration: none;
@@ -577,7 +585,7 @@ section {
     }
     .icon {
       vertical-align: text-top;
-      margin-left: 6px;
+      padding-left: 6px;
     }
   }
 }
