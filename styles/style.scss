@@ -333,6 +333,7 @@ input.email {
   margin: 50px -20px 0;
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
+  text-decoration: none;
   padding: 10px 15px 10px 50px;
   position: relative;
   clear: both;
@@ -348,6 +349,7 @@ input.email {
     color: #fff;
   }
   &:hover {
+    color: #fff;
     background: rgba(255, 255, 255, 0.15);
   }
 }
@@ -626,6 +628,9 @@ section {
 .sponsor, .supporter {
   display: inline-block;
   margin: 0 7px 10px;
+  img {
+    max-width: 100%;
+  }
 }
 
 /*-- Homepage Organizers -- */
@@ -798,6 +803,7 @@ section {
   display: inline-block;
   .detail {
     display: inline-block;
+    @extend %box-sizing;
     padding: 10px 30px 12px;
     vertical-align: bottom;
     font-size: 1.25em;
@@ -1253,7 +1259,7 @@ $schedulecirclesize: 21px;
       vertical-align: middle;
     }
     a {
-      padding: 16px 10px;
+      padding: 22px 10px;
       max-width: 90px;
       text-align: center;
     }
@@ -1272,15 +1278,29 @@ $schedulecirclesize: 21px;
     width: 390px;
     margin-bottom: 30px;
   }
+  .challenges li {
+    width: 49%;
+  }
+  .page-nav li:first-child {
+    display: none;
+  }
+  .rsvp-button {
+    margin: 20px 0 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
   .main .half-container {
     width: 100%;
+    margin: 0;
     .content {
       float: none;
       margin: 0 auto;
+      max-width: none;
       box-sizing: border-box;
+    }
+    &:last-of-type {
+      margin-bottom: -40px;
     }
   }
   .grid-wide, .grid-narrow, .grid-third, .grid-half, .grid-fourth {
@@ -1353,12 +1373,27 @@ $schedulecirclesize: 21px;
   .half-container.event, .half-container.venue {
     margin-bottom: -20px;
   }
-
+  .callout {
+    margin-bottom: 40px;
+  }
+  .schedule {
+    margin-top: -16px;
+  }
+  .event-details .detail {
+    width: 100%;
+    &:last-child {
+      border-left: none;
+      border-top: 2px solid #e2e5e6;
+    }
+  }
 }
 
 @media screen and (max-width: 550px) {
   .page-header .container, .page-footer .container, .main .container {
     width: 100%;
+  }
+  .main .half-container p {
+    line-height: 1.4;
   }
   input.email {
     width: 99%;
@@ -1377,6 +1412,9 @@ $schedulecirclesize: 21px;
   }
   .counter-wrapper .legend {
     font-size: 11px;
+  }
+  .challenges li {
+    width: 100%;
   }
 }
 @media screen and (max-width: 480px) {
@@ -1455,9 +1493,6 @@ $schedulecirclesize: 21px;
   .button-cta .button {
     font-size: 15px;
     padding: 11px 20px;
-  }
-  .event-details .detail:last-child {
-    border-left: none;
   }
   .timeline {
     &:after {

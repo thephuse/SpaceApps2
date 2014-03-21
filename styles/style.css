@@ -67,7 +67,7 @@ input, select {
 
 /* @group Mixins
 ----------------------------------------------- */
-.page-header .container, .page-footer .container, .main .container, .half-container, .grid, input.email, .dropdown.active ul a, .timeline li, .timeline li:before, .schedule li, .schedule li:before, .sponsorship-levels th, .sponsorship-levels td {
+.page-header .container, .page-footer .container, .main .container, .half-container, .grid, input.email, .dropdown.active ul a, .event-details .detail, .timeline li, .timeline li:before, .schedule li, .schedule li:before, .sponsorship-levels th, .sponsorship-levels td {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -303,6 +303,7 @@ input.email {
   margin: 50px -20px 0;
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
+  text-decoration: none;
   padding: 10px 15px 10px 50px;
   position: relative;
   clear: both; }
@@ -317,6 +318,7 @@ input.email {
     border-bottom: 3px solid #fff;
     color: #fff; }
   .menu-toggle:hover {
+    color: #fff;
     background: rgba(255, 255, 255, 0.15); }
 
 .page-nav ul {
@@ -537,6 +539,8 @@ section {
 .sponsor, .supporter {
   display: inline-block;
   margin: 0 7px 10px; }
+  .sponsor img, .supporter img {
+    max-width: 100%; }
 
 /*-- Homepage Organizers -- */
 .organizer {
@@ -1030,7 +1034,7 @@ cite {
   .page-nav li {
     vertical-align: middle; }
   .page-nav a {
-    padding: 16px 10px;
+    padding: 22px 10px;
     max-width: 90px;
     text-align: center; } }
 @media screen and (max-width: 900px) {
@@ -1043,14 +1047,27 @@ cite {
     float: none;
     margin: 0 auto;
     width: 390px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; }
+
+  .challenges li {
+    width: 49%; }
+
+  .page-nav li:first-child {
+    display: none; }
+
+  .rsvp-button {
+    margin: 20px 0 0; } }
 @media screen and (max-width: 768px) {
   .main .half-container {
-    width: 100%; }
+    width: 100%;
+    margin: 0; }
     .main .half-container .content {
       float: none;
       margin: 0 auto;
+      max-width: none;
       box-sizing: border-box; }
+    .main .half-container:last-of-type {
+      margin-bottom: -40px; }
 
   .grid-wide, .grid-narrow, .grid-third, .grid-half, .grid-fourth {
     width: 100%; }
@@ -1112,10 +1129,25 @@ cite {
     margin: 0; }
 
   .half-container.event, .half-container.venue {
-    margin-bottom: -20px; } }
+    margin-bottom: -20px; }
+
+  .callout {
+    margin-bottom: 40px; }
+
+  .schedule {
+    margin-top: -16px; }
+
+  .event-details .detail {
+    width: 100%; }
+    .event-details .detail:last-child {
+      border-left: none;
+      border-top: 2px solid #e2e5e6; } }
 @media screen and (max-width: 550px) {
   .page-header .container, .page-footer .container, .main .container {
     width: 100%; }
+
+  .main .half-container p {
+    line-height: 1.4; }
 
   input.email {
     width: 99%; }
@@ -1133,7 +1165,10 @@ cite {
     width: 273px; }
 
   .counter-wrapper .legend {
-    font-size: 11px; } }
+    font-size: 11px; }
+
+  .challenges li {
+    width: 100%; } }
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 1.5em; }
@@ -1208,9 +1243,6 @@ cite {
   .button-cta .button {
     font-size: 15px;
     padding: 11px 20px; }
-
-  .event-details .detail:last-child {
-    border-left: none; }
 
   .timeline:after {
     margin-left: 30px; }
