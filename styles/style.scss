@@ -532,10 +532,12 @@ section {
     font-size: 1.1em;
   }
   a {
-    color: $bluegrey;
-    @include transition(color 0.2s);
+    color: #fff;
+    border-bottom: 1px solid rgba(#fff, 0);
+    text-decoration: none;
+    @include transition(border-color 0.2s);
     &:hover {
-      color: #fff;
+      border-bottom: 1px solid #fff;
     }
   }
   a.button {
@@ -676,9 +678,52 @@ section {
   }
 }
 
-/*-- Homepage Schedule -- */
+/*-- Homepage Challenges -- */
 
+.hashtag {
+  color: $bluegrey;
+  margin-top: 0;
+}
+.challenges {
+  h3 {
+    margin-bottom: 0;
+  }
+  li {
+    display: inline-block;
+    width: 33%;
+    margin-bottom: 15px;
+    a {
+      display: block;
+      position: relative;
+      border: 2px solid rgba(#fff, 0.2);
+      border-radius: 3px;
+      text-align: left;
+      padding: 15px 30px 15px 45px;
+      color: #fff;
+      text-decoration: none;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      @include transition(all 0.2s);
 
+      &:hover {
+        border: 2px solid #fff;
+        background-color: rgba(#fff, 0.1);
+      }
+
+      &:before {
+        display: block;
+        content: "";
+        background: url(../images/icon-star.png);
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        left: 15px;
+        top: 12px;
+      }
+    }
+  }
+}
 
 /*-- Sponsors Hero -- */
 
