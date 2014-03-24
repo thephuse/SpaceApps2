@@ -67,17 +67,17 @@ input, select {
 
 /* @group Mixins
 ----------------------------------------------- */
-.page-header .container, .page-footer .container, .main .container, .half-container, .grid, input.email, .dropdown.active ul a, .event-details .detail, .timeline li, .timeline li:before, .schedule li, .schedule li:before, .sponsorship-levels th, .sponsorship-levels td {
+.page-header .container, .page-footer .container, .main .container, .half-container, .grid, input.email, .dropdown.active ul a, .event-details .detail, .timeline li, .timeline li:before, .schedule li, .schedule li:before, .sponsorship-levels th, .sponsorship-levels td, .modal aside, .modal .button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.cf, .page-header .container, .page-footer .container, .main .container, .graphic-row, .timeline, .timeline li, .schedule ul, .schedule li, .sponsorship-heading {
+.cf, .modal, .page-header .container, .page-footer .container, .main .container, .graphic-row, .timeline, .timeline li, .schedule ul, .schedule li, .sponsorship-heading {
   clear: both; }
-  .cf:before, .page-header .container:before, .page-footer .container:before, .main .container:before, .graphic-row:before, .timeline:before, .timeline li:before, .schedule ul:before, .schedule li:before, .sponsorship-heading:before, .cf:after, .page-header .container:after, .page-footer .container:after, .main .container:after, .graphic-row:after, .timeline:after, .timeline li:after, .schedule ul:after, .schedule li:after, .sponsorship-heading:after {
+  .cf:before, .modal:before, .page-header .container:before, .page-footer .container:before, .main .container:before, .graphic-row:before, .timeline:before, .timeline li:before, .schedule ul:before, .schedule li:before, .sponsorship-heading:before, .cf:after, .modal:after, .page-header .container:after, .page-footer .container:after, .main .container:after, .graphic-row:after, .timeline:after, .timeline li:after, .schedule ul:after, .schedule li:after, .sponsorship-heading:after {
     content: "";
     display: table; }
-  .cf:after, .page-header .container:after, .page-footer .container:after, .main .container:after, .graphic-row:after, .timeline:after, .timeline li:after, .schedule ul:after, .schedule li:after, .sponsorship-heading:after {
+  .cf:after, .modal:after, .page-header .container:after, .page-footer .container:after, .main .container:after, .graphic-row:after, .timeline:after, .timeline li:after, .schedule ul:after, .schedule li:after, .sponsorship-heading:after {
     clear: both; }
 
 /* @group Variables
@@ -538,7 +538,7 @@ section {
 /*-- Homepage Sponsors -- */
 .sponsor, .supporter {
   display: inline-block;
-  margin: 0 7px 10px; }
+  margin: 0 7px 14px; }
   .sponsor img, .supporter img {
     max-width: 100%; }
 
@@ -1018,6 +1018,76 @@ cite {
     margin: 10px 0 0;
     font-size: 0.85em;
     line-height: 1.6; }
+
+/*-- @component MODAL -- */
+.modal {
+  opacity: 0;
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  z-index: 1050;
+  width: 820px;
+  margin-left: -410px;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  overflow: hidden;
+  text-align: left;
+  min-height: 350px; }
+  .modal .btn-small {
+    color: #fff; }
+  .modal .modal-close {
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    color: #999;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none; }
+    .modal .modal-close:hover {
+      color: #1d2228; }
+  .modal aside {
+    background: #1d2228;
+    padding: 20px;
+    padding-bottom: 400px;
+    margin-bottom: -400px;
+    width: 200px;
+    float: left;
+    text-align: center; }
+    .modal aside img {
+      border-radius: 50%; }
+  .modal .button {
+    display: inline-block;
+    margin-top: 15px;
+    width: 100%; }
+  .modal .modal-main {
+    padding: 25px;
+    margin-left: 200px; }
+    .modal .modal-main header {
+      border-bottom: 2px solid #d9d9d9;
+      padding-bottom: 20px;
+      margin-bottom: 20px; }
+    .modal .modal-main h3 {
+      color: #f25337;
+      margin: 0 0 15px; }
+    .modal .modal-main h4 {
+      color: #1d2228;
+      margin: 0; }
+    .modal .modal-main p {
+      color: #707b83; }
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: rgba(0, 0, 0, 0.6); }
 
 /* @group Responsive
 ----------------------------------------------- */

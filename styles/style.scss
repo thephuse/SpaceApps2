@@ -627,7 +627,7 @@ section {
 
 .sponsor, .supporter {
   display: inline-block;
-  margin: 0 7px 10px;
+  margin: 0 7px 14px;
   img {
     max-width: 100%;
   }
@@ -1233,6 +1233,94 @@ $schedulecirclesize: 21px;
   }
 }
 
+
+
+/*-- @component MODAL -- */
+
+.modal {
+  opacity: 0;
+  position: fixed;
+  top: -100%;
+  left: 50%;
+  z-index: 1050;
+  width: 820px;
+  margin-left: -410px;
+  background-color: #ffffff;
+  outline: none;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+  border-radius: 2px;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  @extend .cf;
+  overflow: hidden;
+  text-align: left;
+  min-height: 350px;
+  .btn-small {
+    color: #fff;
+  }
+  .modal-close {
+    position: absolute;
+    top: 6px;
+    right: 12px;
+    color: #999;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    &:hover {
+      color: $darkblue;
+    }
+  }
+  aside {
+    background: $darkblue;
+    padding: 20px;
+    padding-bottom: 400px;
+    margin-bottom: -400px;
+    width: 200px;
+    float: left;
+    text-align: center;
+    @extend %box-sizing;
+    img {
+      border-radius: 50%;
+    }
+  }
+  .button {
+    display: inline-block;
+    margin-top: 15px;
+    width: 100%;
+    @extend %box-sizing;
+  }
+  .modal-main {
+    padding: 25px;
+    margin-left: 200px;
+    header {
+      border-bottom: 2px solid #d9d9d9;
+      padding-bottom: 20px;
+      margin-bottom: 20px;
+    }
+    h3 {
+      color: $red;
+      margin: 0 0 15px;
+    }
+    h4 {
+      color: $darkblue;
+      margin: 0;
+    }
+    p {
+      color: $textcolor;
+    }
+  }
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1040;
+  background-color: rgba(0,0,0,0.6);
+}
 
 
 

@@ -264,8 +264,12 @@
       <div class="supporter">
         <a href="http://www.theflyingmonkeys.ca/" target="_blank"><img src="images/logo_flyingmonkeys.png" alt="Flying Monkeys Craft Brewery"/></a>
       </div>
+      <br/>
       <div class="supporter">
         <a href="https://cleverhost.ca/" target="_blank"><img src="images/logo_cleverhost.png" alt="Cleverhost"/></a>
+      </div>
+      <div class="supporter">
+        <a href="https://ideacouture.com/" target="_blank"><img src="images/logo_ideacouture.png" alt="Idea Couture"/></a>
       </div>
 
     </div>
@@ -288,16 +292,67 @@
       <h2>Organizers</h2>
 
       <div class="organizer">
-        <a href="http://twitter.com/jamescosta" class="org-photo"><img src="images/photo_james.png"/></a>
+        <a href="#" class="org-photo modal-trigger"><img src="images/photo_james.png"/></a>
         <h4>James Costa</h4>
+        <!-- @compontent MODAL -->
+        <div class="modal bio">
+          <aside>
+            <img src="images/photo_james.png"/>
+            <a class="button" target="_blank" href="https://twitter.com/jamescosta">Twitter</a>
+            <a class="button" target="_blank" href="http://www.thephuse.com/">Website</a>
+          </aside>
+          <div class="modal-main">
+            <a href="#" class="modal-close">&times;</a>
+            <header>
+              <h3>James Costa</h3>
+              <h4>Founder &amp; creative director at The Phuse</h4>
+            </header>
+            <p>James Costa works with The Phuse, a team of designers and developers, to craft websites, interfaces, and brands. In his spare time, James co-founded Positive Gear, an organization that speaks and works with youth to empower them towards positive change, and is the Director of Marketing for the Trek for Teens Foundation that raises funds and awareness for youth homelessness in Toronto.</p>
+          </div>
+        </div>
       </div>
+
       <div class="organizer">
-        <a href="http://twitter.com/jmonets" class="org-photo"><img src="images/photo_jonathan.png"/></a>
+        <a href="#" class="org-photo modal-trigger"><img src="images/photo_jonathan.png"/></a>
         <h4>Jonathan Moneta</h4>
+        <!-- @compontent MODAL -->
+        <div class="modal bio">
+          <aside>
+            <img src="images/photo_jonathan.png"/>
+            <a class="button" target="_blank" href="https://twitter.com/jmonets">Twitter</a>
+          </aside>
+          <div class="modal-main">
+            <a href="#" class="modal-close">&times;</a>
+            <header>
+              <h3>Jonathan Moneta</h3>
+              <h4>Co-Founder at MAKELAB</h4>
+            </header>
+            <p>Jonathan is co-founder of MAKELAB, a hands-on 3D printing studio in Toronto. At MAKELAB, Jonathan leads a team of industrial design and event staff, creating experiences with 3D printing and digital tools at their core &mdash; for the public, for private events, and for brands. Jonathan is also Partnerships Director for Toronto Mini Maker Faire, an annual do-it-yourself technology festival and massive show and tell.</p>
+          </div>
+        </div>
       </div>
+
       <div class="organizer">
-        <a href="http://twitter.com/emmamwoolley" class="org-photo"><img src="images/photo_emma.png"/></a>
+        <a href="#" class="org-photo modal-trigger"><img src="images/photo_emma.png"/></a>
         <h4>Emma Woolley</h4>
+        <!-- @compontent MODAL -->
+        <div class="modal bio">
+          <aside>
+            <img src="images/photo_emma.png"/>
+            <a class="button" target="_blank" href="https://twitter.com/emmamwoolley">Twitter</a>
+            <a class="button" target="_blank" href="http://www.thephuse.com/">Website</a>
+          </aside>
+          <div class="modal-main">
+            <a href="#" class="modal-close">&times;</a>
+            <header>
+              <h3>Emma Woolley</h3>
+              <h4>Community Manager at The Phuse</h4>
+            </header>
+            <p>Emma works with stellar designers and developers at The Phuse, a distributed team that crafts websites, interfaces and brands. Her job involves a bit copywriting, some marketing and a lot of animated gifs. She's also a freelance writer, often focusing on how technology, social justice and culture intersect.</p>
+
+            <p>Passionate about all things space, she's over the moon about joining this year's NASA International Space Apps Challenge Toronto team as a communications lead and Beer & Post-Its organizer.</p>
+          </div>
+        </div>
       </div>
 
     </div>
@@ -373,6 +428,8 @@
       </div>
     </div>
   </footer>
+  
+  <div id="overlay"></div>
 
 <!--
   <script src="scripts/main.js"></script>
@@ -386,6 +443,7 @@
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
     })();
   </script>-->
+
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="./scripts/site.js?v=2"></script>
 </body>
