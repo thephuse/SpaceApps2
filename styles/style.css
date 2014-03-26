@@ -498,6 +498,12 @@ section {
   font-weight: normal;
   margin-bottom: 1.3em; }
 
+.subtitle {
+  font-family: "brandon-grotesque", sans-serif;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: #272c33; }
+
 .button-cta .button {
   margin: 0 10px;
   font-size: 20px;
@@ -541,6 +547,10 @@ section {
   margin: 0 7px 14px; }
   .sponsor img, .supporter img {
     max-width: 100%; }
+
+.white-section .sponsor img, .white-section .supporter img {
+  border: 2px solid #e2e5e6;
+  border-radius: 5px; }
 
 /*-- Homepage Organizers -- */
 .organizer {

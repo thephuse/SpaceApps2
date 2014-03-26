@@ -570,6 +570,12 @@ section {
   font-weight: normal;
   margin-bottom: 1.3em;
 }
+.subtitle {
+  font-family: $fancyFont;
+  font-weight: 500;
+  font-size: 1.3em;
+  color: $textblue;
+}
 .button-cta {
   .button {
     margin: 0 10px;
@@ -632,7 +638,14 @@ section {
     max-width: 100%;
   }
 }
-
+.white-section {
+  .sponsor, .supporter {
+    img {
+      border: 2px solid #e2e5e6;
+      border-radius: 5px;
+    }
+  }
+}
 /*-- Homepage Organizers -- */
 
 .organizer {
