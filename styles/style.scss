@@ -937,34 +937,46 @@ section {
 
 /* -- @component DOWNLOADS -- */
 
-.download {
-  @extend %box-sizing;
-  display: inline-block;
-  float: left;
-  border-radius: 5px;
+.downloads {
   text-align: center;
-  &:hover {
-    opacity: 0.9;
-  }
-  &.light {
+  .light {
     padding: 25px 20px;
     border: 2px solid #e2e5e6;
-    margin-right: 30px;
   }
-  &.dark {
+  .dark {
     background: $darkblue;
-    margin: 30px 30px 0 0;
+    margin-top: 30px;
   }
-  &.logo {
+  .logo {
     width: 300px;
     height: 180px;
     padding: 52px 0;
+    max-width: 90%;
   }
-  &.image {
+  .image {
     margin: 0 10px 10px 0;
+    max-width: 45%;
+    &:nth-of-type(2n) {
+      margin-right: 0;
+    }
+    img {
+      max-width: 100%;
+    }
   }
 }
 
+.download {
+  @extend %box-sizing;
+  display: inline-block;
+  border-radius: 5px;
+  max-width: 100%;
+  img {
+    max-width: 100%;
+  }
+  &:hover {
+    opacity: 0.9;
+  }
+}
 
 /* -- @component COUNTER -- */
 .counter-wrapper {
@@ -1445,7 +1457,6 @@ $schedulecirclesize: 21px;
 
 /* @group Responsive
 ----------------------------------------------- */
-
 
 @media screen and (max-width: 1000px) {
   h1 {
