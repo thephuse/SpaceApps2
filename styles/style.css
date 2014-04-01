@@ -96,6 +96,9 @@ body {
 .center {
   text-align: center; }
 
+hr {
+  margin: 70px 0; }
+
 /* @group Typography
 ----------------------------------------------- */
 body {
@@ -565,18 +568,18 @@ section {
   border: 2px solid #e2e5e6;
   border-radius: 5px; }
 
-/*-- Homepage Organizers -- */
-.organizer {
+/*-- Homepage Organizers, Judges, Mentors -- */
+.volunteer {
   display: inline-block;
   margin: 35px 30px 0; }
-  .organizer .org-photo {
+  .volunteer .org-photo {
     display: block;
     position: relative;
     border-radius: 50%;
     overflow: hidden;
     width: 160px;
     height: 160px; }
-    .organizer .org-photo:after {
+    .volunteer .org-photo:after {
       position: absolute;
       top: 0;
       left: 0;
@@ -595,7 +598,7 @@ section {
       -ms-transition: all 0.4s;
       -o-transition: all 0.4s;
       transition: all 0.4s; }
-    .organizer .org-photo:hover:after {
+    .volunteer .org-photo:hover:after {
       background: rgba(242, 83, 55, 0.7);
       color: #fff; }
 
@@ -1144,7 +1147,7 @@ cite {
   .modal .modal-close {
     position: absolute;
     top: 6px;
-    right: 12px;
+    right: 26px;
     color: #999;
     font-size: 24px;
     font-weight: bold;
@@ -1167,7 +1170,9 @@ cite {
     width: 100%; }
   .modal .modal-main {
     padding: 25px;
-    margin-left: 200px; }
+    margin-left: 200px;
+    max-height: 500px;
+    overflow-y: auto; }
     .modal .modal-main header {
       border-bottom: 2px solid #d9d9d9;
       padding-bottom: 20px;

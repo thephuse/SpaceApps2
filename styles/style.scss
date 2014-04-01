@@ -103,6 +103,10 @@ body {
   text-align: center;
 }
 
+hr {
+  margin: 70px 0;
+}
+
 /* @group Typography
 ----------------------------------------------- */
 body {
@@ -658,9 +662,9 @@ section {
     }
   }
 }
-/*-- Homepage Organizers -- */
+/*-- Homepage Organizers, Judges, Mentors -- */
 
-.organizer {
+.volunteer {
   display: inline-block;
   margin: 35px 30px 0;
   .org-photo{
@@ -1392,7 +1396,7 @@ $schedulecirclesize: 21px;
   .modal-close {
     position: absolute;
     top: 6px;
-    right: 12px;
+    right: 26px;
     color: #999;
     font-size: 24px;
     font-weight: bold;
@@ -1423,6 +1427,8 @@ $schedulecirclesize: 21px;
   .modal-main {
     padding: 25px;
     margin-left: 200px;
+    max-height: 500px;
+    overflow-y: auto;
     header {
       border-bottom: 2px solid #d9d9d9;
       padding-bottom: 20px;
