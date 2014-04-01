@@ -67,17 +67,17 @@ input, select {
 
 /* @group Mixins
 ----------------------------------------------- */
-.page-header .container, .page-footer .container, .main .container, .half-container, .grid, input.email, .dropdown.active ul a, .event-details .detail, .timeline li, .timeline li:before, .schedule li, .schedule li:before, .sponsorship-levels th, .sponsorship-levels td, .modal aside, .modal .button {
+.page-header .container, .page-footer .container, .main .container, .half-container, .grid, input.email, .dropdown.active ul a, .event-details .detail, .download, .timeline li, .timeline li:before, .schedule li, .schedule li:before, .sponsorship-levels th, .sponsorship-levels td, .modal aside, .modal .button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-.cf, .modal, .page-header .container, .page-footer .container, .main .container, .graphic-row, .timeline, .timeline li, .schedule ul, .schedule li, .sponsorship-heading {
+.cf, .modal, .page-header .container, .page-footer .container, .main .container, .graphic-row, .contacts, .timeline, .timeline li, .schedule ul, .schedule li, .sponsorship-heading {
   clear: both; }
-  .cf:before, .modal:before, .page-header .container:before, .page-footer .container:before, .main .container:before, .graphic-row:before, .timeline:before, .timeline li:before, .schedule ul:before, .schedule li:before, .sponsorship-heading:before, .cf:after, .modal:after, .page-header .container:after, .page-footer .container:after, .main .container:after, .graphic-row:after, .timeline:after, .timeline li:after, .schedule ul:after, .schedule li:after, .sponsorship-heading:after {
+  .cf:before, .modal:before, .page-header .container:before, .page-footer .container:before, .main .container:before, .graphic-row:before, .contacts:before, .timeline:before, .timeline li:before, .schedule ul:before, .schedule li:before, .sponsorship-heading:before, .cf:after, .modal:after, .page-header .container:after, .page-footer .container:after, .main .container:after, .graphic-row:after, .contacts:after, .timeline:after, .timeline li:after, .schedule ul:after, .schedule li:after, .sponsorship-heading:after {
     content: "";
     display: table; }
-  .cf:after, .modal:after, .page-header .container:after, .page-footer .container:after, .main .container:after, .graphic-row:after, .timeline:after, .timeline li:after, .schedule ul:after, .schedule li:after, .sponsorship-heading:after {
+  .cf:after, .modal:after, .page-header .container:after, .page-footer .container:after, .main .container:after, .graphic-row:after, .contacts:after, .timeline:after, .timeline li:after, .schedule ul:after, .schedule li:after, .sponsorship-heading:after {
     clear: both; }
 
 /* @group Variables
@@ -283,6 +283,8 @@ input.email {
 ----------------------------------------------- */
 #hero .container {
   position: relative; }
+#hero .standalone {
+  margin-bottom: 40px; }
 
 .space-junk {
   position: fixed;
@@ -482,6 +484,17 @@ section {
     transition: border-color 0.2s; }
     .transparent-section a.link:hover {
       border-bottom: 1px solid #fff; }
+  .transparent-section a.red-link {
+    color: #f25337;
+    font-weight: bold;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
+    -moz-transition: color 0.2s;
+    -ms-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    transition: color 0.2s; }
+    .transparent-section a.red-link:hover {
+      color: #f8a597; }
   .transparent-section a.button {
     color: #fff; }
   .transparent-section .cta {
@@ -725,6 +738,76 @@ section {
   border: 2px solid #e2e5e6;
   border-radius: 5px;
   padding: 15px 30px 50px; }
+
+/* -- @component PRESS -- */
+.press {
+  list-style: none;
+  font-weight: bold;
+  color: #626f78;
+  line-height: 1.4;
+  margin-bottom: 40px; }
+  .press li {
+    margin-bottom: 30px; }
+  .press a {
+    font-family: "brandon-grotesque", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 10px;
+    color: #2f91dc;
+    text-decoration: none;
+    line-height: 1; }
+
+/* -- @component CONTACTS -- */
+.contacts {
+  border: 2px solid #e2e5e6;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 60px; }
+  .contacts .grid {
+    margin-bottom: 0;
+    padding: 20px; }
+  .contacts h2 {
+    margin: 10px 0 5px; }
+  .contacts p {
+    margin-bottom: 10px; }
+  .contacts .grid:last-of-type {
+    border-left: 2px solid #e2e5e6; }
+  .contacts .title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 0.85em;
+    color: #b7bdc1;
+    font-weight: bold;
+    font-family: "brandon-grotesque", sans-serif; }
+  .contacts a {
+    text-decoration: none; }
+
+/* -- @component ABOUT -- */
+.main .about {
+  width: 70%; }
+
+/* -- @component DOWNLOADS -- */
+.download {
+  display: inline-block;
+  float: left;
+  border-radius: 5px;
+  text-align: center; }
+  .download:hover {
+    opacity: 0.9; }
+  .download.light {
+    padding: 25px 20px;
+    border: 2px solid #e2e5e6;
+    margin-right: 30px; }
+  .download.dark {
+    background: #1d2228;
+    margin: 30px 30px 0 0; }
+  .download.logo {
+    width: 300px;
+    height: 180px;
+    padding: 52px 0; }
+  .download.image {
+    margin: 0 10px 10px 0; }
 
 /* -- @component COUNTER -- */
 .counter-wrapper {

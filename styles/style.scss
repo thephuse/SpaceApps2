@@ -304,6 +304,9 @@ input.email {
   .container {
     position: relative;
   }
+  .standalone {
+    margin-bottom: 40px;
+  }
 }
 
 .space-junk {
@@ -548,6 +551,15 @@ section {
     @include transition(border-color 0.2s);
     &:hover {
       border-bottom: 1px solid #fff;
+    }
+  }
+  a.red-link {
+    color: $red;
+    font-weight: bold;
+    text-decoration: none;
+    @include transition(color 0.2s);
+    &:hover {
+      color: lighten($red, 20);
     }
   }
   a.button {
@@ -859,6 +871,100 @@ section {
   border-radius: 5px;
   padding: 15px 30px 50px;
 }
+
+/* -- @component PRESS -- */
+
+.press {
+  list-style: none;
+  font-weight: bold;
+  color: #626f78;
+  line-height: 1.4;
+  margin-bottom: 40px;
+  li {
+    margin-bottom: 30px;
+  }
+  a {
+    font-family: $fancyFont;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 10px;
+    color: #2f91dc;
+    text-decoration: none;
+    line-height: 1;
+  }
+}
+
+/* -- @component CONTACTS -- */
+
+.contacts {
+  @extend %clear;
+  border: 2px solid #e2e5e6;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 60px;
+  .grid {
+    margin-bottom: 0;
+    padding: 20px;
+  }
+  h2 {
+    margin: 10px 0 5px;
+  }
+  p {
+    margin-bottom: 10px;
+  }
+  .grid:last-of-type {
+    border-left: 2px solid #e2e5e6;
+  }
+  .title {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 0.85em;
+    color: #b7bdc1;
+    font-weight: bold;
+    font-family: $fancyFont;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+/* -- @component ABOUT -- */
+
+.main .about {
+  width: 70%;
+}
+
+/* -- @component DOWNLOADS -- */
+
+.download {
+  @extend %box-sizing;
+  display: inline-block;
+  float: left;
+  border-radius: 5px;
+  text-align: center;
+  &:hover {
+    opacity: 0.9;
+  }
+  &.light {
+    padding: 25px 20px;
+    border: 2px solid #e2e5e6;
+    margin-right: 30px;
+  }
+  &.dark {
+    background: $darkblue;
+    margin: 30px 30px 0 0;
+  }
+  &.logo {
+    width: 300px;
+    height: 180px;
+    padding: 52px 0;
+  }
+  &.image {
+    margin: 0 10px 10px 0;
+  }
+}
+
 
 /* -- @component COUNTER -- */
 .counter-wrapper {
