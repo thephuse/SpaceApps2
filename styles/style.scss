@@ -1464,6 +1464,22 @@ $schedulecirclesize: 21px;
 /* @group Responsive
 ----------------------------------------------- */
 
+@media screen and (max-width: 1100px) {
+  .page-nav {
+    ul {
+      margin: 0 0 0 28px;
+    }
+    li {
+      vertical-align: middle;
+    }
+    a {
+      padding: 22px 10px;
+      max-width: 90px;
+      text-align: center;
+    }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   h1 {
     font-size: 2em;
@@ -1474,16 +1490,19 @@ $schedulecirclesize: 21px;
   }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 910px) {
   .page-nav {
     ul {
-      margin: 0 0 0 28px;
+      margin: 0 0 0 10px;
     }
     li {
-      vertical-align: middle;
+      vertical-align: middle;t
+      &:first-of-type {
+        display: none;
+      }
     }
     a {
-      padding: 22px 10px;
+      padding: 22px 5px;
       max-width: 90px;
       text-align: center;
     }
