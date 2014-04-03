@@ -860,11 +860,17 @@ section {
       margin-right: 6px;
     }
   }
+  a:hover {
+    background: rgba(#000, 0.05);
+  }
 }
 .transparent-section .event-details {
   border-color: rgba(#fff, 0.1);
   .detail:last-of-type {
     border-color: rgba(#fff, 0.1);
+  }
+  a:hover {
+    background: rgba(#fff, 0.05);
   }
 }
 
