@@ -1196,6 +1196,10 @@ cite {
       margin: 0; }
     .modal .modal-main p {
       color: #707b83; }
+    .modal .modal-main a {
+      color: #2f91dc; }
+      .modal .modal-main a:hover {
+        color: #86bfeb; }
 
 #overlay {
   display: none;

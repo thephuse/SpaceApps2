@@ -1462,6 +1462,12 @@ $schedulecirclesize: 21px;
     p {
       color: $textcolor;
     }
+    a {
+      color: $linkcolor;
+      &:hover {
+        color: $linkhover;
+      }
+    }
   }
 }
 
