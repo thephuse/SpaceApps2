@@ -654,8 +654,19 @@ section {
     max-width: 100%;
   }
 }
+.sponsor-row {
+  a {
+    @extend %box-sizing;
+    width: 24%;
+    display: inline-block;
+    padding: 0 5px 10px;
+  }
+  img {
+    width: 100%;
+  }
+}
 .white-section {
-  .sponsor, .supporter {
+  .sponsor, .supporter, .sponsor-row {
     img {
       border: 2px solid #e2e5e6;
       border-radius: 5px;

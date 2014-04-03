@@ -67,7 +67,7 @@ input, select {
 
 /* @group Mixins
 ----------------------------------------------- */
-.page-header .container, .page-footer .container, .main .container, .half-container, .grid, input.email, .dropdown.active ul a, .event-details .detail, .download, .timeline li, .timeline li:before, .schedule li, .schedule li:before, .sponsorship-levels th, .sponsorship-levels td, .modal aside, .modal .button {
+.page-header .container, .page-footer .container, .main .container, .half-container, .grid, input.email, .dropdown.active ul a, .sponsor-row a, .event-details .detail, .download, .timeline li, .timeline li:before, .schedule li, .schedule li:before, .sponsorship-levels th, .sponsorship-levels td, .modal aside, .modal .button {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -564,7 +564,14 @@ section {
   .sponsor img, .supporter img {
     max-width: 100%; }
 
-.white-section .sponsor img, .white-section .supporter img {
+.sponsor-row a {
+  width: 24%;
+  display: inline-block;
+  padding: 0 5px 10px; }
+.sponsor-row img {
+  width: 100%; }
+
+.white-section .sponsor img, .white-section .supporter img, .white-section .sponsor-row img {
   border: 2px solid #e2e5e6;
   border-radius: 5px; }
 
