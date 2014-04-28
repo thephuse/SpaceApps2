@@ -52,6 +52,8 @@ $(function () {
   responsiveNav();
   modals();
 
+  $('.video-section').fitVids();
+
   var thankyou = document.URL.match(/\?(.*)/);
   if(thankyou && thankyou[1] == 'thank-you')
   {

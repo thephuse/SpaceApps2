@@ -557,6 +557,17 @@ section {
   .graphic-row.alt .description {
     margin-left: 0; }
 
+/*-- Videos --*/
+.video-section h3 {
+  margin: 0 0 30px; }
+.video-section .grid {
+  margin-bottom: 50px; }
+
+.video {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 50px; }
+
 /*-- Homepage Sponsors -- */
 .sponsor, .supporter {
   display: inline-block;
