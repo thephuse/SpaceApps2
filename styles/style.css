@@ -250,11 +250,11 @@ input.email {
     background-image: -ms-linear-gradient(top, #ff7c64 0%, #de4f35 100%);
     background-image: linear-gradient(to bottom, #ff7c64 0%, #de4f35 100%); }
   .button:active {
-    background-image: -moz-linear-gradient(top, #ec6048 0%, #dc4328 100%);
-    background-image: -webkit-linear-gradient(top, #ec6048 0%, #dc4328 100%);
-    background-image: -o-linear-gradient(top, #ec6048 0%, #dc4328 100%);
-    background-image: -ms-linear-gradient(top, #ec6048 0%, #dc4328 100%);
-    background-image: linear-gradient(to bottom, #ec6048 0%, #dc4328 100%);
+    background-image: -moz-linear-gradient(top, #EC6048 0%, #dc4328 100%);
+    background-image: -webkit-linear-gradient(top, #EC6048 0%, #dc4328 100%);
+    background-image: -o-linear-gradient(top, #EC6048 0%, #dc4328 100%);
+    background-image: -ms-linear-gradient(top, #EC6048 0%, #dc4328 100%);
+    background-image: linear-gradient(to bottom, #EC6048 0%, #dc4328 100%);
     box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.19); }
 
 #mc-embedded-subscribe-form {
@@ -278,7 +278,7 @@ input.email {
   .thank-you h2 {
     font-weight: normal;
     margin: 0;
-    color: #cccccc; }
+    color: #ccc; }
   .thank-you p {
     margin: 7px 0 0; }
 
@@ -463,7 +463,7 @@ section {
   .transparent-section h2 {
     color: #fff; }
   .transparent-section p {
-    color: #cccccc; }
+    color: #ccc; }
   .transparent-section .subtitle {
     color: #fff;
     font-size: 1.1em; }
@@ -622,11 +622,11 @@ section {
 
 /*-- Homepage Half Containers -- */
 .half-container.event {
-  background: white url(../images/background-event.png) no-repeat right; }
+  background: #fff url(../images/background-event.png) no-repeat right; }
   .half-container.event .content {
     float: right; }
 .half-container.venue {
-  background: white url(../images/background-venue.png) no-repeat left; }
+  background: #fff url(../images/background-venue.png) no-repeat left; }
 .half-container.event, .half-container.venue {
   height: 360px;
   margin-bottom: -40px; }
@@ -1476,3 +1476,10 @@ cite {
 
   .timeline-button {
     float: left; } }
+/* POST-EVENT LANDING PAGE */
+.letter-container {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 40px; }
+
+/*# sourceMappingURL=style.css.map */
