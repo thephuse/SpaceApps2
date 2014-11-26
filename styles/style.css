@@ -1478,6 +1478,7 @@ cite {
     float: left; } }
 /* POST-EVENT LANDING PAGE */
 .letter-container {
+  text-align: left;
   padding: 40px; }
   .letter-container h3 {
     line-height: 1.6;
