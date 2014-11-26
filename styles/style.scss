@@ -1811,3 +1811,20 @@ $schedulecirclesize: 21px;
     margin-top: 10px;
   }
 }
+
+.visible-mobile {
+  display: none;
+  p {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 767px){
+  .visible-mobile {
+    display: inherit;
+    margin-top: 40px;
+  }
+  .hidden-mobile {
+    display: none;
+  }
+}

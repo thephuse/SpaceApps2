@@ -1484,4 +1484,17 @@ cite {
     line-height: 1.6;
     margin-top: 10px; }
 
+.visible-mobile {
+  display: none; }
+  .visible-mobile p {
+    text-align: center; }
+
+@media screen and (max-width: 767px) {
+  .visible-mobile {
+    display: inherit;
+    margin-top: 40px; }
+
+  .hidden-mobile {
+    display: none; } }
+
 /*# sourceMappingURL=style.css.map */
