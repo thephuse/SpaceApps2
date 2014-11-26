@@ -1478,8 +1478,9 @@ cite {
     float: left; } }
 /* POST-EVENT LANDING PAGE */
 .letter-container {
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 14px;
   padding: 40px; }
+  .letter-container h3 {
+    line-height: 1.6;
+    margin-top: 10px; }
 
 /*# sourceMappingURL=style.css.map */
