@@ -274,6 +274,9 @@ input.email {
 #mc_embed_signup {
   width: 50%;
   margin: 25px auto 0;
+  @media screen and (max-width: 767px){
+    width: 100%;
+  }
 }
 #mc-embedded-subscribe-form {
   position: relative;
@@ -297,6 +300,9 @@ input.email {
   color: #ccc;
   -webkit-transition: background-color 0.1s linear;
   transition: background-color 0.1s linear;
+  @media screen and (max-width: 767px){
+    padding: 15px 30px 14px 15px;
+  }
 }
 #mc_embed_signup input[type="submit"] {
   background-color: #f24831;
