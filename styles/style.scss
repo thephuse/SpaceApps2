@@ -276,7 +276,7 @@ input.email {
   white-space: nowrap;
 }
 #mc-embedded-subscribe {
-  margin-left: -99px;
+  margin-left: -115px;
   box-shadow: 0 2px 2px 0 rgba(#000, 0.39), inset 0 1px 0 0 rgba(#fff, 0.41);
   font-size: 13px;
 }
@@ -644,22 +644,6 @@ section {
   }
 }
 
-/*-- Videos --*/
-
-.video-section {
-  h3 {
-    margin: 0 0 30px;
-  }
-  .grid {
-    margin-bottom: 50px;
-  }
-}
-
-.video {
-  max-width: 600px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-}
 
 /*-- Homepage Sponsors -- */
 
@@ -1745,12 +1729,12 @@ $schedulecirclesize: 21px;
     border-color: #313841;
   }
   #mc-embedded-subscribe {
-    margin-left: -66px;
+    margin-left: -79px;
     padding: 12px 7px 11px;
     font-size: 11px;
   }
   #mce-EMAIL {
-    padding: 15px 65px 15px 12px;
+    padding: 15px 76px 15px 12px;
     font-size: 0.8em;
   }
 
@@ -1799,32 +1783,5 @@ $schedulecirclesize: 21px;
   }
   .timeline-button {
     float: left;
-  }
-}
-
-/* POST-EVENT LANDING PAGE */
-.letter-container {
-  text-align: left;
-  padding: 40px;
-  h3 {
-    line-height: 1.6;
-    margin-top: 10px;
-  }
-}
-
-.visible-mobile {
-  display: none;
-  p {
-    text-align: center;
-  }
-}
-
-@media screen and (max-width: 767px){
-  .visible-mobile {
-    display: inherit;
-    margin-top: 40px;
-  }
-  .hidden-mobile {
-    display: none;
   }
 }
