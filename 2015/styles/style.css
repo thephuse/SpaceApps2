@@ -1301,11 +1301,14 @@ cite {
   .challenges li {
     width: 49%; }
 
-  .page-nav li:first-child {
-    display: none; }
-
   .rsvp-button {
     margin: 20px 0 0; } }
+@media screen and (min-width: 769px) {
+  .page-header .social-icons {
+    margin-top: -13px;
+    position: absolute;
+    top: 50%;
+    right: 20px; } }
 @media screen and (max-width: 768px) {
   .main .half-container {
     width: 100%;
