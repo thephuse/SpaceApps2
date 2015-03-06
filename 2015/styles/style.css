@@ -614,6 +614,7 @@ section {
   display: inline-block;
   padding: 0 5px 10px; }
 .sponsor-row img {
+  border-radius: 4px;
   width: 100%; }
 
 .white-section .sponsor img, .white-section .supporter img, .white-section .sponsor-row img {
