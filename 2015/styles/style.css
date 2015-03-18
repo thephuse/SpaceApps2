@@ -617,7 +617,7 @@ section {
   border-radius: 4px;
   width: 100%; }
 
-.white-section .sponsor img, .white-section .supporter img, .white-section .sponsor-row img {
+.white-section .sponsor img, .white-section .supporter img, .white-section .sponsor-row img, .transparent-section .sponsor img, .transparent-section .supporter img, .transparent-section .sponsor-row img {
   border: 2px solid #e2e5e6;
   border-radius: 5px; }
 
