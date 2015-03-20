@@ -858,8 +858,8 @@ section {
     margin-top: 30px; }
   .downloads .logo {
     width: 300px;
-    height: 180px;
-    padding: 52px 0;
+    height: 166px;
+    padding: 45px 0;
     max-width: 90%; }
   .downloads .image {
     margin: 0 10px 10px 0;
@@ -868,6 +868,8 @@ section {
       margin-right: 0; }
     .downloads .image img {
       max-width: 100%; }
+  .downloads.photos {
+    padding: 0 10px; }
 
 .download {
   display: inline-block;

@@ -1020,8 +1020,8 @@ section {
   }
   .logo {
     width: 300px;
-    height: 180px;
-    padding: 52px 0;
+    height: 166px;
+    padding: 45px 0;
     max-width: 90%;
   }
   .image {
@@ -1033,6 +1033,9 @@ section {
     img {
       max-width: 100%;
     }
+  }
+  &.photos {
+    padding: 0 10px;
   }
 }
 
