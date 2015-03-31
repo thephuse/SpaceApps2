@@ -756,6 +756,19 @@ section {
     background: url(../images/social-googleplus.png); }
 
 /* -- @component EVENT-DETAILS -- */
+@media screen and (min-width: 900px) {
+  .details-wrapper .detail.button {
+    display: inline-block;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    margin-left: 25px; } }
+@media screen and (max-width: 899px) {
+  .details-wrapper .detail.button {
+    display: block;
+    margin: 25px auto 15px;
+    max-width: 230px; } }
+
 .event-details {
   border: 2px solid #e2e5e6;
   display: inline-block; }
