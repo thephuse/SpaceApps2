@@ -761,7 +761,6 @@ section {
     display: inline-block;
     transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
     margin-left: 25px; } }
 @media screen and (max-width: 899px) {
   .details-wrapper .detail.button {
