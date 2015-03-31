@@ -1300,7 +1300,7 @@ cite {
 
   .event-details .wait-list {
     border-left: 0;
-    padding: 26px 30px 25px; } }
+    padding: 26px 15px 25px; } }
 @media screen and (max-width: 900px) {
   .main-headline {
     float: none;
