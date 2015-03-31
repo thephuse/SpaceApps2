@@ -755,6 +755,49 @@ section {
   .social-icons .googleplus {
     background: url(../images/social-googleplus.png); }
 
+/* -- @component LANDING-PAGE -- */
+.landing-wrapper {
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 4px; }
+  .landing-wrapper:after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    clear: both; }
+  .landing-wrapper .half {
+    width: 50%;
+    float: left;
+    padding: 1.5em 30px 1.5em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+    @media screen and (max-width: 950px) {
+      .landing-wrapper .half {
+        float: none;
+        width: 100%; } }
+    .landing-wrapper .half.hackathon {
+      border-right: 2px solid rgba(255, 255, 255, 0.1); }
+      @media screen and (max-width: 950px) {
+        .landing-wrapper .half.hackathon {
+          border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+          border-right: none; } }
+    .landing-wrapper .half h3 {
+      margin-top: 0; }
+    .landing-wrapper .half .button {
+      margin-top: 30px;
+      display: inline-block; }
+    @media screen and (max-width: 950px) {
+      .landing-wrapper .half .event-details {
+        display: table;
+        margin: 0 auto; } }
+    .landing-wrapper .half .event-details .detail {
+      font-size: 1.05em;
+      padding: 10px 15px 12px; }
+      .landing-wrapper .half .event-details .detail.location {
+        border-bottom: none; }
+
 /* -- @component EVENT-DETAILS -- */
 .event-details {
   border: 2px solid #e2e5e6;
