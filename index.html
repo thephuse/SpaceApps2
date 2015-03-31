@@ -14,6 +14,21 @@
   <script type="text/javascript" src="//use.typekit.net/fdx4bxh.js"></script>
   <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
   <link href="http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700" rel="stylesheet" type="text/css">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SpaceApps Toronto</title>
+  
+  <meta charset="utf-8">
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <meta content="" name="description">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="google-site-verification" content="RLS9reRZqesEZH9vbyTO7l_d4ZrbzXfXlH52IzodNQM" />
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?v2">
+  <link href="styles/style.css?v=2" rel="stylesheet">
+  <script type="text/javascript" src="//use.typekit.net/fdx4bxh.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+  <link href="http://fonts.googleapis.com/css?family=Quattrocento+Sans:400,700" rel="stylesheet" type="text/css">
 <!--
 
                                             ,:::.                                                   
@@ -68,7 +83,105 @@
 
 <body>
 
+  <!-- @component HEADER -->
+  <header class="page-header">
+    <div class="container">
+      <a href="./" class="logo"><img alt="Toronto Space Apps Challenge" src="./images/logo.png"></a>
+      <!-- @component SOCIAL ICONS -->
+      <div class="social-icons">
+        <a class="email" href="mailto:info@spaceappstoronto.com"></a>
+        <a class="twitter" href="http://twitter.com/spaceappsto" target="_blank"></a>
+        <a class="facebook" href="http://facebook.com/SpaceAppsTO" target="_blank"></a>
+        <a class="googleplus" href="https://plus.google.com/u/1/100116826686037234314/" target="_blank"></a>
+      </div>
+      <a href="#" class="menu-toggle">Menu</a>
+      <nav class="page-nav">
+        <ul>
+          <li><a href="./" class="active">Hackathon</a></li>
+          <li><a href="./youth.html">Youth</a></li>
+          <li><a href="./sponsors.html">Sponsors</a></li>
+          <!-- <li><a href="./volunteer.html">Volunteers</a></li> -->
+          <li><a href="./press.html">Press</a></li>
+          <li><a href="/2014">2014</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- @compontent SECTION -->
+  <section class="main transparent-section center" id="hero">
+    <div class="container">
+      <h1>Toronto, prepare for lift-off!</h1>
+      <p>The weekend of April 10&ndash;12th, developers, makers, engineers and entrepreneurs will take on NASA-designed challenges, creating solutions that range from silly to serious, fantastical to feasible. A part of NASA's International Space Apps Challenge, NASA's Space Apps Toronto is composed of both a <a href="index.html">Hackathon</a> and a <a href="youth.html">Youth Program</a> &ndash; both of which challenge participants to think critically about technology and it's effect on the world around us.</p>
+
+      <div class="landing-wrapper">
+        <div class="half hackathon">
+          <h3>Hackathon</h3>
+          <p>A weekend-long Hackathon for participants to create solutions with software and hardware to some of NASA's toughest challenges.</p>
+          
+          <div class="event-details">
+            <div class="detail date">
+              <img src="images/icon-calendar-white.png" class="icon"> April 10th - 12th
+            </div>
+            <a target="_blank" href="https://www.google.ca/maps/place/BNOTIONS/@43.649843,-79.371054,15z/data=!4m2!3m1!1s0x0:0x197424a455e141ce" class="detail location"><img src="images/icon-map-white.png" class="icon"> BNOTIONS</a>
+          </div>
+
+          <a href="http://spaceappstoronto.com/2015/index.html" target="_blank" class="button">Find out about the Hackathon</a>
+        </div>
+
+        <div class="half youth-program">
+          <h3>Youth Program</h3>
+          <p>A fair-style program for youth aged 7 &ndash; 15 to learn about technology's impact through activities led by local organizations.</p>
+
+          <div class="event-details">
+            <div class="detail date">
+              <img src="images/icon-calendar-white.png" class="icon"> April 11th
+            </div>
+            <a target="_blank" href="https://www.google.ca/maps/place/The+Lab/@43.648257,-79.397807,17z/data=!3m1!4b1!4m2!3m1!1s0x882b34dc87dc87e7:0x88c805b336bd95fa?hl=en" class="detail location"><img src="images/icon-map-white.png" class="icon"> The Lab</a>
+          </div>
+
+          <a href="http://spaceappstoronto.com/2015/youth.html" target="_blank" class="button">Find out about the Youth Program</a>          
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- @component FOOTER -->
+  <footer class="page-footer transparent-section">
+    <div class="container">
+      <div class="separator"><span class="leaf"></span></div>
+      <div class="attributions">
+        <a href="http://www.nasa.gov" target="_blank">In partnership with NASA</a>
+        <a href="http://phuse.ca" target="_blank">Designed by Phuse</a>
+      </div>
+      <!-- @component SOCIAL ICONS -->
+      <div class="social-icons">
+        <a class="email" href="mailto:info@spaceappstoronto.com"></a>
+        <a class="twitter" href="http://twitter.com/spaceappsto" target="_blank"></a>
+        <a class="facebook" href="http://facebook.com/SpaceAppsTO" target="_blank"></a>
+        <a class="googleplus" href="https://plus.google.com/u/1/100116826686037234314/" target="_blank"></a>
+      </div>
+    </div>
+  </footer>
+  
+  <div id="overlay"></div>
+
+  <script src="scripts/main.js"></script>
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-38311033-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
   <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
   <script src="./scripts/site.js?v=2"></script>
 </body>
 </html>
+
