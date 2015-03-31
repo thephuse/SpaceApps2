@@ -888,21 +888,6 @@ section {
 
 /* -- @component EVENT-DETAILS -- */
 
-.details-wrapper {
-  .detail.button {
-    @media screen and (min-width: 900px){
-      display: inline-block;
-      transform: translateY(-50%);
-      -webkit-transform: translateY(-50%);
-      margin-left: 25px;
-    }
-    @media screen and (max-width: 899px){
-      display: block;
-      margin: 25px auto 15px;
-      max-width: 230px;
-    }
-  }
-}  
 .event-details {
   border: 2px solid #e2e5e6;
   display: inline-block;
@@ -917,13 +902,19 @@ section {
     line-height: 25px;
     color: inherit;
     text-decoration: none;
-    &:last-child {
-      border-left: 2px solid #e2e5e6;
+    border-left: 2px solid rgba(#fff, 0.1);
+    &:first-child {
+      border-left: none;
     }
     img {
       vertical-align: middle;
       margin-right: 6px;
     }
+  }
+  .wait-list {
+    border-left: 2px solid rgba(#fff, 0.1);
+    display: inline-block;
+    padding: 16px 30px 17px;
   }
   a:hover {
     background: rgba(#000, 0.05);
@@ -931,9 +922,6 @@ section {
 }
 .transparent-section .event-details {
   border-color: rgba(#fff, 0.1);
-  .detail:last-of-type {
-    border-color: rgba(#fff, 0.1);
-  }
   a:hover {
     background: rgba(#fff, 0.05);
   }
@@ -1598,6 +1586,15 @@ $schedulecirclesize: 21px;
       text-align: center;
     }
   }
+  .event-details .detail {
+    width: 100%;
+    border-left: none;
+    border-bottom: 2px solid rgba(#fff, 0.1);
+  }
+  .event-details .wait-list {
+    border-left: 0;
+    padding: 26px 30px 25px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1717,13 +1714,6 @@ $schedulecirclesize: 21px;
   }
   .schedule {
     margin-top: -16px;
-  }
-  .event-details .detail {
-    width: 100%;
-    &:last-child {
-      border-left: none;
-      border-top: 2px solid #e2e5e6;
-    }
   }
 }
 
