@@ -193,7 +193,7 @@ textarea, input, button, .btn, select {
   display: inline-block;
   vertical-align: top; }
   .grid-half:nth-of-type(2n - 1) {
-    margin-right: 4%;
+    margin-right: 3%;
     clear: left; }
 
 .grid-third {
