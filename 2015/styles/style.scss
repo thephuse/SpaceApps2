@@ -194,6 +194,22 @@ textarea, input, button, .btn, select {
   vertical-align: top;
 }
 
+.winners {
+  .half-container {
+    width: 45%;
+    &.first {
+      margin-right: 5%;
+    }
+    img {
+      border-radius: 4px;
+    }
+    h3 {
+      margin-top: 10px; 
+      line-height: 1.4;
+    }
+  }
+}
+
 .grid {
   display: block;
   float: left;
