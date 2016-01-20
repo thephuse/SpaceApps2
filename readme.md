@@ -19,7 +19,7 @@ Development
 
 ```bash
 git clone git@github.com:thephuse/SpaceApps2.git
-cd SpaceApps2/styles
+cd SpaceApps2/[year]/styles
 sass --watch main.scss:main.css # alternatively compile sass using a GUI
 ```
 
