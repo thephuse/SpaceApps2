@@ -489,6 +489,10 @@ input.email {
 section {
   padding: 40px 0; }
 
+.single-signup {
+  width: 75%;
+  margin: auto; }
+
 .white-section {
   background: #fff; }
   .white-section h1, .white-section h2, .white-section h4 {
