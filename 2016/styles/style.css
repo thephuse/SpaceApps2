@@ -866,6 +866,7 @@ section {
     background: rgba(0, 0, 0, 0.05); }
 
 .transparent-section .event-details {
+  height: 81px;
   border-color: rgba(255, 255, 255, 0.1); }
   .transparent-section .event-details a:hover {
     background: rgba(255, 255, 255, 0.05); }
