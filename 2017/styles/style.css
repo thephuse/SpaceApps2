@@ -774,6 +774,8 @@ section {
       position: absolute;
       left: 15px;
       top: 12px; }
+.challenges li.csa-challenge {
+  width: 50%; }
 
 /*-- Sponsors Hero -- */
 .buttons {
