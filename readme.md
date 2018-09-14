@@ -1,4 +1,4 @@
-SpaceApps Toronto 2013
+SpaceApps Toronto 2018
 =============
 
 Static HTML/CSS/JS site for [spaceappstoronto.com/](http://spaceappstoronto.com/)
@@ -9,7 +9,7 @@ Development
 ###Requirements
 
 * Sass CLI or a GUI for compiling .scss to sass
-* Some variety of local server (for Typekit authorization)
+* Some variety of local server
 
 ####Local server options (OSX)
 
