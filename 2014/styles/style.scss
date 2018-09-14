@@ -84,9 +84,9 @@ $textcolor: $lightbluegrey;
 $linkcolor: $blue;
 $linkhover: lighten($linkcolor, 20);
 
-$fancyFont: 'brandon-grotesque', sans-serif;
+$fancyFont: 'Lato', sans-serif;
 $mainFont: 'Quattrocento Sans', sans-serif;
-$narrowFont: 'pt-sans-narrow', sans-serif;
+$narrowFont: 'PT Sans Narrow', sans-serif;
 
 
 /* @group Global
@@ -154,7 +154,7 @@ ul, li {
 p {
   margin: 0.5em 0 1.5em;
   line-height: 1.8;
-  font-size: 1.05em;
+  font-size: 0.99em;
 }
 p.full {
   max-width: 75%;
@@ -847,7 +847,7 @@ section {
     padding: 10px 30px 12px;
     vertical-align: bottom;
     font-size: 1.25em;
-    font-family: "brandon-grotesque", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 600;
     line-height: 25px;
     color: inherit;

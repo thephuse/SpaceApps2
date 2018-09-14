@@ -109,7 +109,7 @@ input, select {
 
 body {
   font-size: 125%;
-  font-family: "proxima-nova", sans-serif; }
+  font-family: "Montserrat", sans-serif; }
 
 a {
   color: #fff;
@@ -135,7 +135,7 @@ h3 {
   margin-bottom: 25px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.25); }
   h3 small {
-    font-family: "proxima-nova", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-size: 24px;
     text-transform: none;
     display: inline-block;
@@ -314,7 +314,7 @@ li.grid-wide-half:nth-of-type(odd) {
     margin-bottom: 70px; }
 
 .btn, .btn-primary, .challenges-links a, .btn-small, .btn-vote, .btn-project, .btn-red, .menu-toggle {
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   background: #000;
@@ -386,7 +386,7 @@ li.grid-wide-half:nth-of-type(odd) {
     display: inline-block;
     padding-right: 20px; }
   .inner-nav a {
-    font-family: "brandon-grotesque", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 900;
     text-transform: uppercase; }
 
@@ -455,7 +455,7 @@ li.grid-wide-half:nth-of-type(odd) {
   font-size: 15px;
   text-align: center;
   text-transform: none;
-  font-family: "proxima-nova", sans-serif;
+  font-family: "Montserrat", sans-serif;
   clear: both;
   padding-bottom: 0;
   border-bottom: 0;
@@ -583,7 +583,7 @@ li.grid-wide-half:nth-of-type(odd) {
   .page-nav a {
     text-transform: uppercase;
     font-size: 16px;
-    font-family: "brandon-grotesque", sans-serif;
+    font-family: "Lato", sans-serif;
     font-weight: 900; }
   .page-nav li {
     display: inline-block;
@@ -616,7 +616,7 @@ li.grid-wide-half:nth-of-type(odd) {
   padding: 35px 0;
   display: block;
   width: 20.636363636%;
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: "Lato", sans-serif;
   color: #aaaaaa;
   text-align: center;
   text-transform: uppercase;
@@ -696,13 +696,13 @@ li.grid-wide-half:nth-of-type(odd) {
   text-align: left; }
   .winner h3 {
     font-size: 18px;
-    font-family: "brandon-grotesque", sans-serif; }
+    font-family: "Lato", sans-serif; }
     .winner h3 span {
       color: #999;
       padding-right: 8px; }
 
 .event-detail {
-  font-family: "brandon-grotesque", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 18px; }
@@ -921,7 +921,7 @@ li.grid-wide-half:nth-of-type(odd) {
   .press article {
     margin-bottom: 40px; }
     .press article a {
-      font-family: "brandon-grotesque", sans-serif;
+      font-family: "Lato", sans-serif;
       display: block;
       font-size: 18px;
       text-transform: uppercase;
@@ -939,7 +939,7 @@ li.grid-wide-half:nth-of-type(odd) {
       .press article a:hover:after {
         background-position: bottom left; }
     .press article footer {
-      font-family: "proxima-nova";
+      font-family: "Montserrat";
       font-size: 18px;
       text-transform: none;
       margin-top: 10px; }
