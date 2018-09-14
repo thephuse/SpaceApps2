@@ -99,6 +99,9 @@ body {
 hr {
   margin: 70px 0; }
 
+.hiddenSection {
+  display: none; }
+
 /* @group Typography
 ----------------------------------------------- */
 body {

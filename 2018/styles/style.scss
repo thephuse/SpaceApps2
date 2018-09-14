@@ -107,6 +107,10 @@ hr {
   margin: 70px 0;
 }
 
+.hiddenSection {
+  display: none;
+}
+
 /* @group Typography
 ----------------------------------------------- */
 body {
@@ -204,8 +208,8 @@ textarea, input, button, .btn, select {
       border-radius: 4px;
     }
     h3 {
-      margin-top: 10px; 
-      margin-bottom: 0em; 
+      margin-top: 10px;
+      margin-bottom: 0em;
       line-height: 1.4;
     }
   }
@@ -621,7 +625,7 @@ section {
 
 .single-signup {
 	width: 75%;
-	margin: auto;	
+	margin: auto;
 }
 
 .white-section {

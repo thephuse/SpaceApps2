@@ -1,5 +1,2 @@
 User-Agent: *
-Disallow: 
-Disallow: /2016/index-event.html
-Disallow: /2016/index-postevent.html
-Disallow: /2016/youth-postevent.html
+Disallow:
